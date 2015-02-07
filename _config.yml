@@ -16,7 +16,7 @@ markdown: redcarpet
 highlighter: pygments
 paginate: 5
 language: 'en-uk'
-baseurl: /
+baseurl: http://biomadeira.github.io/jasper/
 short_url: 'biomadeira.github.io/jasper'
 google_analytics: 'UA-XXXXXXXX-X'
 disqus: biomadeira
