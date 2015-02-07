@@ -25,7 +25,7 @@ Here's the original [Casper](https://demo.ghost.io)
 * Pagination
 * Author page **(New)**
 * Tag page(s) **(New)**
-* 404 page **(New)**
+* 404 page **(New)**  (this is somehow overridden by my biomadeira.github.io page - should work fine for you)
 * Rss
 * Google Analytics Tracking code
 * Code Syntax Highlight
