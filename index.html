@@ -1,15 +1,32 @@
+---
+layout: default
+title: Home
+cover: '/assets/images/cover1.jpg'
+logo: '/assets/images/ghost.png'
+class: 'home-template'
+---
+<!-- < default -->
+<!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The big featured header  -->
+<header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {% else %}no-cover{% endif %}">
+    <nav class="main-nav overlay clearfix">
+            {% if page.logo %}<a class="blog-logo" href="{{ site.baseurl }}"><img src="{{ page.logo }}" alt="Blog Logo" /></a>{% endif %}
+        <a class="subscribe-button icon-feed" href="{{ site.baseurl }}rss.xml">Subscribe</a>
+    </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">{{ site.name }}</h1>
+            <h2 class="page-description">{{ site.description }}</h2>
+        </div>
+    </div>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+</header>
 
-<html>
+<!-- The main content area on the homepage -->
+<main id="content" class="content" role="main">
 
-        <head>
-            <title>Jasper test page</title>
+    <!-- The tag below includes the post loop - partials/loop.hbs -->
+    {% include loop.html %}
 
-				<style type="text/css" media="screen">
-					html { color: #333; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; font-size: 13px; text-align: center; }
-					#container { margin: 0 auto; text-align: center; }
-				</style>
-        </head>
-<h2>Jasper Website Under Development- Edited 3</h2>
-</html>
+</main>

@@ -1,0 +1,103 @@
+---
+layout: default
+disqus: false
+class: 'post-template'
+---
+<!-- < default -->
+
+<!-- The comment above "< default" means - insert everything in this file into -->
+    <!-- the [body] of the default.hbs template, which contains our header/footer. -->
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+<header class="main-header post-head {% if page.cover %}" style="background-image: url({{ page.cover }}) {% else %}no-cover{% endif %}">
+    <nav class="main-nav {% if page.cover %} overlay {% endif %} clearfix">
+        <a class="back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
+        <a class="subscribe-button icon-feed" href="{{ site.baseurl }}rss.xml">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="{{ page.subclass }}">
+
+        <header class="post-header">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <section class="post-meta">
+            <!-- <a href='{{ site.baseurl }}{{ page.about }}'>{{ site.author }}</a> -->
+            <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>            
+                <!-- [[tags prefix=" on "]] -->
+                {% if page.tags.size > 0 %} 
+                on 
+                {% for tag in page.tags %}
+                    {% if forloop.index == page.tags.size %}
+                       <a href='{{ site.baseurl }}tag/{{ tag }}'>{{ tag | capitalize }}</a>
+                    {% else %}
+                       <a href='{{ site.baseurl }}tag/{{ tag }}'>{{ tag | capitalize }}</a>,
+                    {% endif %}   
+                {% endfor %}
+                {% endif %}
+            </section>
+        </header>
+
+        <section class="post-content">
+            
+            {{ content }}
+
+        </section>
+
+        <footer class="post-footer">
+
+            <!-- Everything inside the #author tags pulls data from the author -->
+            <!-- #author-->
+
+            {% if site.image %}
+            <figure class="author-image">
+                <a class="img" href="{{ site.baseurl }}author/{{ site.username }}" style="background-image: url({{ site.image }})"><span class="hidden">{{ page.author }}'s Picture</span></a>
+            </figure>
+            {% endif %}
+
+            <section class="author">
+                <h4><a href="{{ site.baseurl }}author/{{ site.username }}">{{ site.author }}</a></h4>
+                
+                {% if site.bio %}
+                    <p> {{ site.bio }}</p>
+                {% else %}
+                    <p>Read <a href="{{ site.baseurl }}author/{{ site.username }}">more posts</a> by this author.</p>
+                {% endif %}
+                <div class="author-meta">
+                    {% if site.location %}<span class="author-location icon-location"> {{ site.location }}</span>{% endif %} 
+                    {% if site.url %}<span class="author-link icon-link"><a href="{{ site.url }}"> {{ site.short_url }}</a></span>{% endif %} 
+                </div>
+            </section>
+
+            <!-- /author  -->
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="http://twitter.com/share?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+            
+            <!-- Add Disqus Comments -->
+            {% if page.disqus %}
+                {% include disqus.html %}
+            {% endif %}
+            
+        </footer>
+
+    </article>
+
+</main>
+<!-- /post -->
