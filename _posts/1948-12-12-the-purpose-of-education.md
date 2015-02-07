@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: '/assets/images/cover2.jpg'
+cover: 'assets/images/cover2.jpg'
 title: The Purpose of Education
 date: 1948-12-12 10:18:00
 tags: speaches

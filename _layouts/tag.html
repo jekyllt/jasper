@@ -1,6 +1,6 @@
 ---
 layout: default
-no-cover: '/assets/images/cover1.jpg'
+no-cover: 'assets/images/cover1.jpg'
 title: Tags
 class: 'tag-template'
 ---
@@ -8,7 +8,7 @@ class: 'tag-template'
 <!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
 
 <!-- If we have a tag cover, display that - else blog cover - else nothing -->
-<header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {% else %}no-cover{% endif %}">
+<header class="main-header {% if page.cover %}" style="background-image: url({{ site.baseurl }}{{ page.cover }}) {% else %}no-cover{% endif %}">
     <nav class="main-nav overlay clearfix">
         <a class="back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
         <a class="subscribe-button icon-feed" href="{{ site.baseurl }}tag/{{ page.tag }}/rss.xml">{{ page.tag }}</a>

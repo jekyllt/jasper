@@ -7,7 +7,7 @@
    {% else %}
       <title>{{ site.short_url }}</title>
    {% endif %}
-   <link>{{ site.full_url }}</link>
+   <link>{{ site.url }}</link>
    <description>{{ site.description }}</description>
    <language>{{ site.language }}</language>
    <managingEditor> {{ site.author }}</managingEditor>

@@ -5,7 +5,7 @@
    
       <title>biomadeira.github.io/jasper</title>
    
-   <link></link>
+   <link>http://biomadeira.github.io/jasper/</link>
    <description>A beautiful narrative written with the world's most elegant publishing platform. The story begins here.</description>
    <language>en-uk</language>
    <managingEditor> Casper McFadden</managingEditor>
@@ -13,10 +13,10 @@
    
 	<item>
 	  <title>I Have a Dream</title>
-	  <link>//i-have-a-dream</link>
+	  <link>/jasper//i-have-a-dream</link>
 	  <author>Casper McFadden</author>
 	  <pubDate>1963-08-28T11:18:00+01:00</pubDate>
-	  <guid>//i-have-a-dream</guid>
+	  <guid>/jasper//i-have-a-dream</guid>
 	  <description><![CDATA[
 	     <p>I am happy to join with you today in what will go down in history as the greatest demonstration for freedom in the history of our nation.</p>
 
@@ -121,10 +121,10 @@
 
 	<item>
 	  <title>The Purpose of Education</title>
-	  <link>//the-purpose-of-education</link>
+	  <link>/jasper//the-purpose-of-education</link>
 	  <author>Casper McFadden</author>
 	  <pubDate>1948-12-12T10:18:00+00:00</pubDate>
-	  <guid>//the-purpose-of-education</guid>
+	  <guid>/jasper//the-purpose-of-education</guid>
 	  <description><![CDATA[
 	     <p>As I engage in the so-called &quot;bull sessions&quot; around and about the school, I too often find that most college men have a misconception of the purpose of education. Most of the &quot;brethren&quot; think that education should equip them with the proper instruments of exploitation so that they can forever trample over the masses. Still others think that education should furnish them with noble ends rather than means to an end.</p>
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-cover: '/assets/images/cover3.jpg'
+cover: 'assets/images/cover3.jpg'
 title: Example Static Page
 class: 'page-template'
 ---

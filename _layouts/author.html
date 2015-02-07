@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Author
-cover: '/assets/images/cover1.jpg'
+cover: 'assets/images/cover1.jpg'
 class: 'author-template'
 ---
 <!-- < default}} -->
@@ -11,7 +11,7 @@ class: 'author-template'
 
 <!-- Everything inside the #author tags pulls data from the author -->
 <!-- #author  -->
-    <header class="main-header author-head {% if page.cover %}" style="background-image: url({{ page.cover }}) {% else %}no-cover{% endif %}">
+    <header class="main-header author-head {% if page.cover %}" style="background-image: url({{ site.baseurl }}{{ page.cover }}) {% else %}no-cover{% endif %}">
         <nav class="main-nav overlay clearfix">
                     <a class="back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
         <a class="subscribe-button icon-feed" href="{{ site.baseurl }}author/{{ site.username }}/rss.xml">{{ site.author }}</a>
@@ -21,7 +21,7 @@ class: 'author-template'
     <section class="author-profile inner">
         {% if site.image %}
         <figure class="author-image">
-            <div class="img" style="background-image: url({{ site.image }})"><span class="hidden">{{ site.author }}'s Picture</span></div>
+            <div class="img" style="background-image: url({{ site.baseurl }}{{ site.image }})"><span class="hidden">{{ site.author }}'s Picture</span></div>
         </figure>
         {% endif %}
         <h1 class="author-title">{{ site.author }}</h1>

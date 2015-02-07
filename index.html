@@ -1,17 +1,17 @@
 ---
 layout: default
 title: Home
-cover: '/assets/images/cover1.jpg'
-logo: '/assets/images/ghost.png'
+cover: 'assets/images/cover1.jpg'
+logo: 'assets/images/ghost.png'
 class: 'home-template'
 ---
 <!-- < default -->
 <!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
 
 <!-- The big featured header  -->
-<header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {% else %}no-cover{% endif %}">
+<header class="main-header {% if page.cover %}" style="background-image: url({{ site.baseurl }}{{ page.cover }}) {% else %}no-cover{% endif %}">
     <nav class="main-nav overlay clearfix">
-            {% if page.logo %}<a class="blog-logo" href="{{ site.baseurl }}"><img src="{{ page.logo }}" alt="Blog Logo" /></a>{% endif %}
+            {% if page.logo %}<a class="blog-logo" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}{{ page.logo }}" alt="Blog Logo" /></a>{% endif %}
         <a class="subscribe-button icon-feed" href="{{ site.baseurl }}rss.xml">Subscribe</a>
     </nav>
     <div class="vertical">

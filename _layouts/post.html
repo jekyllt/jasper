@@ -11,7 +11,7 @@ class: 'post-template'
 <!-- Everything inside the #post tags pulls data from the post -->
 <!-- #post -->
 
-<header class="main-header post-head {% if page.cover %}" style="background-image: url({{ page.cover }}) {% else %}no-cover{% endif %}">
+<header class="main-header post-head {% if page.cover %}" style="background-image: url({{ site.baseurl }}{{ page.cover }}) {% else %}no-cover{% endif %}">
     <nav class="main-nav {% if page.cover %} overlay {% endif %} clearfix">
         <a class="back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
         <a class="subscribe-button icon-feed" href="{{ site.baseurl }}rss.xml">Subscribe</a>
@@ -54,7 +54,7 @@ class: 'post-template'
 
             {% if site.image %}
             <figure class="author-image">
-                <a class="img" href="{{ site.baseurl }}author/{{ site.username }}" style="background-image: url({{ site.image }})"><span class="hidden">{{ page.author }}'s Picture</span></a>
+                <a class="img" href="{{ site.baseurl }}author/{{ site.username }}" style="background-image: url({{ site.baseurl }}{{ site.image }})"><span class="hidden">{{ page.author }}'s Picture</span></a>
             </figure>
             {% endif %}
 
