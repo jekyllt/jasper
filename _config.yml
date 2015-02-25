@@ -23,7 +23,7 @@ disqus: biomadeira
 # this is a fix to properly run jasper on top of my personal
 # biomadeira.github.io - all contents run on /jasper/
 # for a normal use at the base of the server change it to "/"
-baseurl: /jasper/
+baseurl: /
 
 # Permalinks
 permalink: /:title
