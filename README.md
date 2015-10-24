@@ -10,6 +10,10 @@ to the original theme.
 The main difference to the original is still the fact that Jasper expects a single author. With a 
 bit of tweaking it shouldn't be too difficult to enable a per-post author. Feel free to fork and improve on this.
 
+**Important**  For security reasons, Github doesn't allow plugins (under _plugins/) when deploying with Github Pages. This means 
+that we need to generate your site locally (as explained below) and push the resulting HTML to Github repository. This is exactly what
+I have done for the live demo.
+
 ## Live demo
 
 [Jasper Live Demo](https://biomadeira.github.io/jasper)
@@ -20,16 +24,16 @@ bit of tweaking it shouldn't be too difficult to enable a per-post author. Feel 
 ## Screenshots
 
 **Home page**
-![home page](https://raw.githubusercontent.com/biomadeira/jasper/gh-pages/assets/images/jasper_screen1.png)
+![home page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen1.png)
 
 **Post page**
-![post page](https://raw.githubusercontent.com/biomadeira/jasper/gh-pages/assets/images/jasper_screen2.png)
+![post page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen2.png)
 
 **Author page**
-![author page](https://raw.githubusercontent.com/biomadeira/jasper/gh-pages/assets/images/jasper_screen3.png)
+![author page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen3.png)
 
 **Tags page**
-![tag page](https://raw.githubusercontent.com/biomadeira/jasper/gh-pages/assets/images/jasper_screen4.png)
+![tag page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen4.png)
 
 ## Jasper theme includes
 

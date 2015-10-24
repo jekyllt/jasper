@@ -17,7 +17,7 @@ module Jekyll
     end
 
     def atomize(site, type, posts)
-      path = "/tag-#{posts[0]}"
+      path = "/tag/#{posts[0]}"
       atom = AtomPageTags.new(site, site.source, path, type, posts[0], posts[1])
       site.pages << atom
     end
@@ -26,9 +26,9 @@ module Jekyll
       pages = Jekyll::Paginate::Pager.calculate_pages(posts[1], site.config['paginate'].to_i)
       (1..pages).each do |num_page|
         pager = Jekyll::Paginate::Pager.new(site, num_page, posts[1], pages)
-        path = "/tag-#{posts[0]}"
+        path = "/tag/#{posts[0]}"
         if num_page > 1
-          path = path + "/tag-page#{num_page}"
+          path = path + "/page#{num_page}"
         end
         newpage = GroupSubPageTags.new(site, site.source, path, type, posts[0])
         newpage.pager = pager

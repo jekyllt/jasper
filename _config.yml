@@ -17,7 +17,7 @@ highlighter: pygments
 paginate: 5
 language: 'en-uk'
 short_url: 'biomadeira.github.io/jasper'
-google_analytics: 'UA-XXXXXXXX-X'
+google_analytics: UA-47728743-1
 disqus: biomadeira
 
 # this is a fix to properly run jasper on top of my personal
@@ -37,4 +37,3 @@ permalink: /:title
 # Post's page cover as a per-post basis _posts/...
 # Disqus comments as a per-post basis
 # ...
-
