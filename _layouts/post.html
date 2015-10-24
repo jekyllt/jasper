@@ -32,9 +32,9 @@ class: 'post-template'
                 on 
                 {% for tag in page.tags %}
                     {% if forloop.index == page.tags.size %}
-                       <a href='{{ site.baseurl }}tag/{{ tag }}'>{{ tag | capitalize }}</a>
+                       <a href='{{ site.baseurl }}tag-{{ tag }}'>{{ tag | capitalize }}</a>
                     {% else %}
-                       <a href='{{ site.baseurl }}tag/{{ tag }}'>{{ tag | capitalize }}</a>,
+                       <a href='{{ site.baseurl }}tag-{{ tag }}'>{{ tag | capitalize }}</a>,
                     {% endif %}   
                 {% endfor %}
                 {% endif %}
@@ -54,7 +54,7 @@ class: 'post-template'
 
             {% if site.image %}
             <figure class="author-image">
-                <a class="img" href="{{ site.baseurl }}author/{{ site.username }}" style="background-image: url({{ site.baseurl }}{{ site.image }})"><span class="hidden">{{ page.author }}'s Picture</span></a>
+                <a class="img" href="{{ site.baseurl }}author-{{ site.username }}" style="background-image: url({{ site.baseurl }}{{ site.image }})"><span class="hidden">{{ page.author }}'s Picture</span></a>
             </figure>
             {% endif %}
 
@@ -64,7 +64,7 @@ class: 'post-template'
                 {% if site.bio %}
                     <p> {{ site.bio }}</p>
                 {% else %}
-                    <p>Read <a href="{{ site.baseurl }}author/{{ site.username }}">more posts</a> by this author.</p>
+                    <p>Read <a href="{{ site.baseurl }}author-{{ site.username }}">more posts</a> by this author.</p>
                 {% endif %}
                 <div class="author-meta">
                     {% if site.location %}<span class="author-location icon-location"> {{ site.location }}</span>{% endif %} 
