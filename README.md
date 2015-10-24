@@ -20,16 +20,16 @@ bit of tweaking it shouldn't be too difficult to enable a per-post author. Feel 
 ## Screenshots
 
 **Home page**
-![home page](https://raw.github.com/biomadeira/jasper/master/assets/images/jasper_theme_screen1.png)
+![home page](https://raw.githubusercontent.com/biomadeira/jasper/gh-pages/assets/images/jasper_screen1.png)
 
 **Post page**
-![post page](https://raw.github.com/biomadeira/jasper/master/assets/images/jasper_theme_screen2.png)
+![post page](https://raw.githubusercontent.com/biomadeira/jasper/gh-pages/assets/images/jasper_screen2.png)
 
 **Author page**
-![author page](https://raw.github.com/biomadeira/jasper/master/assets/images/jasper_theme_screen3.png)
+![author page](https://raw.githubusercontent.com/biomadeira/jasper/gh-pages/assets/images/jasper_screen3.png)
 
 **Tags page**
-![tag page](https://raw.github.com/biomadeira/jasper/master/assets/images/jasper_theme_screen4.png)
+![tag page](https://raw.githubusercontent.com/biomadeira/jasper/gh-pages/assets/images/jasper_screen4.png)
 
 ## Jasper theme includes
 
