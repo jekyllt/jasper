@@ -10,9 +10,9 @@ to the original theme.
 The main difference to the original is still the fact that Jasper expects a single author. With a 
 bit of tweaking it shouldn't be too difficult to enable a per-post author. Feel free to fork and improve on this.
 
-**Important**  For security reasons, Github doesn't allow plugins (under _plugins/) when deploying with Github Pages. This means 
-that we need to generate your site locally (as explained below) and push the resulting HTML to Github repository. This is exactly what
-I have done for the live demo.
+**Important:**  For security reasons, Github doesn't allow plugins (under _plugins/) when deploying with Github Pages. This means 
+that we need to generate your site locally (as explained below) and push the resulting HTML to a Github repository. 
+This is exactly what I have done for the generating the live demo.
 
 ## Live demo
 
@@ -49,7 +49,8 @@ I have done for the live demo.
 
 ## How to use it
 
-Simply clone this repository, and then run `jekyll serve` inside the directory.
+Simply clone this repository, and then run `jekyll serve` inside the directory. Upload the resulting 
+_site/ contents to your repository (gh-pages branch).
 
 ## Thanks 
 
