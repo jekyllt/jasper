@@ -13,10 +13,10 @@
    
 	<item>
 	  <title>A Full and Comprehensive Style Test</title>
-	  <link>//a-full-and-comprehensive-style-test</link>
+	  <link>/jasper//a-full-and-comprehensive-style-test</link>
 	  <author>Casper McFadden</author>
 	  <pubDate>2014-09-27T11:18:00+01:00</pubDate>
-	  <guid>//a-full-and-comprehensive-style-test</guid>
+	  <guid>/jasper//a-full-and-comprehensive-style-test</guid>
 	  <description><![CDATA[
 	     <p>This is just an <em>ipsis verbis</em> copy of the first example running on the <a href="http://demo.ghost.io">Ghost Demo</a>. This shows how you can use html styling to achieve your hopes.</p>
 
