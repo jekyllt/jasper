@@ -27,25 +27,28 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
 
 </head>
-<body class="home-template">
+<body class="tag-template">
 
     <!-- [[! Everything else gets inserted here ]] -->
-    <!-- < default -->
+    <!-- < default}} -->
 <!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
 
-<!-- The big featured header  -->
-<header class="main-header " style="background-image: url(/assets/images/cover1.jpg) ">
+<!-- If we have a tag cover, display that - else blog cover - else nothing -->
+<header class="main-header no-cover">
     <nav class="main-nav overlay clearfix">
-            <a class="blog-logo" href="/"><img src="/assets/images/ghost.png" alt="Blog Logo" /></a>
-        <a class="subscribe-button icon-feed" href="/rss.xml">Subscribe</a>
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/tag/fiction/rss.xml">fiction</a>
     </nav>
     <div class="vertical">
         <div class="main-header-content inner">
-            <h1 class="page-title">Finding The Way Home</h1>
-            <h2 class="page-description">A beautiful narrative written with the world's most elegant publishing platform. The story begins here.</h2>
+            <h1 class="page-title">Fiction</h1>
+            <h2 class="page-description">
+            
+			    A 4-post collection
+            
+            </h2>
         </div>
     </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
 <!-- The main content area on the homepage -->
@@ -57,91 +60,13 @@
         
             <nav class="pagination" role="pagination">
     
-    <span class="page-number"> Page 1 of 2 </span>
-     
-        <a class="older-posts" href="/page2/" title="Next Page">Older Posts &raquo;</a>
+    <span class="page-number"> Page 1 of 1 </span>
      
 </nav>
         
     </div>
 
     <!-- This is the post loop - each post will be output using this markup -->
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/a-full-and-comprehensive-style-test">A Full and Comprehensive Style Test</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p><p>This is just an <em>ipsis verbis</em> copy of the first example running on the <a href="http://demo.ghost.io">Ghost Demo</a>. This shows how you can use html styling to... <a class="read-more" href="/a-full-and-comprehensive-style-test">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/assets/images/casper.png" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/author/casper'>Casper McFadden</a>
-            <!-- [[tags prefix=" on "]] -->
-             
-                on 
-                
-                    
-                       <a href='/tag/test'>Test</a>,
-                       
-                
-                    
-                       <a href='/tag/content'>Content</a>
-                       
-                
-            
-            <time class="post-date" datetime="2014-09-27">27 Sep 2014</time>
-        </footer>
-    </article>
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/i-have-a-dream">I Have a Dream</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p><p>I am happy to join with you today in what will go down in history as the greatest demonstration for freedom in the history of our... <a class="read-more" href="/i-have-a-dream">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/assets/images/casper.png" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/author/casper'>Casper McFadden</a>
-            <!-- [[tags prefix=" on "]] -->
-             
-                on 
-                
-                    
-                       <a href='/tag/speaches'>Speaches</a>
-                       
-                
-            
-            <time class="post-date" datetime="1963-08-28">28 Aug 1963</time>
-        </footer>
-    </article>
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/the-purpose-of-education">The Purpose of Education</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p><p>As I engage in the so-called &quot;bull sessions&quot; around and about the school, I too often find that most college men have a misconception of the... <a class="read-more" href="/the-purpose-of-education">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/assets/images/casper.png" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/author/casper'>Casper McFadden</a>
-            <!-- [[tags prefix=" on "]] -->
-             
-                on 
-                
-                    
-                       <a href='/tag/speaches'>Speaches</a>
-                       
-                
-            
-            <time class="post-date" datetime="1948-12-12">12 Dec 1948</time>
-        </footer>
-    </article>
     
     <article class="post">
         <header class="post-header">
@@ -191,20 +116,67 @@
         </footer>
     </article>
     
+    <article class="post">
+        <header class="post-header">
+            <h2 class="post-title"><a href="/down-the-rabbit-hole">Down The Rabbit Hole</a></h2>
+        </header>
+        <section class="post-excerpt">
+            <p><p>Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had... <a class="read-more" href="/down-the-rabbit-hole">&raquo;</a></p>
+        </section>
+        <footer class="post-meta">
+            <img class="author-thumb" src="/assets/images/casper.png" alt="Author image" nopin="nopin" />
+            <!-- author -->
+            <a href='/author/casper'>Casper McFadden</a>
+            <!-- [[tags prefix=" on "]] -->
+             
+                on 
+                
+                    
+                       <a href='/tag/fiction'>Fiction</a>
+                       
+                
+            
+            <time class="post-date" datetime="1865-11-26">26 Nov 1865</time>
+        </footer>
+    </article>
+    
+    <article class="post">
+        <header class="post-header">
+            <h2 class="post-title"><a href="/gettysburg-address">Gettysburg Address</a></h2>
+        </header>
+        <section class="post-excerpt">
+            <p><p>Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men... <a class="read-more" href="/gettysburg-address">&raquo;</a></p>
+        </section>
+        <footer class="post-meta">
+            <img class="author-thumb" src="/assets/images/casper.png" alt="Author image" nopin="nopin" />
+            <!-- author -->
+            <a href='/author/casper'>Casper McFadden</a>
+            <!-- [[tags prefix=" on "]] -->
+             
+                on 
+                
+                    
+                       <a href='/tag/fiction'>Fiction</a>
+                       
+                
+            
+            <time class="post-date" datetime="1863-11-19">19 Nov 1863</time>
+        </footer>
+    </article>
+    
 
     <!-- Previous/next page links - displayed on every page -->
     
         <nav class="pagination" role="pagination">
     
-    <span class="page-number"> Page 1 of 2 </span>
-     
-        <a class="older-posts" href="/page2/" title="Next Page">Older Posts &raquo;</a>
+    <span class="page-number"> Page 1 of 1 </span>
      
 </nav>
     
 
 
 </main>
+
 
 
     <footer class="site-footer clearfix">

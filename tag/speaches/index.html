@@ -27,25 +27,28 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
 
 </head>
-<body class="home-template">
+<body class="tag-template">
 
     <!-- [[! Everything else gets inserted here ]] -->
-    <!-- < default -->
+    <!-- < default}} -->
 <!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
 
-<!-- The big featured header  -->
-<header class="main-header " style="background-image: url(/assets/images/cover1.jpg) ">
+<!-- If we have a tag cover, display that - else blog cover - else nothing -->
+<header class="main-header no-cover">
     <nav class="main-nav overlay clearfix">
-            <a class="blog-logo" href="/"><img src="/assets/images/ghost.png" alt="Blog Logo" /></a>
-        <a class="subscribe-button icon-feed" href="/rss.xml">Subscribe</a>
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/tag/speaches/rss.xml">speaches</a>
     </nav>
     <div class="vertical">
         <div class="main-header-content inner">
-            <h1 class="page-title">Finding The Way Home</h1>
-            <h2 class="page-description">A beautiful narrative written with the world's most elegant publishing platform. The story begins here.</h2>
+            <h1 class="page-title">Speaches</h1>
+            <h2 class="page-description">
+            
+			    A 2-post collection
+            
+            </h2>
         </div>
     </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
 <!-- The main content area on the homepage -->
@@ -57,43 +60,13 @@
         
             <nav class="pagination" role="pagination">
     
-    <span class="page-number"> Page 1 of 2 </span>
-     
-        <a class="older-posts" href="/page2/" title="Next Page">Older Posts &raquo;</a>
+    <span class="page-number"> Page 1 of 1 </span>
      
 </nav>
         
     </div>
 
     <!-- This is the post loop - each post will be output using this markup -->
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/a-full-and-comprehensive-style-test">A Full and Comprehensive Style Test</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p><p>This is just an <em>ipsis verbis</em> copy of the first example running on the <a href="http://demo.ghost.io">Ghost Demo</a>. This shows how you can use html styling to... <a class="read-more" href="/a-full-and-comprehensive-style-test">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/assets/images/casper.png" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/author/casper'>Casper McFadden</a>
-            <!-- [[tags prefix=" on "]] -->
-             
-                on 
-                
-                    
-                       <a href='/tag/test'>Test</a>,
-                       
-                
-                    
-                       <a href='/tag/content'>Content</a>
-                       
-                
-            
-            <time class="post-date" datetime="2014-09-27">27 Sep 2014</time>
-        </footer>
-    </article>
     
     <article class="post">
         <header class="post-header">
@@ -143,68 +116,19 @@
         </footer>
     </article>
     
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/out-to-sea">Out to Sea</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p><p>I had this story from one who had no business to tell it to me, or to any other. I may credit the seductive influence of... <a class="read-more" href="/out-to-sea">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/assets/images/casper.png" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/author/casper'>Casper McFadden</a>
-            <!-- [[tags prefix=" on "]] -->
-             
-                on 
-                
-                    
-                       <a href='/tag/fiction'>Fiction</a>
-                       
-                
-            
-            <time class="post-date" datetime="1912-07-24">24 Jul 1912</time>
-        </footer>
-    </article>
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/looking-glass-house">Looking-Glass house</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p><p>One thing was certain, that the white kitten had had nothing to do with it:— it was the black kitten’s fault entirely. For the white kitten... <a class="read-more" href="/looking-glass-house">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/assets/images/casper.png" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/author/casper'>Casper McFadden</a>
-            <!-- [[tags prefix=" on "]] -->
-             
-                on 
-                
-                    
-                       <a href='/tag/fiction'>Fiction</a>
-                       
-                
-            
-            <time class="post-date" datetime="1871-03-18">18 Mar 1871</time>
-        </footer>
-    </article>
-    
 
     <!-- Previous/next page links - displayed on every page -->
     
         <nav class="pagination" role="pagination">
     
-    <span class="page-number"> Page 1 of 2 </span>
-     
-        <a class="older-posts" href="/page2/" title="Next Page">Older Posts &raquo;</a>
+    <span class="page-number"> Page 1 of 1 </span>
      
 </nav>
     
 
 
 </main>
+
 
 
     <footer class="site-footer clearfix">
