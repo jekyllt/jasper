@@ -20,7 +20,7 @@ short_url: 'biomadeira.github.io/jasper'
 google_analytics: UA-47728743-1
 disqus: biomadeira
 
-baseurl: /
+baseurl: /jasper/
 
 # Permalinks
 permalink: /:title
