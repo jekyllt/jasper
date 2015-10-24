@@ -20,6 +20,13 @@ Live demo at [Jasper](https://biomadeira.github.io/jasper)
 
 Here's the original [Casper](https://demo.ghost.io)
 
+
+## Screenshots
+
+![home page](https://raw.github.com/biomadeira/jasper/master/assets/images/jasper_theme_screen1.png)
+![post page](https://raw.github.com/biomadeira/jasper/master/assets/images/jasper_theme_screen2.png)
+![author page](https://raw.github.com/biomadeira/jasper/master/assets/images/jasper_theme_screen3.png)
+
 ## Jasper theme includes:
 
 * Pagination
