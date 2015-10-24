@@ -8,17 +8,13 @@ Although this is inspired by Kasper, there are some *additional* features, makin
 to the original theme. 
 
 The main difference to the original is still the fact that Jasper expects a single author. With a 
-bit of tweeking it shouldn't be too difficult to enable a per-post author. 
+bit of tweaking it shouldn't be too difficult to enable a per-post author. Feel free to fork and improve on this.
 
-Other less important bits that can still be 
-addressed are the tag-descriptions and parsing 'Test Content' as a single tag, instead of as 'Test' and 'Content'. Feel
-free to fork, and improve on this.
+## Live demo
 
-## View the live demo
+[Jasper Live Demo](https://biomadeira.github.io/jasper)
 
-Live demo at [Jasper](https://biomadeira.github.io/jasper)
-
-Here's the original [Casper](https://demo.ghost.io)
+[Casper's Original Here](https://demo.ghost.io)
 
 
 ## Screenshots
@@ -35,19 +31,19 @@ Here's the original [Casper](https://demo.ghost.io)
 **Tags page**
 ![tag page](https://raw.github.com/biomadeira/jasper/master/assets/images/jasper_theme_screen4.png)
 
-## Jasper theme includes:
+## Jasper theme includes
 
 * Pagination
 * Author page **(New)**
 * Tag page(s) **(New)**
-* 404 page **(New)**  (this is somehow overridden by my biomadeira.github.io page - should work fine for you)
+* 404 page **(New)**
 * Rss
 * Google Analytics Tracking code
 * Code Syntax Highlight
 * Author's profile with picture
 * Disqus comments
 
-## How to use it locally
+## How to use it
 
 Simply clone this repository, and then run `jekyll serve` inside the directory.
 
@@ -58,7 +54,7 @@ Most of the work has been already done by the Ghost team and Rosario. Many thank
 
 ## Copyright & License
 
-Copyright (C) 2013-2015 Ghost Foundation - Released under the MIT License.
+Copyright (C) 2015 - Released under the MIT License.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
