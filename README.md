@@ -3,8 +3,8 @@
 This is a port of Ghost's default theme [Casper](https://github.com/tryghost/casper) for Jekyll inspired by the work of 
 [Kasper](https://github.com/rosario/kasper). 
 
-You might well ask at this point why bother making a new jekyll clone of Ghost's Casper theme? 
-Although this is inspired by Kasper, there are some *additional* features, making this port closer 
+You might well ask at this point why bother making a new Casper's clone? 
+Although this is inspired by Kasper, there are some *additional* features which make this port closer 
 to the original theme. 
 
 The main difference to the original is still the fact that Jasper expects a single author. With a 
@@ -49,7 +49,7 @@ Simply clone this repository, and then run `jekyll serve` inside the directory.
 
 ## Thanks 
 
-Most of the work has been already done by the Ghost team and Rosario. Many thanks to them :)
+Most of the work has been already done by the Ghost team and Rosario. Many thanks to them :smile:
 
 
 ## Copyright & License
