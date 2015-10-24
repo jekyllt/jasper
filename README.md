@@ -23,9 +23,17 @@ Here's the original [Casper](https://demo.ghost.io)
 
 ## Screenshots
 
+**Home page**
 ![home page](https://raw.github.com/biomadeira/jasper/master/assets/images/jasper_theme_screen1.png)
+
+**Post page**
 ![post page](https://raw.github.com/biomadeira/jasper/master/assets/images/jasper_theme_screen2.png)
+
+**Author page**
 ![author page](https://raw.github.com/biomadeira/jasper/master/assets/images/jasper_theme_screen3.png)
+
+**Tags page**
+![tag page](https://raw.github.com/biomadeira/jasper/master/assets/images/jasper_theme_screen4.png)
 
 ## Jasper theme includes:
 
