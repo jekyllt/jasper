@@ -17,7 +17,7 @@
     {% for post in paginator.posts %}
     <article class="post">
         <header class="post-header">
-            <h2 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
         </header>
         <section class="post-excerpt">
             <p>{{ post.content | truncatewords: 26 }} <a class="read-more" href="{{ post.url }}">&raquo;</a></p>
@@ -37,7 +37,7 @@
                     {% endif %}   
                 {% endfor %}
             {% endif %}
-            <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> 
+            <time class="post-date" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date_to_string }}</time>
         </footer>
     </article>
     {% endfor %}
