@@ -1,13 +1,13 @@
 # Jasper
 
-This is a port of Ghost's default theme [Casper](https://github.com/tryghost/casper) for Jekyll based on the work of 
+This is a port of Ghost's default theme [Casper](https://github.com/tryghost/casper) for Jekyll inspired by the work of 
 [Kasper](https://github.com/rosario/kasper). 
 
-You might well ask at this point why bother making a new port (repo)? 
-Although this is based on a fork of Kasper, there are some *exciting* additional features, making this port closer 
-to the full Casper Ghost install. 
+You might well ask at this point why bother making a new jekyll clone of Ghost's Casper theme? 
+Although this is inspired by Kasper, there are some *additional* features, making this port closer 
+to the original theme. 
 
-The main difference still is the fact that Jasper expects a single author. With a 
+The main difference to the original is still the fact that Jasper expects a single author. With a 
 bit of tweeking it shouldn't be too difficult to enable a per-post author. 
 
 Other less important bits that can still be 
