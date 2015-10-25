@@ -49,8 +49,8 @@ This is exactly what I have done for the generating the live demo.
 
 ## How to use it
 
-Simply clone this repository, and then run `jekyll serve` inside the directory. Upload the resulting 
-_site/ contents to your repository (gh-pages branch).
+Simply clone this repository (*master branch*), and then run `jekyll serve` inside the directory. Upload the resulting 
+_site/ contents to your repository (*gh-pages branch*).
 
 ## Thanks 
 
