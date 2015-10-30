@@ -31,13 +31,13 @@ This is exactly what I have done for the generating the live demo.
 **Author page**
 ![author page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen3.png)
 
-**Tags page**
+**Related posts page**
 ![tag page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen4.png)
 
-**Sidebar page**
+**Tags page with opened sidebar**
 ![sidebar page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen5.png)
 
-**Related posts page**
+**404 page**
 ![related page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen6.png)
 
 ## Jasper theme includes
