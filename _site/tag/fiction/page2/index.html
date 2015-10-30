@@ -60,11 +60,11 @@
         <span class="hidden">Close</span>
     </a>
     <ul>
-        <li class="nav-home  nav-current" role="presentation"><a href="/jasper/">Home</a></li>
+        <li class="nav-home " role="presentation"><a href="/jasper/">Home</a></li>
         <li class="nav-about " role="presentation"><a href="/jasper/about.html">About</a></li>
         <li class="nav-fables " role="presentation"><a href="/jasper/tag/fables/">Fables</a></li>
         <li class="nav-speeches " role="presentation"><a href="/jasper/tag/speeches/">Speeches</a></li>
-        <li class="nav-fiction " role="presentation"><a href="/jasper/tag/fiction/">Fiction</a></li>
+        <li class="nav-fiction  nav-current" role="presentation"><a href="/jasper/tag/fiction/">Fiction</a></li>
         <li class="nav-author " role="presentation"><a href="/jasper/author/casper/">Author</a></li>
     </ul>
     <a class="subscribe-button icon-feed" href="/jasper/rss.xml">Subscribe</a>
@@ -74,12 +74,14 @@
     <div class="site-wrapper">
 
         <!-- [[! Everything else gets inserted here ]] -->
-        <!-- < default -->
+        <!-- < dynamically overriding backgrounds for tags as well as descriptions -->
+
+
+<!-- < default}} -->
 <!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
 
-<!-- The big featured header  -->
-<header class="main-header "
-        style="background-image: url(/jasper/assets/images/cover1.jpg) ">
+<!-- If we have a tag cover, display that - else blog cover - else nothing -->
+<header class="main-header tag-head " style="background-image: url(/jasper/assets/images/cover1.jpg) ">
     <nav class="main-nav overlay clearfix">
         <a class="blog-logo" href="/jasper/"><img src="/jasper/assets/images/ghost.png" alt="Blog Logo" /></a>
         
@@ -88,11 +90,14 @@
     </nav>
     <div class="vertical">
         <div class="main-header-content inner">
-            <h1 class="page-title">Finding The Way Home</h1>
-            <h2 class="page-description">A beautiful narrative written with the world's most elegant publishing platform. The story begins here.</h2>
+            <h1 class="page-title">Fiction</h1>
+            <h2 class="page-description">
+            
+			    A 6-post collection
+            
+            </h2>
         </div>
     </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
 <!-- The main content area on the homepage -->
@@ -105,7 +110,7 @@
             <nav class="pagination" role="pagination">
     
         
-            <a class="newer-posts" href="/jasper/" title="Previous Page">&laquo; Newer Posts</a>
+            <a class="newer-posts" href="/jasper/tag/fiction" title="Previous Page">&laquo; Newer Posts</a>
         
     
     <span class="page-number"> Page 2 of 2 </span>
@@ -115,54 +120,6 @@
     </div>
 
     <!-- This is the post loop - each post will be output using this markup -->
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/jasper//looking-glass-house">Looking-Glass house</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p><p>One thing was certain, that the white kitten had had nothing to do with it:— it was the black kitten’s fault entirely. For the white kitten... <a class="read-more" href="/jasper//looking-glass-house">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/jasper/assets/images/casper.png" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/jasper/author/casper'>Casper McFadden</a>
-            <!-- [[tags prefix=" on "]] -->
-             
-                on 
-                
-                    
-                       <a href='/jasper/tag/fiction'>Fiction</a>
-                       
-                
-            
-            <time class="post-date" datetime="1871-03-18">18 Mar 1871</time>
-        </footer>
-    </article>
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/jasper//down-the-rabbit-hole">Down The Rabbit Hole</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p><p>Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had... <a class="read-more" href="/jasper//down-the-rabbit-hole">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/jasper/assets/images/casper.png" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/jasper/author/casper'>Casper McFadden</a>
-            <!-- [[tags prefix=" on "]] -->
-             
-                on 
-                
-                    
-                       <a href='/jasper/tag/fiction'>Fiction</a>
-                       
-                
-            
-            <time class="post-date" datetime="1865-11-26">26 Nov 1865</time>
-        </footer>
-    </article>
     
     <article class="post">
         <header class="post-header">
@@ -194,7 +151,7 @@
         <nav class="pagination" role="pagination">
     
         
-            <a class="newer-posts" href="/jasper/" title="Previous Page">&laquo; Newer Posts</a>
+            <a class="newer-posts" href="/jasper/tag/fiction" title="Previous Page">&laquo; Newer Posts</a>
         
     
     <span class="page-number"> Page 2 of 2 </span>
@@ -204,7 +161,6 @@
 
 
 </main>
-
 
         <footer class="site-footer clearfix">
           <section class="copyright"><a href="/jasper/">Finding The Way Home</a> &copy; 2015</section>
