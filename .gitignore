@@ -2,3 +2,4 @@
 *.swp
 .sass-cache
 .idea
+.jekyll-metadata

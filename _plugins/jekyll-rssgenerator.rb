@@ -46,13 +46,13 @@ module Jekyll
         maker.channel.updated = site.posts.map { |p| p.date  }.max
         maker.channel.copyright = site.config['copyright']
 
-        post_limit = (site.config['rss_post_limit'] - 1 rescue site.posts.count)
+        post_limit = site.config['rss_post_limit'].nil? ? site.posts.count : site.config['rss_post_limit'] - 1
 
         site.posts.reverse[0..post_limit].each do |post|
           maker.items.new_item do |item|
             item.title = post.title
             item.link = "#{site.config['url']}#{post.url}"
-            item.description = parser.convert(post.excerpt)
+            item.description = post.excerpt
             item.updated = post.date
           end
         end

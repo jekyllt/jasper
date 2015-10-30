@@ -52,6 +52,12 @@ This is exactly what I have done for the generating the live demo.
 Simply clone this repository (*master branch*), and then run `jekyll serve` inside the directory. Upload the resulting 
 _site/ contents to your repository (*gh-pages branch*).
 
+## Issues and contributing 
+
+I have tested this install with Ruby v2.2.2p95 (Mac OS RVM) and Jekyll v3.0.0. If you run into any issues please log them on the [issue tracker](https://github.com/biomadeira/jasper/issues).
+
+Feel free pull-request your patches and fixes.
+
 ## Thanks 
 
 Most of the work has been already done by the Ghost team and Rosario. Many thanks to them :smile:
