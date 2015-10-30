@@ -17,8 +17,7 @@ paginate: 5
 language: 'en-uk'
 short_url: 'biomadeira.github.io/jasper/'
 google_analytics: UA-69281367-1
-disqus: biomadeira
-
+disqus: username
 baseurl: /jasper/
 
 # Permalinks

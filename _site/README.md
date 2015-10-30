@@ -1,11 +1,10 @@
 # Jasper
 
-This is a port of Ghost's default theme [Casper](https://github.com/tryghost/casper) for Jekyll inspired by the work of 
-[Kasper](https://github.com/rosario/kasper). 
+This is a port of Ghost's default theme [Casper](https://github.com/tryghost/casper) for Jekyll inspired by [Kasper](https://github.com/rosario/kasper). 
 
 You might well ask at this point why bother making a new Casper's clone? 
-Although this is inspired by Kasper, there are some *additional* features which make this port closer 
-to the original theme. 
+Although this is inspired by Kasper, there are several **additional** features which make this port closer 
+to the original theme. Besides, it was recently updated to match the current version of the theme.
 
 The main difference to the original is still the fact that Jasper expects a single author. With a 
 bit of tweaking it shouldn't be too difficult to enable a per-post author. Feel free to fork and improve on this.
@@ -35,17 +34,26 @@ This is exactly what I have done for the generating the live demo.
 **Tags page**
 ![tag page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen4.png)
 
+**Sidebar page**
+![sidebar page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen5.png)
+
+**Related posts page**
+![related page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen6.png)
+
 ## Jasper theme includes
 
 * Pagination
-* Author page **(New)**
-* Tag page(s) **(New)**
-* 404 page **(New)**
+* Author page **(New 07.02.2015)**
+* Tag page(s) **(New 07.02.2015)**
+* 404 page **(New 07.02.2015)**
+* Toggleable sliding sidebar **(New 07.02.2015)**
+* Related posts view **(New 30.10.2015)**
+* Tag description(s) **(New 30.10.2015)**
 * Rss
-* Google Analytics Tracking code
+* Google Analytics tracking
 * Code Syntax Highlight
 * Author's profile with picture
-* Disqus comments
+* Disqus comments (not Ghost standard)
 
 ## How to use it
 

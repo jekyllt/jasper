@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- [[! Page Meta ]] -->
-    <title>{{ site.name }}</title>
+    <title>{% if page.title %}{{ page.title }}{% elsif site.name %}{{ site.name }}{% endif %}</title>
     <meta name="description" content="{{ site.name }} - {{ site.description }}" />
 
     <meta name="HandheldFriendly" content="True" />
@@ -16,28 +16,29 @@
 
     <!-- [[! Styles'n'Scripts ]] -->
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <link rel="stylesheet" type="text/css"
+          href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
     
     <!-- [[! Ghost outputs important style and meta data with this tag ]] -->
     {% include head.html %}
 
-    <!-- Additional Jekyll Customisation  -->
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/css/main.css" />
-
 </head>
-<body class="{% if page.class %}{{ page.class }}{% else %}home-template{% endif %}">
+<body class="{% if page.class %}{{ page.class }}{% else %}home-template{% endif %} nav-closed">
 
-    <!-- [[! Everything else gets inserted here ]] -->
-    {{ content }}
+    {% include navigation.html %}
 
-    <footer class="site-footer clearfix">
-      <section class="copyright"><a href="{{ site.baseurl }}">{{ site.name }}</a> &copy; {{  site.time | date: '%Y' }}</section>
-      <section class="poweredby">Proudly published with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="http://github.com/biomadeira/jasper">Jasper</a></section>
-    </footer>
-    
+    <div class="site-wrapper">
+
+        <!-- [[! Everything else gets inserted here ]] -->
+        {{ content }}
+
+        <footer class="site-footer clearfix">
+          <section class="copyright"><a href="{{ site.baseurl }}">{{ site.name }}</a> &copy; {{  site.time | date: '%Y' }}</section>
+          <section class="poweredby">Proudly published with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="http://github.com/biomadeira/jasper">Jasper</a></section>
+        </footer>
+    </div>
     <!-- [[! Ghost outputs important scripts and data with this tag ]] -->
-    <script type="text/javascript" src="{{ site.baseurl }}assets/js/jquery-1.11.1.min.js"></script>
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <!-- [[! The main JavaScript file for Casper ]] -->
     <script type="text/javascript" src="{{ site.baseurl }}assets/js/jquery.fitvids.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}assets/js/index.js"></script>
