@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- [[! Page Meta ]] -->
-    <title>Finding The Way Home</title>
+    <title>A Full and Comprehensive Style Test</title>
     <meta name="description" content="Finding The Way Home - A beautiful narrative written with the world's most elegant publishing platform. The story begins here." />
 
     <meta name="HandheldFriendly" content="True" />
@@ -16,21 +16,65 @@
 
     <!-- [[! Styles'n'Scripts ]] -->
     <link rel="stylesheet" type="text/css" href="/jasper/assets/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <link rel="stylesheet" type="text/css"
+          href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
     
     <!-- [[! Ghost outputs important style and meta data with this tag ]] -->
         <link rel="canonical" href="/jasper/" />
-    <meta name="generator" content="Jekyll 2.5.3" />
-    <link rel="alternate" type="application/rss+xml" title="" href="/jasper/rss.xml" />
+    <meta name="referrer" content="origin" />
+    <link rel="next" href="/jasper/page2/" />
 
-    <!-- Additional Jekyll Customisation  -->
-    <link rel="stylesheet" type="text/css" href="/jasper/assets/css/main.css" />
+    <meta property="og:site_name" content="Finding The Way Home" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Finding The Way Home" />
+    <meta property="og:description" content="A beautiful narrative written with the world's most elegant publishing platform. The story begins here." />
+    <meta property="og:url" content="/jasper/" />
+    <meta property="og:image" content="/jasper/assets/images/cover1.jpg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Finding The Way Home" />
+    <meta name="twitter:description" content="A beautiful narrative written with the world's most elegant publishing platform. The story begins here." />
+    <meta name="twitter:url" content="/jasper/" />
+    <meta name="twitter:image:src" content="/jasper/assets/images/cover1.jpg" />
+
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Website",
+    "publisher": "Finding The Way Home",
+    "url": "/jasper/",
+    "image": "/jasper/assets/images/cover1.jpg",
+    "description": "A beautiful narrative written with the world's most elegant publishing platform. The story begins here."
+}
+    </script>
+
+    <meta name="generator" content="Jekyll 3.0.0" />
+    <link rel="alternate" type="application/rss+xml" title="Finding The Way Home" href="/jasper/rss.xml" />
 
 </head>
-<body class="post-template">
+<body class="home-template nav-closed">
 
-    <!-- [[! Everything else gets inserted here ]] -->
-    <!-- < default -->
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        <li class="nav-home " role="presentation"><a href="/jasper/">Home</a></li>
+        <li class="nav-about " role="presentation"><a href="/jasper/about/">About</a></li>
+        <li class="nav-fables " role="presentation"><a href="/jasper/tag/fables/">Fables</a></li>
+        <li class="nav-speeches " role="presentation"><a href="/jasper/tag/speeches/">Speeches</a></li>
+        <li class="nav-fiction " role="presentation"><a href="/jasper/tag/fiction/">Fiction</a></li>
+        <li class="nav-author " role="presentation"><a href="/jasper/author/casper/">Author</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="/jasper/rss.xml">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+    <div class="site-wrapper">
+
+        <!-- [[! Everything else gets inserted here ]] -->
+        <!-- < default -->
 
 <!-- The comment above "< default" means - insert everything in this file into -->
     <!-- the [body] of the default.hbs template, which contains our header/footer. -->
@@ -40,8 +84,10 @@
 
 <header class="main-header post-head " style="background-image: url(/jasper/assets/images/cover3.jpg) ">
     <nav class="main-nav  overlay  clearfix">
-        <a class="back-button icon-arrow-left" href="/jasper/">Home</a>
-        <a class="subscribe-button icon-feed" href="/jasper/rss.xml">Subscribe</a>
+        <a class="blog-logo" href="/jasper/"><img src="/jasper/assets/images/ghost.png" alt="Blog Logo" /></a>
+        
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+        
     </nav>
 </header>
 
@@ -190,11 +236,11 @@
 
 <p>Code can be presented inline, like <code>&lt;?php bloginfo('stylesheet_url'); ?&gt;</code>, or within a <code>&lt;pre&gt;</code> block. Because we have more specific typographic needs for code, we’ll specify Consolas and Monaco ahead of the browser-defined monospace font.</p>
 
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#container</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#container</span> <span class="p">{</span>
     <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
     <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">-240px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
     <span class="k">width</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
-<span class="p">}</span></code></pre></div>
+<span class="p">}</span></code></pre></figure>
 
 <hr />
 
@@ -479,17 +525,34 @@ c.draw = function() {
     </article>
 
 </main>
+
+<aside class="read-next">
+
+    <!-- [[! next_post ]] -->
+    
+    <!-- [[! /next_post ]] -->
+    <!-- [[! prev_post ]] -->
+    
+        <a class="read-next-story prev " style="background-image: url(/jasper/assets/images/cover7.jpg)" href="/jasper//the-businessman-and-fisherman">
+            <section class="post">
+                <h2>The Businessman & the fisherman</h2>
+                <p><p>An American businessman took a vacation to a small coastal Mexican village on doctor’s orders....</p>
+            </section>
+        </a>
+    
+    <!-- [[! /prev_post ]] -->
+</aside>
+
 <!-- /post -->
 
 
-    <footer class="site-footer clearfix">
-      <section class="copyright"><a href="/jasper/">Finding The Way Home</a> &copy; 2015</section>
-      <section class="poweredby">Proudly published with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="http://github.com/biomadeira/jasper">Jasper</a></section>
-    </footer>
-    
+        <footer class="site-footer clearfix">
+          <section class="copyright"><a href="/jasper/">Finding The Way Home</a> &copy; 2015</section>
+          <section class="poweredby">Proudly published with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="http://github.com/biomadeira/jasper">Jasper</a></section>
+        </footer>
+    </div>
     <!-- [[! Ghost outputs important scripts and data with this tag ]] -->
-    <script type="text/javascript" src="/jasper/assets/js/jquery-1.11.1.min.js"></script>
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <!-- [[! The main JavaScript file for Casper ]] -->
     <script type="text/javascript" src="/jasper/assets/js/jquery.fitvids.js"></script>
     <script type="text/javascript" src="/jasper/assets/js/index.js"></script>
