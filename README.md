@@ -55,14 +55,14 @@ This is exactly what I have done for the generating the live demo.
 ## How to use it
 
 Simply clone this repository (*master branch*), and then run `jekyll serve` inside the directory. Upload the resulting 
-_site/ contents to your repository (*gh-pages branch*).
+_site/ contents to your repository (*master branch* if uploading as your personal page (username.github.io) or *gh-pages branch* if uploading as a project page (like I did for the [demo](https://github.com/biomadeira/jasper/tree/gh-pages)).
 
 As discussed [here](https://github.com/biomadeira/jasper/issues/3), in order to properly generate author pages you need to rename the field *categories* in the front matter of every post to match that of your *username* as defined in the [\_config.yml](_config.yml) file.
 This probably means that with a bit of hacking you could in principle generate multiple author blogs...
 
 ## Issues and contributing 
 
-I have tested this install with Ruby v2.2.2p95 (Mac OS RVM) and Jekyll v3.0.0. If you run into any issues please log them on the [issue tracker](https://github.com/biomadeira/jasper/issues).
+I have tested this install with Ruby v2.2.2p95 (Mac OS RVM) and Jekyll v3.0.0. If you run into any problems please log them on the [issue tracker](https://github.com/biomadeira/jasper/issues).
 
 Feel free pull-request your patches and fixes.
 

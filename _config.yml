@@ -1,23 +1,26 @@
+# Jykell configuration
+markdown: redcarpet
+highlighter: pygments
+paginate: 5
+language: 'en-uk'
+
 # Website info
 name: 'Finding The Way Home'
 description: "A beautiful narrative written with the world's most elegant publishing platform. The story begins here."
 
 # Author's info
 author: 'Casper McFadden'
+# edit 'categories' in the front matter of every post to match this username
 username: casper
 bio: 'A paranormal expert and his daughter bunk in an abandoned house populated by 3 mischievous ghosts and one friendly one.'
 location: 'Maine, USA'
 url: 'http://biomadeira.github.io/jasper/'
 image: 'assets/images/casper.png'
 
-# Jykell configuration
-markdown: redcarpet
-highlighter: pygments
-paginate: 5
-language: 'en-uk'
 short_url: 'biomadeira.github.io/jasper/'
 google_analytics: UA-69281367-1
 disqus: username
+# edit baseurl to simply '/' if using as your personal page (instead of a project page)
 baseurl: /jasper/
 
 # Permalinks
