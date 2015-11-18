@@ -55,9 +55,9 @@ to the original theme. Besides, I have recently updated it to match the current 
 
 ### Deployment
 
-**Important:**  For security reasons, Github doesn't allow plugins (under _plugins/) when deploying with Github Pages. This means: 
- 1) that we need to generate your site locally (more details below) and push the resulting HTML to a Github repository;
- 2) built the site with [travis-ci](https://travis-ci.org/) (with goodies from [jekyll-travis](https://github.com/mfenner/jekyll-travis)) automatically pushing the generated *_site/* files to your *gh-pages* branch.
+**Important:**  For security reasons, Github doesn't allow plugins (under _plugins/) when deploying with Github Pages. This means:  
+1. that we need to generate your site locally (more details below) and push the resulting HTML to a Github repository;
+2. built the site with [travis-ci](https://travis-ci.org/) (with goodies from [jekyll-travis](https://github.com/mfenner/jekyll-travis)) automatically pushing the generated *_site/* files to your *gh-pages* branch.
  This later approach is the one I am currently using to generate the live demo.
 
 For option **1.** simply clone this repository (*master branch*), and then run `jekyll serve` inside the directory. Upload the resulting 
@@ -72,7 +72,7 @@ This probably means that with a bit of hacking you could in principle generate m
 
 ## Issues and contributing 
 
-I have tested this install with Ruby v2.2.2p95 (Mac OS RVM) and Jekyll v3.0.0. If you run into any problems please log them on the [issue tracker](https://github.com/biomadeira/jasper/issues).
+This install builds well with Ruby v2.1.1 and Jekyll v3.0.0. If you run into any problems please log them on the [issue tracker](https://github.com/biomadeira/jasper/issues).
 
 Feel free pull-request your patches and fixes.
 
