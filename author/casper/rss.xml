@@ -15,7 +15,7 @@
 	  <title>A Full and Comprehensive Style Test</title>
 	  <link>/jasper//a-full-and-comprehensive-style-test</link>
 	  <author>Casper McFadden</author>
-	  <pubDate>2014-09-27T11:18:00+01:00</pubDate>
+	  <pubDate>2014-09-27T10:18:00+00:00</pubDate>
 	  <guid>/jasper//a-full-and-comprehensive-style-test</guid>
 	  <description><![CDATA[
 	     <p>This is just an <em>ipsis verbis</em> copy of the first example running on the <a href="http://demo.ghost.io">Ghost Demo</a>. This shows how you can use html styling to achieve your hopes.</p>
@@ -136,11 +136,11 @@
 
 <p>Code can be presented inline, like <code>&lt;?php bloginfo('stylesheet_url'); ?&gt;</code>, or within a <code>&lt;pre&gt;</code> block. Because we have more specific typographic needs for code, we’ll specify Consolas and Monaco ahead of the browser-defined monospace font.</p>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#container</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#container</span> <span class="p">{</span>
     <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
     <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">-240px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
     <span class="k">width</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
-<span class="p">}</span></code></pre></figure>
+<span class="p">}</span></code></pre></div>
 
 <hr />
 
@@ -380,7 +380,7 @@ c.draw = function() {
 	  <title>The Businessman & the fisherman</title>
 	  <link>/jasper//the-businessman-and-fisherman</link>
 	  <author>Casper McFadden</author>
-	  <pubDate>2014-08-12T11:18:00+01:00</pubDate>
+	  <pubDate>2014-08-12T10:18:00+00:00</pubDate>
 	  <guid>/jasper//the-businessman-and-fisherman</guid>
 	  <description><![CDATA[
 	     <p>An American businessman took a vacation to a small coastal Mexican village on doctor’s orders. Unable to sleep after an urgent phone call from the office the first morning, he walked out to the pier to clear his head. A small boat with just one fisherman had docked, and inside the boat were several large yellowfin tuna. The American complimented the Mexican on the quality of his fish.</p>
@@ -420,7 +420,7 @@ c.draw = function() {
 	  <title>I Have a Dream</title>
 	  <link>/jasper//i-have-a-dream</link>
 	  <author>Casper McFadden</author>
-	  <pubDate>1963-08-28T11:18:00+01:00</pubDate>
+	  <pubDate>1963-08-28T10:18:00+00:00</pubDate>
 	  <guid>/jasper//i-have-a-dream</guid>
 	  <description><![CDATA[
 	     <p>I am happy to join with you today in what will go down in history as the greatest demonstration for freedom in the history of our nation.</p>
@@ -646,7 +646,7 @@ c.draw = function() {
 	  <title>Looking-Glass house</title>
 	  <link>/jasper//looking-glass-house</link>
 	  <author>Casper McFadden</author>
-	  <pubDate>1871-03-18T11:18:00+01:00</pubDate>
+	  <pubDate>1871-03-18T10:18:00+00:00</pubDate>
 	  <guid>/jasper//looking-glass-house</guid>
 	  <description><![CDATA[
 	     <p>One thing was certain, that the white kitten had had nothing to do with it:— it was the black kitten’s fault entirely. For the white kitten had been having its face washed by the old cat for the last quarter of an hour (and bearing it pretty well, considering); so you see that it couldn’t have had any hand in the mischief. 
@@ -689,7 +689,7 @@ The poor King looked puzzled and unhappy, and struggled with the pencil for some
 	  <title>Down The Rabbit Hole</title>
 	  <link>/jasper//down-the-rabbit-hole</link>
 	  <author>Casper McFadden</author>
-	  <pubDate>1865-11-26T11:18:00+01:00</pubDate>
+	  <pubDate>1865-11-26T10:18:00+00:00</pubDate>
 	  <guid>/jasper//down-the-rabbit-hole</guid>
 	  <description><![CDATA[
 	     <p>Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, &#39;and what is the use of a book,&#39; thought Alice &#39;without pictures or conversation?&#39;</p>
@@ -753,7 +753,7 @@ The poor King looked puzzled and unhappy, and struggled with the pencil for some
 	  <title>Gettysburg Address</title>
 	  <link>/jasper//gettysburg-address</link>
 	  <author>Casper McFadden</author>
-	  <pubDate>1863-11-19T11:18:00+01:00</pubDate>
+	  <pubDate>1863-11-19T10:18:00+00:00</pubDate>
 	  <guid>/jasper//gettysburg-address</guid>
 	  <description><![CDATA[
 	     <p>Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.</p>
