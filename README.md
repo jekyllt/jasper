@@ -1,6 +1,8 @@
 ## Jasper
 
 [![Build Status](https://travis-ci.org/biomadeira/jasper.svg?branch=master)](https://travis-ci.org/biomadeira/jasper)
+[![Ruby](https://img.shields.io/badge/ruby-2.1.1-blue.svg?style=flat)](http://travis-ci.org/biomadeira/jasper)
+[![Jekyll](https://img.shields.io/badge/jekyll-3.0.0-blue.svg?style=flat)](http://travis-ci.org/biomadeira/jasper)
 
 This is a port of Ghost's default theme [Casper](https://github.com/tryghost/casper) for Jekyll inspired by [Kasper](https://github.com/rosario/kasper). 
 
@@ -45,6 +47,7 @@ to the original theme. Besides, I have recently updated it to match the current 
 * Toggleable sliding sidebar **(New 07.02.2015)**
 * Related posts view **(New 30.10.2015)**
 * Tag description(s) **(New 30.10.2015)**
+* Code Highlighting **(New 24.11.2015)**
 * Rss
 * Google Analytics tracking
 * Code Syntax Highlight
