@@ -47,10 +47,9 @@ to the original theme. Besides, I have recently updated it to match the current 
 * Toggleable sliding sidebar **(New 07.02.2015)**
 * Related posts view **(New 30.10.2015)**
 * Tag description(s) **(New 30.10.2015)**
-* Code Highlighting **(New 24.11.2015)**
+* Code Syntax Highlight **(New 24.11.2015)**
 * Rss
 * Google Analytics tracking
-* Code Syntax Highlight
 * Author's profile with picture
 * Disqus comments (not Ghost standard)
 
