@@ -17,15 +17,15 @@
     {% for post in paginator.posts %}
     <article class="post">
         <header class="post-header">
-            <h2 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+            <h2 class="post-title"><a href="{{ site.baseurl }}{{ post.url | remove: '/' }}">{{ post.title }}</a></h2>
         </header>
         <section class="post-excerpt">
-            <p>{{ post.content | truncatewords: 26 }} <a class="read-more" href="{{ site.baseurl }}{{ post.url }}">&raquo;</a></p>
+            <p>{{ post.content | truncatewords: 26 }} <a class="read-more" href="{{ site.baseurl }}{{ post.url | remove: '/' }}">&raquo;</a></p>
         </section>
         <footer class="post-meta">
             {% if site.image %}<img class="author-thumb" src="{{ site.baseurl }}{{ site.image }}" alt="Author image" nopin="nopin" />{% endif %}
             <!-- author -->
-            <a href='{{ site.baseurl }}author/{{ site.username }}'>{{ site.author }}</a>
+            <a href='{{ site.baseurl }}author/{{ site.nickname }}'>{{ site.author }}</a>
             <!-- [[tags prefix=" on "]] -->
             {% if post.tags.size > 0 %} 
                 on 
