@@ -19,7 +19,7 @@ image: 'assets/images/casper.png'
 
 short_url: 'iskandarov.github.io/blog/'
 google_analytics: UA-69281367-1
-disqus: username
+disqus: iskandarov
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
 baseurl: /blog/
 
