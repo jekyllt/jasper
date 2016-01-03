@@ -54,8 +54,8 @@ exclude: [vendor]
 # or "master" otherwise
 safe: false
 lsi: false
-username: biomadeira
-repo: jasper
+username: iskandarov
+repo: blog
 branch: master
 relative_source: ../blog/
 destination: ../jasper-pages/
