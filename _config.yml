@@ -57,7 +57,7 @@ lsi: false
 username: biomadeira
 repo: jasper
 branch: master
-relative_source: ../jasper/
+relative_source: ../blog/
 destination: ../jasper-pages/
 production_url:  https://biomadeira.github.io/jasper/
 source_url:      https://github.com/biomadeira/jasper/
