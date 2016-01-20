@@ -71,7 +71,7 @@ For option **2)** you will need to set up travis-ci for your personal fork. Brie
 ### Author pages
 
 As discussed [here](https://github.com/biomadeira/jasper/issues/3), in order to properly generate author pages you need to rename the field *categories* in the front matter of every post to match that of your *username* as defined in the *[\_config.yml](_config.yml)* file.
-This probably means that with a bit of hacking you could in principle generate multiple author blogs...
+This probably means that with a bit of hacking you could in principle generate multiple author blogs. Check this [link](https://github.com/biomadeira/jasper/issues/10) for more on working with multiple authors...
 
 ## Issues and contributing 
 
