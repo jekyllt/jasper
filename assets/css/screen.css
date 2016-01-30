@@ -310,6 +310,7 @@ blockquote {
     margin: 1.75em 0 1.75em -2.2em;
     padding: 0 0 0 1.75em;
     border-left: #4A4A4A 0.4em solid;
+    margin-left: 0;
 }
 
 blockquote p {
@@ -1606,11 +1607,7 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 @media only screen and (max-width: 900px) {
-
-    blockquote {
-        margin-left: 0;
-    }
-
+   
     .main-header {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
