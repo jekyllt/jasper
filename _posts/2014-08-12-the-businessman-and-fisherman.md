@@ -39,3 +39,7 @@ The American laughed and said, “That’s the best part. When the time is right
 “Millions señor? Then what?"
 
 “Then you would retire and move to a small coastal fishing village, where you would sleep late, fish a little, play with your kids, take a siesta with your wife, and stroll in to the village in the evenings where you could sip wine and play your guitar with your amigos.”
+
+Adapted from the "Anekdote zur Senkung der Arbeitsmoral" by **Heinrich Böll**
+
+An influential German write and Nobel Prize for Literature in 1972.
