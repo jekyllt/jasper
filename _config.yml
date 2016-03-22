@@ -1,6 +1,8 @@
 # Jykell configuration
-markdown: redcarpet
-highlighter: pygments
+#markdown: redcarpet
+#highlighter: pygments
+markdown: kramdown
+highlighter: rouge
 paginate: 5
 language: 'en-uk'
 
