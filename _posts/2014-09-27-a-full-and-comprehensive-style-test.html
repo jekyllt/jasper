@@ -128,12 +128,68 @@ logo: 'assets/images/ghost.png'
 
 <p>Code can be presented inline, like <code>&lt;?php bloginfo('stylesheet_url'); ?&gt;</code>, or within a <code>&lt;pre&gt;</code> block. Because we have more specific typographic needs for code, we’ll specify Consolas and Monaco ahead of the browser-defined monospace font.</p>
 
+<p>Code blocks can also be inserted with the highlight tag as below:</p>
+<pre>
+    {% raw %}
+    {% highlight language-x %}
+    # some code
+    {% endhighlight %}
+    {% endraw %}
+</pre>
+
+<p>More information about code highlighting in jykell can be found  <a href="https://jekyllrb.com/docs/templates/#code-snippet-highlighting">in Jekyll documentation</a>.</p>
+
+<p>These area a couple of examples showing the resulting highlighted code:</p>
+
 {% highlight css %}
+/* css code sample */
 #container {
     float: left;
     margin: 0 -240px 0 0;
     width: 100%;
 }
+{% endhighlight %}
+
+
+{% highlight javascript %}
+// javascript code sample
+import {x, y} as p from 'point';
+const ANSWER = 42;
+
+class Car extends Vehicle {
+    constructor(speed, cost) {
+        super(speed);
+
+        var c = Symbol('cost');
+        this[c] = cost;
+
+        this.intro = `This is a car runs at
+            ${speed}.`;
+    }
+}
+
+for (let num of [1, 2, 3]) {
+    console.log(num + 0b111110111);
+}
+
+function $initHighlight(block, flags) {
+    try {
+        if (block.className.search(/\bno\-highlight\b/) != -1)
+            return processBlock(block.function, true, 0x0F) + ' class=""';
+    } catch (e) {
+        /* handle exception */
+        var e4x =
+            <div>Example
+                <p>1234</p></div>;
+    }
+    for (var i = 0 / 2; i < classes.length; i++) { // "0 / 2" should not be parsed as regexp
+        if (checkCondition(classes[i]) === undefined)
+            return /\d+[\s/]/g;
+    }
+    console.log(Array.every(classes, Boolean));
+}
+
+export  $initHighlight;
 {% endhighlight %}
 
 <hr />
