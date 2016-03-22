@@ -53,7 +53,7 @@
     <link rel="alternate" type="application/rss+xml" title="Finding The Way Home" href="/jasper/rss.xml" />
 
 </head>
-<body class="post-template nav-closed">
+<body class="home-template nav-closed">
 
     <div class="nav">
     <h3 class="nav-title">Menu</h3>
@@ -237,11 +237,65 @@
 
 <p>Code can be presented inline, like <code>&lt;?php bloginfo('stylesheet_url'); ?&gt;</code>, or within a <code>&lt;pre&gt;</code> block. Because we have more specific typographic needs for code, we’ll specify Consolas and Monaco ahead of the browser-defined monospace font.</p>
 
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#container</span> <span class="p">{</span>
-    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
-    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">-240px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
-    <span class="k">width</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
-<span class="p">}</span></code></pre></div>
+<p>Code blocks can also be inserted with the highlight tag as below:</p>
+<pre>
+    
+    {% highlight language-x %}
+    # some code
+    {% endhighlight %}
+    
+</pre>
+
+<p>More information about code highlighting in jykell can be found  <a href="https://jekyllrb.com/docs/templates/#code-snippet-highlighting">in Jekyll documentation</a>.</p>
+
+<p>These area a couple of examples showing the resulting highlighted code:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/* css code sample */</span>
+<span class="nf">#container</span> <span class="p">{</span>
+    <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="m">-240px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// javascript code sample</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">}</span> <span class="nx">as</span> <span class="nx">p</span> <span class="nx">from</span> <span class="s1">'point'</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">ANSWER</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span>
+
+<span class="kr">class</span> <span class="nx">Car</span> <span class="kr">extends</span> <span class="nx">Vehicle</span> <span class="p">{</span>
+    <span class="nx">constructor</span><span class="p">(</span><span class="nx">speed</span><span class="p">,</span> <span class="nx">cost</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kr">super</span><span class="p">(</span><span class="nx">speed</span><span class="p">);</span>
+
+        <span class="kd">var</span> <span class="nx">c</span> <span class="o">=</span> <span class="nx">Symbol</span><span class="p">(</span><span class="s1">'cost'</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">[</span><span class="nx">c</span><span class="p">]</span> <span class="o">=</span> <span class="nx">cost</span><span class="p">;</span>
+
+        <span class="k">this</span><span class="p">.</span><span class="nx">intro</span> <span class="o">=</span> <span class="err">`</span><span class="nx">This</span> <span class="nx">is</span> <span class="nx">a</span> <span class="nx">car</span> <span class="nx">runs</span> <span class="nx">at</span>
+            <span class="nx">$</span><span class="p">{</span><span class="nx">speed</span><span class="p">}.</span><span class="err">`</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">num</span> <span class="nx">of</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span> <span class="o">+</span> <span class="mi">0</span><span class="nx">b111110111</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">$initHighlight</span><span class="p">(</span><span class="nx">block</span><span class="p">,</span> <span class="nx">flags</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">block</span><span class="p">.</span><span class="nx">className</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="sr">/</span><span class="se">\b</span><span class="sr">no</span><span class="se">\-</span><span class="sr">highlight</span><span class="se">\b</span><span class="sr">/</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+            <span class="k">return</span> <span class="nx">processBlock</span><span class="p">(</span><span class="nx">block</span><span class="p">.</span><span class="kd">function</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="mh">0x0F</span><span class="p">)</span> <span class="o">+</span> <span class="s1">' class=""'</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+        <span class="cm">/* handle exception */</span>
+        <span class="kd">var</span> <span class="nx">e4x</span> <span class="o">=</span>
+            <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="nx">Example</span>
+                <span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="mi">1234</span><span class="o">&lt;</span><span class="sr">/p&gt;&lt;/</span><span class="nx">div</span><span class="o">&gt;</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">classes</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// "0 / 2" should not be parsed as regexp</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">checkCondition</span><span class="p">(</span><span class="nx">classes</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span> <span class="o">===</span> <span class="kc">undefined</span><span class="p">)</span>
+            <span class="k">return</span> <span class="sr">/</span><span class="se">\d</span><span class="sr">+</span><span class="se">[\s/]</span><span class="sr">/g</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="nx">every</span><span class="p">(</span><span class="nx">classes</span><span class="p">,</span> <span class="nb">Boolean</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="kr">export</span>  <span class="nx">$initHighlight</span><span class="p">;</span></code></pre></figure>
 
 <hr />
 
