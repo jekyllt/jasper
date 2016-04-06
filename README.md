@@ -82,7 +82,8 @@ Feel free pull-request your patches and fixes.
 
 ## Thanks 
 
-All the design work has been already done by the Ghost team. Many thanks to them :smile:
+
+Many thanks to the Ghost team for all the design work that allows to make this clone possible. Also many thanks to all contributors, that help keeping the project alive and updated :smile:
 
 
 ## Copyright & License
