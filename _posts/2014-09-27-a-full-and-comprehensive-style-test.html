@@ -137,7 +137,7 @@ logo: 'assets/images/ghost.png'
     {% endraw %}
 </pre>
 
-<p>More information about code highlighting in jykell can be found  <a href="https://jekyllrb.com/docs/templates/#code-snippet-highlighting">in Jekyll documentation</a>.</p>
+<p>More information about code highlighting in jekyll can be found  <a href="https://jekyllrb.com/docs/templates/#code-snippet-highlighting">in Jekyll documentation</a>.</p>
 
 <p>These area a couple of examples showing the resulting highlighted code:</p>
 
@@ -153,44 +153,45 @@ logo: 'assets/images/ghost.png'
 
 {% highlight javascript %}
 // javascript code sample
-import {x, y} as p from 'point';
-const ANSWER = 42;
-
-class Car extends Vehicle {
-    constructor(speed, cost) {
-        super(speed);
-
-        var c = Symbol('cost');
-        this[c] = cost;
-
-        this.intro = `This is a car runs at
-            ${speed}.`;
-    }
-}
-
-for (let num of [1, 2, 3]) {
-    console.log(num + 0b111110111);
-}
-
-function $initHighlight(block, flags) {
-    try {
-        if (block.className.search(/\bno\-highlight\b/) != -1)
-            return processBlock(block.function, true, 0x0F) + ' class=""';
-    } catch (e) {
-        /* handle exception */
-        var e4x =
-            <div>Example
-                <p>1234</p></div>;
-    }
-    for (var i = 0 / 2; i < classes.length; i++) { // "0 / 2" should not be parsed as regexp
-        if (checkCondition(classes[i]) === undefined)
-            return /\d+[\s/]/g;
-    }
-    console.log(Array.every(classes, Boolean));
-}
-
-export  $initHighlight;
+$.ajax({
+  type: 'POST',
+  url: 'backend.php',
+  data: "q="+myform.serialize(),
+  success: function(data){
+    // on success use return data here
+  },
+  error: function(xhr, type, exception) {
+    // if ajax fails display error alert
+    alert("ajax error response type "+type);
+  }
+});
 {% endhighlight %}
+
+<p>Now you can also use <a href="https://highlightjs.org/">highlight.js</a>.
+For more on how to use it and on the available styles check their
+<a href="https://highlightjs.org/static/demo/">demo</a> and
+<a href="http://highlightjs.readthedocs.org/en/latest/">documentation</a> pages.</p>
+
+<div class="system">
+<pre><code class="swift">// Swift code sample
+import Foundation
+
+@objc class Person: Entity {
+  var name: String!
+  var age:  Int!
+
+  init(name: String, age: Int) {
+    /* /* ... */ */
+  }
+
+  // Return a descriptive string for this person
+  func description(offset: Int = 0) -> String {
+    return "\(name) is \(age + offset) years old"
+  }
+}
+</code></pre>
+</div>
+
 
 <hr />
 
