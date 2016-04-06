@@ -19,7 +19,12 @@
     <link rel="stylesheet" type="text/css"
           href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
     <link rel="stylesheet" type="text/css" href="/jasper/assets/css/syntax.css" />
-    
+
+    <!-- [[! highlight.js ]] -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
     <!-- [[! Ghost outputs important style and meta data with this tag ]] -->
         <link rel="canonical" href="/jasper/" />
     <meta name="referrer" content="origin" />
@@ -50,7 +55,8 @@
     </script>
 
     <meta name="generator" content="Jekyll 3.0.0" />
-    <link rel="alternate" type="application/rss+xml" title="Finding The Way Home" href="/jasper/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Finding The Way Home" href="/jasper/feed.xml" />
+
 
 </head>
 <body class="home-template nav-closed">
@@ -68,9 +74,10 @@
         <li class="nav-fiction " role="presentation"><a href="/jasper/tag/fiction">Fiction</a></li>
         <li class="nav-author " role="presentation"><a href="/jasper/author/casper">Author</a></li>
     </ul>
-    <a class="subscribe-button icon-feed" href="/jasper/rss.xml">Subscribe</a>
+    <a class="subscribe-button icon-feed" href="/jasper/feed.xml">Subscribe</a>
 </div>
 <span class="nav-cover"></span>
+
 
     <div class="site-wrapper">
 

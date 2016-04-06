@@ -19,7 +19,12 @@
     <link rel="stylesheet" type="text/css"
           href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
     <link rel="stylesheet" type="text/css" href="/jasper/assets/css/syntax.css" />
-    
+
+    <!-- [[! highlight.js ]] -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
     <!-- [[! Ghost outputs important style and meta data with this tag ]] -->
         <link rel="canonical" href="/jasper/" />
     <meta name="referrer" content="origin" />
@@ -50,7 +55,8 @@
     </script>
 
     <meta name="generator" content="Jekyll 3.0.0" />
-    <link rel="alternate" type="application/rss+xml" title="Finding The Way Home" href="/jasper/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Finding The Way Home" href="/jasper/feed.xml" />
+
 
 </head>
 <body class="home-template nav-closed">
@@ -68,9 +74,10 @@
         <li class="nav-fiction " role="presentation"><a href="/jasper/tag/fiction">Fiction</a></li>
         <li class="nav-author " role="presentation"><a href="/jasper/author/casper">Author</a></li>
     </ul>
-    <a class="subscribe-button icon-feed" href="/jasper/rss.xml">Subscribe</a>
+    <a class="subscribe-button icon-feed" href="/jasper/feed.xml">Subscribe</a>
 </div>
 <span class="nav-cover"></span>
+
 
     <div class="site-wrapper">
 
@@ -246,7 +253,7 @@
     
 </pre>
 
-<p>More information about code highlighting in jykell can be found  <a href="https://jekyllrb.com/docs/templates/#code-snippet-highlighting">in Jekyll documentation</a>.</p>
+<p>More information about code highlighting in jekyll can be found  <a href="https://jekyllrb.com/docs/templates/#code-snippet-highlighting">in Jekyll documentation</a>.</p>
 
 <p>These area a couple of examples showing the resulting highlighted code:</p>
 
@@ -259,43 +266,44 @@
 
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// javascript code sample</span>
-<span class="kr">import</span> <span class="p">{</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">}</span> <span class="nx">as</span> <span class="nx">p</span> <span class="nx">from</span> <span class="s1">'point'</span><span class="p">;</span>
-<span class="kr">const</span> <span class="nx">ANSWER</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+  <span class="na">type</span><span class="p">:</span> <span class="s1">'POST'</span><span class="p">,</span>
+  <span class="na">url</span><span class="p">:</span> <span class="s1">'backend.php'</span><span class="p">,</span>
+  <span class="na">data</span><span class="p">:</span> <span class="s2">"q="</span><span class="o">+</span><span class="nx">myform</span><span class="p">.</span><span class="nx">serialize</span><span class="p">(),</span>
+  <span class="na">success</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">){</span>
+    <span class="c1">// on success use return data here</span>
+  <span class="p">},</span>
+  <span class="na">error</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">xhr</span><span class="p">,</span> <span class="nx">type</span><span class="p">,</span> <span class="nx">exception</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// if ajax fails display error alert</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="s2">"ajax error response type "</span><span class="o">+</span><span class="nx">type</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span></code></pre></figure>
 
-<span class="kr">class</span> <span class="nx">Car</span> <span class="kr">extends</span> <span class="nx">Vehicle</span> <span class="p">{</span>
-    <span class="nx">constructor</span><span class="p">(</span><span class="nx">speed</span><span class="p">,</span> <span class="nx">cost</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kr">super</span><span class="p">(</span><span class="nx">speed</span><span class="p">);</span>
+<p>Now you can also use <a href="https://highlightjs.org/">highlight.js</a>.
+For more on how to use it and on the available styles check their
+<a href="https://highlightjs.org/static/demo/">demo</a> and
+<a href="http://highlightjs.readthedocs.org/en/latest/">documentation</a> pages.</p>
 
-        <span class="kd">var</span> <span class="nx">c</span> <span class="o">=</span> <span class="nx">Symbol</span><span class="p">(</span><span class="s1">'cost'</span><span class="p">);</span>
-        <span class="k">this</span><span class="p">[</span><span class="nx">c</span><span class="p">]</span> <span class="o">=</span> <span class="nx">cost</span><span class="p">;</span>
+<div class="system">
+<pre><code class="swift">// Swift code sample
+import Foundation
 
-        <span class="k">this</span><span class="p">.</span><span class="nx">intro</span> <span class="o">=</span> <span class="err">`</span><span class="nx">This</span> <span class="nx">is</span> <span class="nx">a</span> <span class="nx">car</span> <span class="nx">runs</span> <span class="nx">at</span>
-            <span class="nx">$</span><span class="p">{</span><span class="nx">speed</span><span class="p">}.</span><span class="err">`</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+@objc class Person: Entity {
+  var name: String!
+  var age:  Int!
 
-<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">num</span> <span class="nx">of</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span> <span class="o">+</span> <span class="mi">0</span><span class="nx">b111110111</span><span class="p">);</span>
-<span class="p">}</span>
+  init(name: String, age: Int) {
+    /* /* ... */ */
+  }
 
-<span class="kd">function</span> <span class="nx">$initHighlight</span><span class="p">(</span><span class="nx">block</span><span class="p">,</span> <span class="nx">flags</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">try</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="nx">block</span><span class="p">.</span><span class="nx">className</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="sr">/</span><span class="se">\b</span><span class="sr">no</span><span class="se">\-</span><span class="sr">highlight</span><span class="se">\b</span><span class="sr">/</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-            <span class="k">return</span> <span class="nx">processBlock</span><span class="p">(</span><span class="nx">block</span><span class="p">.</span><span class="kd">function</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="mh">0x0F</span><span class="p">)</span> <span class="o">+</span> <span class="s1">' class=""'</span><span class="p">;</span>
-    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
-        <span class="cm">/* handle exception */</span>
-        <span class="kd">var</span> <span class="nx">e4x</span> <span class="o">=</span>
-            <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="nx">Example</span>
-                <span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="mi">1234</span><span class="o">&lt;</span><span class="sr">/p&gt;&lt;/</span><span class="nx">div</span><span class="o">&gt;</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">classes</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// "0 / 2" should not be parsed as regexp</span>
-        <span class="k">if</span> <span class="p">(</span><span class="nx">checkCondition</span><span class="p">(</span><span class="nx">classes</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span> <span class="o">===</span> <span class="kc">undefined</span><span class="p">)</span>
-            <span class="k">return</span> <span class="sr">/</span><span class="se">\d</span><span class="sr">+</span><span class="se">[\s/]</span><span class="sr">/g</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="nx">every</span><span class="p">(</span><span class="nx">classes</span><span class="p">,</span> <span class="nb">Boolean</span><span class="p">));</span>
-<span class="p">}</span>
+  // Return a descriptive string for this person
+  func description(offset: Int = 0) -> String {
+    return "\(name) is \(age + offset) years old"
+  }
+}
+</code></pre>
+</div>
 
-<span class="kr">export</span>  <span class="nx">$initHighlight</span><span class="p">;</span></code></pre></figure>
 
 <hr />
 

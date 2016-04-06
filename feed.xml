@@ -1,36 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"
-  xmlns:content="http://purl.org/rss/1.0/modules/content/"
-  xmlns:dc="http://purl.org/dc/elements/1.1/"
-  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
-  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Finding The Way Home</title>
-    <link>http://biomadeira.github.io/jasper/</link>
-    <description>A beautiful narrative written with the world's most elegant publishing platform. The story begins here.</description>
-    <pubDate>Sat, 27 Sep 2014 10:18:00 +0000</pubDate>
-    <item>
-      <title>A Full and Comprehensive Style Test</title>
-      <link>http://biomadeira.github.io/jasper//a-full-and-comprehensive-style-test</link>
-      <description>&lt;p&gt;This is just an &lt;em&gt;ipsis verbis&lt;/em&gt; copy of the first example running on the &lt;a href=&quot;http://demo.ghost.io&quot;&gt;Ghost Demo&lt;/a&gt;. This shows how you can use html styling to achieve your hopes.&lt;/p&gt;
+    <title>Finding The Way Home - Articles</title>
+    <description>A beautiful narrative written with the world&#39;s most elegant publishing platform. The story begins here.</description>
+    <link>
+    http://biomadeira.github.io/jasper/</link>
+    
+      
+      <item>
+        <title>A Full and Comprehensive Style Test</title>
+        
+          <description>&lt;p&gt;This is just an &lt;em&gt;ipsis verbis&lt;/em&gt; copy of the first example running on the &lt;a href=&quot;http://demo.ghost.io&quot;&gt;Ghost Demo&lt;/a&gt;. This shows how you can use html styling to achieve your hopes.&lt;/p&gt;
 
 </description>
-      <pubDate>Sat, 27 Sep 2014 10:18:00 +0000</pubDate>
-      <dc:date>2014-09-27T10:18:00+00:00</dc:date>
-    </item>
-    <item>
-      <title>The Businessman &amp; the fisherman</title>
-      <link>http://biomadeira.github.io/jasper//the-businessman-and-fisherman</link>
-      <description>&lt;p&gt;An American businessman took a vacation to a small coastal Mexican village on doctor’s orders. Unable to sleep after an urgent phone call from the office the first morning, he walked out to the pier to clear his head. A small boat with just one fisherman had docked, and inside the boat were several large yellowfin tuna. The American complimented the Mexican on the quality of his fish.&lt;/p&gt;
+        
+        <pubDate>Sat, 27 Sep 2014 10:18:00 +0000</pubDate>
+        <link>
+        http://biomadeira.github.io/jasper//a-full-and-comprehensive-style-test</link>
+        <guid isPermaLink="true">http://biomadeira.github.io/jasper//a-full-and-comprehensive-style-test</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>The Businessman &amp; the fisherman</title>
+        
+          <description>&lt;p&gt;An American businessman took a vacation to a small coastal Mexican village on doctor’s orders. Unable to sleep after an urgent phone call from the office the first morning, he walked out to the pier to clear his head. A small boat with just one fisherman had docked, and inside the boat were several large yellowfin tuna. The American complimented the Mexican on the quality of his fish.&lt;/p&gt;
 
 </description>
-      <pubDate>Tue, 12 Aug 2014 10:18:00 +0000</pubDate>
-      <dc:date>2014-08-12T10:18:00+00:00</dc:date>
-    </item>
-    <item>
-      <title>I Have a Dream</title>
-      <link>http://biomadeira.github.io/jasper//i-have-a-dream</link>
-      <description>&lt;p&gt;I am happy to join with you today in what will go down in history as the greatest demonstration for freedom in the history of our nation.&lt;/p&gt;
+        
+        <pubDate>Tue, 12 Aug 2014 10:18:00 +0000</pubDate>
+        <link>
+        http://biomadeira.github.io/jasper//the-businessman-and-fisherman</link>
+        <guid isPermaLink="true">http://biomadeira.github.io/jasper//the-businessman-and-fisherman</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>I Have a Dream</title>
+        
+          <description>&lt;p&gt;I am happy to join with you today in what will go down in history as the greatest demonstration for freedom in the history of our nation.&lt;/p&gt;
 
 &lt;p&gt;Five score years ago, a great American, in whose symbolic shadow we stand today, signed the Emancipation Proclamation. This momentous decree came as a great beacon light of hope to millions of Negro slaves who had been seared in the flames of withering injustice. It came as a joyous daybreak to end the long night of their captivity.&lt;/p&gt;
 
@@ -128,31 +138,49 @@
 
 &lt;p&gt;An American pastor, activist, humanitarian. People know him for leading the African-American Civil Rights movement using nonviolent civil disobedience.&lt;/p&gt;
 </description>
-      <pubDate>Wed, 28 Aug 1963 10:18:00 +0000</pubDate>
-      <dc:date>1963-08-28T10:18:00+00:00</dc:date>
-    </item>
-    <item>
-      <title>The Purpose of Education</title>
-      <link>http://biomadeira.github.io/jasper//the-purpose-of-education</link>
-      <description>&lt;p&gt;As I engage in the so-called “bull sessions” around and about the school, I too often find that most college men have a misconception of the purpose of education. Most of the “brethren” think that education should equip them with the proper instruments of exploitation so that they can forever trample over the masses. Still others think that education should furnish them with noble ends rather than means to an end.&lt;/p&gt;
+        
+        <pubDate>Wed, 28 Aug 1963 10:18:00 +0000</pubDate>
+        <link>
+        http://biomadeira.github.io/jasper//i-have-a-dream</link>
+        <guid isPermaLink="true">http://biomadeira.github.io/jasper//i-have-a-dream</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>The Purpose of Education</title>
+        
+          <description>&lt;p&gt;As I engage in the so-called “bull sessions” around and about the school, I too often find that most college men have a misconception of the purpose of education. Most of the “brethren” think that education should equip them with the proper instruments of exploitation so that they can forever trample over the masses. Still others think that education should furnish them with noble ends rather than means to an end.&lt;/p&gt;
 
 </description>
-      <pubDate>Sun, 12 Dec 1948 10:18:00 +0000</pubDate>
-      <dc:date>1948-12-12T10:18:00+00:00</dc:date>
-    </item>
-    <item>
-      <title>Out to Sea</title>
-      <link>http://biomadeira.github.io/jasper//out-to-sea</link>
-      <description>&lt;p&gt;I had this story from one who had no business to tell it to me, or to any other. I may credit the seductive influence of an old vintage upon the narrator for the beginning of it, and my own skeptical incredulity during the days that followed for the balance of the strange tale.&lt;/p&gt;
+        
+        <pubDate>Sun, 12 Dec 1948 10:18:00 +0000</pubDate>
+        <link>
+        http://biomadeira.github.io/jasper//the-purpose-of-education</link>
+        <guid isPermaLink="true">http://biomadeira.github.io/jasper//the-purpose-of-education</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Out to Sea</title>
+        
+          <description>&lt;p&gt;I had this story from one who had no business to tell it to me, or to any other. I may credit the seductive influence of an old vintage upon the narrator for the beginning of it, and my own skeptical incredulity during the days that followed for the balance of the strange tale.&lt;/p&gt;
 
 </description>
-      <pubDate>Wed, 24 Jul 1912 10:18:00 +0000</pubDate>
-      <dc:date>1912-07-24T10:18:00+00:00</dc:date>
-    </item>
-    <item>
-      <title>Looking-Glass house</title>
-      <link>http://biomadeira.github.io/jasper//looking-glass-house</link>
-      <description>&lt;p&gt;One thing was certain, that the white kitten had had nothing to do with it:— it was the black kitten’s fault entirely. For the white kitten had been having its face washed by the old cat for the last quarter of an hour (and bearing it pretty well, considering); so you see that it couldn’t have had any hand in the mischief. 
+        
+        <pubDate>Wed, 24 Jul 1912 10:18:00 +0000</pubDate>
+        <link>
+        http://biomadeira.github.io/jasper//out-to-sea</link>
+        <guid isPermaLink="true">http://biomadeira.github.io/jasper//out-to-sea</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Looking-Glass house</title>
+        
+          <description>&lt;p&gt;One thing was certain, that the white kitten had had nothing to do with it:— it was the black kitten’s fault entirely. For the white kitten had been having its face washed by the old cat for the last quarter of an hour (and bearing it pretty well, considering); so you see that it couldn’t have had any hand in the mischief. 
 The way Dinah washed her children’s faces was this: first she held the poor thing down by its ear with one paw, and then with the other paw she rubbed its face all over, the wrong way, beginning at the nose: and just now, as I said, she was hard at work on the white kitten, which was lying quite still and trying to purr — no doubt feeling that it was all meant for its good. 
 But the black kitten had been finished with earlier in the afternoon, and so, while Alice was sitting curled up in a corner of the great arm-chair, half talking to herself and half asleep, the kitten had been having a grand game of romps with the ball of worsted Alice had been trying to wind up, and had been rolling it up and down till it had all come undone again; and there it was, spread over the hearth-rug, all knots and tangles, with the kitten running after its own tail in the middle.&lt;/p&gt;
 
@@ -185,13 +213,19 @@ The poor King looked puzzled and unhappy, and struggled with the pencil for some
 
 &lt;p&gt;An English writer, mathematician, logician, Anglican deacon and photographer, best know for writing about Alice.&lt;/p&gt;
 </description>
-      <pubDate>Sat, 18 Mar 1871 10:18:00 +0000</pubDate>
-      <dc:date>1871-03-18T10:18:00+00:00</dc:date>
-    </item>
-    <item>
-      <title>Down The Rabbit Hole</title>
-      <link>http://biomadeira.github.io/jasper//down-the-rabbit-hole</link>
-      <description>&lt;p&gt;Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, ‘and what is the use of a book,’ thought Alice ‘without pictures or conversation?’&lt;/p&gt;
+        
+        <pubDate>Sat, 18 Mar 1871 10:18:00 +0000</pubDate>
+        <link>
+        http://biomadeira.github.io/jasper//looking-glass-house</link>
+        <guid isPermaLink="true">http://biomadeira.github.io/jasper//looking-glass-house</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Down The Rabbit Hole</title>
+        
+          <description>&lt;p&gt;Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, ‘and what is the use of a book,’ thought Alice ‘without pictures or conversation?’&lt;/p&gt;
 
 &lt;p&gt;So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid), whether the pleasure of making a daisy-chain would be worth the trouble of getting up and picking the daisies, when suddenly a White Rabbit with pink eyes ran close by her.&lt;/p&gt;
 
@@ -245,13 +279,19 @@ The poor King looked puzzled and unhappy, and struggled with the pencil for some
 
 &lt;p&gt;An English writer, mathematician, logician, Anglican deacon and photographer, best know for writing about Alice.&lt;/p&gt;
 </description>
-      <pubDate>Sun, 26 Nov 1865 10:18:00 +0000</pubDate>
-      <dc:date>1865-11-26T10:18:00+00:00</dc:date>
-    </item>
-    <item>
-      <title>Gettysburg Address</title>
-      <link>http://biomadeira.github.io/jasper//gettysburg-address</link>
-      <description>&lt;p&gt;Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.&lt;/p&gt;
+        
+        <pubDate>Sun, 26 Nov 1865 10:18:00 +0000</pubDate>
+        <link>
+        http://biomadeira.github.io/jasper//down-the-rabbit-hole</link>
+        <guid isPermaLink="true">http://biomadeira.github.io/jasper//down-the-rabbit-hole</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Gettysburg Address</title>
+        
+          <description>&lt;p&gt;Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.&lt;/p&gt;
 
 &lt;p&gt;Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.&lt;/p&gt;
 
@@ -261,9 +301,13 @@ The poor King looked puzzled and unhappy, and struggled with the pencil for some
 
 &lt;p&gt;The 16th president of the USA until he was assassinated in April of 1963. He led the US through its Civil War - its bloodiest and greatest moral, constitutional and political crisis.&lt;/p&gt;
 </description>
-      <pubDate>Thu, 19 Nov 1863 10:18:00 +0000</pubDate>
-      <dc:date>1863-11-19T10:18:00+00:00</dc:date>
-    </item>
-    <dc:date>2014-09-27T10:18:00+00:00</dc:date>
+        
+        <pubDate>Thu, 19 Nov 1863 10:18:00 +0000</pubDate>
+        <link>
+        http://biomadeira.github.io/jasper//gettysburg-address</link>
+        <guid isPermaLink="true">http://biomadeira.github.io/jasper//gettysburg-address</guid>
+      </item>
+      
+    
   </channel>
 </rss>
