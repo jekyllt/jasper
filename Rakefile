@@ -66,9 +66,7 @@ namespace :site do
     # Commit and push to github
     sha = `git log`.match(/[a-z0-9]{40}/)[0]
     Dir.chdir(CONFIG["destination"]) do
-      sh "git add --all ."
-      sh "git commit -m 'Updating to #{USERNAME}/#{REPO}@#{sha}.'"
-      sh "git push --quiet origin #{DESTINATION_BRANCH}"
+      sh "if [ -n '$(git status)' ]; then git add --all .; git commit -m 'Updating to #{USERNAME}/#{REPO}@#{sha}.'; git push --quiet origin #{DESTINATION_BRANCH}; else echo 'There were no changes. Skipping pushing updates.'; fi"
       puts "Pushed updated branch #{DESTINATION_BRANCH} to GitHub Pages"
     end
   end
