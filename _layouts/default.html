@@ -30,7 +30,7 @@
     {% include head.html %}
 
 </head>
-<body class="{% if page.url contains 'page' %}paged archive-template{% elsif page.class %}{{ page.class }}{% else %}home-template{% endif %} nav-closed">
+<body class="{% if paginator.page > 1 %}paged archive-template{% elsif page.class %}{{ page.class }}{% else %}home-template{% endif %} nav-closed">
 
     {% include navigation.html %}
 
