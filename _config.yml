@@ -7,19 +7,24 @@ paginate: 5
 language: 'en-uk'
 
 # Website info
-name: 'Finding The Way Home'
-description: "A beautiful narrative written with the world's most elegant publishing platform. The story begins here."
+#name: 'Finding the Way Home'
+name: 'Firefly In The Darkness, Flittering About'
+#description: "A beautiful narrative written withh the world's most elegant publishing platform. The story begins here."
+description: "Doubt thout the stars are fire, Doubt that the sun doth move, Doubt truth to be a liar, But never doubt the lights"
 
 # Author's info
-author: 'Casper McFadden'
+#author: 'Casper McFadden'
+author: 'Jensen Su'
 # edit 'categories' in the front matter of every post to match this username
-nickname: casper
-bio: 'A paranormal expert and his daughter bunk in an abandoned house populated by 3 mischievous ghosts and one friendly one.'
-location: 'Maine, USA'
-url: 'http://biomadeira.github.io/jasper/'
+#nickname: casper
+nickname: shindou
+bio: 'State Key Lab. of Asic & Sys. Fudan University.'
+#location: 'Maine, USA'
+location: 'Shanghai, CH'
+url: 'http://jensen-su.github.io/jasper/'
 image: 'assets/images/casper.png'
 
-short_url: 'biomadeira.github.io/jasper/'
+short_url: 'jensen-su.github.io/jasper/'
 google_analytics: UA-69281367-1
 disqus: username
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
@@ -56,12 +61,13 @@ exclude: [vendor]
 # or "master" otherwise
 safe: false
 lsi: false
-username: biomadeira
+username: Jensen 
 repo: jasper
 branch: master
 relative_source: ../jasper/
-destination: ../jasper-pages/
-production_url:  https://biomadeira.github.io/jasper/
+#destination: ../jasper-pages/
+destination: /home/jensen/Shindou/workspace/python_toys/nn/jensen-su.github.io/nn-pages
+production_url:  https://jensen-su.github.io/jasper/
 source_url:      https://github.com/biomadeira/jasper/
 
 exclude:

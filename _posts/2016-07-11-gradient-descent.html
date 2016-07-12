@@ -1,0 +1,78 @@
+---
+layout: post
+title: The Gradient Descent
+date:   2016-07-11 10:10:00
+tags: NeuralNetwork
+subclass: 'post tag-NeuralNetwork'
+categories: 'casper'
+cover: 'assets/images/valley_with_ball.png'
+navigation: True
+logo: 'assets/images/ghost.png'
+---
+<p> </p>
+<p> The cover picture is taken from Michael Nielsen's book 
+<a href="http://neuralnetworksanddeeplearning.com/index.html"><em> Neural Networks and Deep Learning</em>.
+<p><a href="https://en.wikipedia.org/wiki/Gradient_descent"><strong>Gradient descent</strong></a>, 
+also known as <em>steepest descent</em>, is a first-order optimization algorithm mostly used to 
+find a local minimum of a given contunious, differentiable function. For convex functions,
+the local minimum is also the global minimum. Therefore gradient descent is widely used 
+to solve the unconstrained optimization problem. One of its versions is also the most commonly 
+used algorithm to train the neural networks in deep learning.
+</p>
+
+<p> Gradient descent is a powerful but very simple algorithm. Given a function $C(\vec x)$ having 
+first order partial derivatives (w.r.t $\vec x$), assuming the function has global minimum, then
+gradient descent finds a global minimum with the following iterations:
+
+$$ \vec x_0 := [random ~initialization]\\
+\vec x_{t+1} := \vec x_t -  \eta\nabla_C(\vec x_t)$$
+
+where $\eta$ controls the step size of each iteration. In some well-designed versions of gradient 
+descent, $\eta$ may varies at each iteration.
+</p>
+
+<p> It is quite simple and clear enough for anybody who can work out the gradient to realize 
+such algorithm. However simple and straightforward, I find myself unconvinced. 
+How comes it with this form? How does it make sense? 
+Why does $\vec x$ minus (instead of plus) the term $\eta\nabla_C(\vec x_t)$?
+</p>
+
+<p> After a few derivations, I gained some insights into it.</p>
+
+<p> Recall from calculus that, if we were to make some small changes $\Delta x$ on $\vec x$, the changes on
+output $C$ would be 
+$$\Delta C = \nabla_C \cdot \Delta. x$$
+How should we choose the $\Delta x$  to make $\Delta C$ always be negative, knowing we would like the objective
+function $C(\vec x)$ to decrease a small amount each iteration to reach a minimum? The eaiest way would
+be to choose $\Delta x = -\nabla_C$, so $\Delta C = - \nabla_C^2$ would be negative.
+</p>
+
+<p> Now we've known how it comes with the form $\vec x_{t+1} := \vec x_t -  \eta\nabla_C(\vec x_t)$. It decreases 
+$\vec x$ by a small amount of $\eta\nabla_C(\vec x_t)$ each iteration to decrease the objective function $C$ 
+by a small amount, hopefully to reach a minimum after some iterations.
+</p>
+
+<p> It is therefore obvious that we can take the form  $\vec x_{t+1} := \vec x_t + \eta\nabla_C(\vec x_t)$ to
+find a maximum of a objective function.
+</p>
+
+<p> But I still not be completely convinced. Is the choice of $\Delta x$ the fastest way to decrease the 
+objective function? Put it another way, given a certain $\eta \lt 0$, is there any other better choice of
+$\Delta x$? 
+</p>
+<p>
+Recall that $\Delta C = \nabla_C \cdot \Delta x$, the question is to find a $\Delta x$ to minimize
+$\Delta C$. Since $\nabla_C$ and $\Delta x$ are both vectors, we can write $\Delta C$ as
+$\Delta C = ||\nabla_C|| \cdot ||\Delta x|| \cdot sin\theta$. It tells the choice of $\Delta x$ which 
+minimize $\nabla_C \cdot \Delta x$ is $ -\eta \Delta x$.
+</p>
+
+<p>
+Although gradient descent is the steepest descent, it is not neccessary the one that convergences fartest, 
+instead, it sometimes convergences much slow, wandering about around the nearby minimum.
+Some other algorithms that convergence faster like <em>Newton method </em> and <em> quasi Newton method </em>
+are two-order optimization algorithms. I plan to investigate and summarize these two methods in the next post. 
+</p>
+
+<p> Since It is mostly my self-understanding, there must be some mistakes.
+Please kindly leave your comments, thank you^.^ </p>
