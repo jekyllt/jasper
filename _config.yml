@@ -8,7 +8,7 @@ language: 'en-uk'
 
 # Website info
 name: 'Jekyll on GitHub Pages'
-description: "Learning how to use Jekyll on GitHub Pages."
+description: "Learning how to use Jekyll hosted on GitHub Pages."
 
 # Author's info
 author: 'Casper McFadden'
