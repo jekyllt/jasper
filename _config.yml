@@ -32,7 +32,7 @@ permalink: /:title
 
 
 # gems and other configs
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 exclude: [vendor]
 
 # Additional settings available on the front-matter
@@ -62,7 +62,7 @@ branch: master
 relative_source: ../jasper/
 destination: ../jasper-pages/
 production_url:  https://biomadeira.github.io/jasper/
-source_url:      https://github.com/biomadeira/jasper/
+source_url:  https://github.com/biomadeira/jasper/
 
 exclude:
   - README.md
