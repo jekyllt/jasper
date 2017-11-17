@@ -1,14 +1,14 @@
 ---
 layout: post
-cover: false
+cover: 'assets/images/cover1.jpg'
+navigation: True
 title: Down The Rabbit Hole
-date:   1865-11-26 10:18:00
+date: 1865-11-26 10:18:00
 tags: fiction
 subclass: 'post tag-fiction'
-categories: 'casper'
-navigation: True
 logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover1.jpg'
+author: lewis
+categories: lewis
 ---
 
 Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, 'and what is the use of a book,' thought Alice 'without pictures or conversation?'
@@ -60,7 +60,3 @@ Soon her eye fell on a little glass box that was lying under the table: she open
 She ate a little bit, and said anxiously to herself, 'Which way? Which way?', holding her hand on the top of her head to feel which way it was growing, and she was quite surprised to find that she remained the same size: to be sure, this generally happens when one eats cake, but Alice had got so much into the way of expecting nothing but out-of-the-way things to happen, that it seemed quite dull and stupid for life to go on in the common way.
 
 So she set to work, and very soon finished off the cake.
-
-By **Lewis Carrol**
-
-An English writer, mathematician, logician, Anglican deacon and photographer, best know for writing about Alice.

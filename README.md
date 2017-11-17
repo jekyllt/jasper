@@ -54,6 +54,7 @@ to the original theme. Besides, I have recently updated it to match the current 
 * Code Syntax Highlight with [highlight.js](https://highlightjs.org/) (New 06.04.2016)
 * Rss updated to Jekyll 3.0 (New 06.04.2016)
 * Updated to Casper v1.3.7 (same as v1.4.0 that runs in Ghost 1.0) **(New 17.11.2017)**  
+* 'Out of the box' support for Multiple Authors **(New 17.11.2017)**  
 
 ## How to use it
 

@@ -3,7 +3,7 @@ layout: default
 disqus: false
 class: 'post-template'
 ---
-<!-- < default -->
+<!-- default -->
 
 <!-- The comment above "< default" means - insert everything in this file into -->
     <!-- the [body] of the default.hbs template, which contains our header/footer. -->
@@ -28,23 +28,29 @@ class: 'post-template'
             <h1 class="post-title">{{ page.title }}</h1>
             <section class="post-meta">
             <!-- <a href='{{ site.baseurl }}{{ page.about }}'>{{ site.author }}</a> -->
+
+            {% for author in site.authors %}
+                {% if author[1].username == page.author %}
+                    <a href='{{ site.baseurl }}author/{{ page.author }}'>{{ author[1].name }}</a>
+                {% endif %}
+            {% endfor %}
             <time class="post-date" datetime="{{ page.date | date:'%Y-%m-%d' }}">{{ page.date | date_to_string }}</time>
                 <!-- [[tags prefix=" on "]] -->
-                {% if page.tags.size > 0 %} 
-                on 
+                {% if page.tags.size > 0 %}
+                on
                 {% for tag in page.tags %}
                     {% if forloop.index == page.tags.size %}
                        <a href='{{ site.baseurl }}tag/{{ tag }}'>{{ tag | capitalize }}</a>
                     {% else %}
                        <a href='{{ site.baseurl }}tag/{{ tag }}'>{{ tag | capitalize }}</a>,
-                    {% endif %}   
+                    {% endif %}
                 {% endfor %}
                 {% endif %}
             </section>
         </header>
 
         <section class="post-content">
-            
+
             {{ content }}
 
         </section>
@@ -53,50 +59,53 @@ class: 'post-template'
 
             <!-- Everything inside the #author tags pulls data from the author -->
             <!-- #author-->
+            {% for author in site.authors %}
+                {% if author[1].username == page.author %}
+                    {% if author[1].assets %}
+                        <figure class="author-image">
+                            <a class="img" href="{{ site.baseurl }}author/{{ page.author }}" style="background-image: url({{ site.baseurl }}{{ author[1].assets }})"><span class="hidden">{{ page.author }}'s Picture</span></a>
+                        </figure>
+                    {% endif %}
 
-            {% if site.image %}
-            <figure class="author-image">
-                <a class="img" href="{{ site.baseurl }}author/{{ site.nickname }}" style="background-image: url({{ site.baseurl }}{{ site.image }})"><span class="hidden">{{ page.author }}'s Picture</span></a>
-            </figure>
-            {% endif %}
+                    <section class="author">
+                        <h4><a href="{{ site.baseurl }}author/{{ page.author }}">{{ author[1].name }}</a></h4>
 
-            <section class="author">
-                <h4><a href="{{ site.baseurl }}author/{{ site.nickname }}">{{ site.author }}</a></h4>
-                
-                {% if site.bio %}
-                    <p> {{ site.bio }}</p>
-                {% else %}
-                    <p>Read <a href="{{ site.baseurl }}author/{{ site.nickname }}">more posts</a> by this author.</p>
+                        {% if author[1].bio %}
+                            <p> {{ author[1].bio }}</p>
+                        {% else %}
+                            <p>Read <a href="{{ site.baseurl }}author/{{ page.author }}">more posts</a> by this author.</p>
+                        {% endif %}
+                        <div class="author-meta">
+                            {% if author[1].location %}<span class="author-location icon-location"> {{ author[1].location }}</span>{% endif %}
+                            {% if author[1].url %}<span class="author-link icon-link"><a href="{{ author[1].url_full }}"> {{ author[1].url }}</a></span>{% endif %}
+                        </div>
+                    </section>
+
+                    <!-- /author  -->
+
+                    <section class="share">
+                        <h4>Share this post</h4>
+                        <a class="icon-twitter" href="http://twitter.com/share?text={{ page.title }}&amp;url={{ site.url }}{{ page.url | remove: '/' }}"
+                            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                            <span class="hidden">Twitter</span>
+                        </a>
+                        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url | remove: '/' }}"
+                            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                            <span class="hidden">Facebook</span>
+                        </a>
+                        <a class="icon-google-plus" href="https://plus.google.com/share?url={{ site.url }}{{ page.url | remove: '/' }}"
+                           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                            <span class="hidden">Google+</span>
+                        </a>
+                    </section>
                 {% endif %}
-                <div class="author-meta">
-                    {% if site.location %}<span class="author-location icon-location"> {{ site.location }}</span>{% endif %} 
-                    {% if site.url %}<span class="author-link icon-link"><a href="{{ site.url }}"> {{ site.short_url }}</a></span>{% endif %} 
-                </div>
-            </section>
+            {% endfor %}
 
-            <!-- /author  -->
-
-            <section class="share">
-                <h4>Share this post</h4>
-                <a class="icon-twitter" href="http://twitter.com/share?text={{ page.title }}&amp;url={{ site.url }}{{ page.url | remove: '/' }}"
-                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                    <span class="hidden">Twitter</span>
-                </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url | remove: '/' }}"
-                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                    <span class="hidden">Facebook</span>
-                </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url={{ site.url }}{{ page.url | remove: '/' }}"
-                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-                    <span class="hidden">Google+</span>
-                </a>
-            </section>
-            
             <!-- Add Disqus Comments -->
             {% if page.disqus %}
                 {% include disqus.html %}
             {% endif %}
-            
+
         </footer>
 
     </article>

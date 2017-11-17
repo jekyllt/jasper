@@ -25,21 +25,27 @@ current: author
     </header>
 
     <section class="author-profile inner">
-        {% if site.image %}
-        <figure class="author-image">
-            <div class="img" style="background-image: url({{ site.baseurl }}{{ site.image }})"><span class="hidden">{{ site.author }}'s Picture</span></div>
-        </figure>
-        {% endif %}
-        <h1 class="author-title">{{ site.author }}</h1>
-        {% if site.bio %}
-            <h2 class="author-bio">{{ site.bio }}</h2>
-        {% endif %}
-        <div class="author-meta">
-            {% if site.location %}<span class="author-location icon-location">{{ site.location }}</span>{% endif %}
-            {% if site.url %}<span class="author-link icon-link"><a href="{{ site.url }}">{{ site.short_url }}</a></span>{% endif %}
-            <!-- <span class="author-stats"><i class="icon-stats"></i> [[plural ../pagination.total empty='No posts' singular='% post' plural='% posts']]</span> -->
-            <span class="author-stats"><i class="icon-stats"></i>{% if paginator.total_posts == 0 %}No posts{% elsif paginator.total_posts == 1 %}1 post{% else %}{{ paginator.total_posts }} posts{% endif %}</span>
-        </div>
+        {% for author in site.authors %}
+            {% if author[1].username == page.author %}
+                {% if author[1].assets %}
+                <figure class="author-image">
+                    <div class="img" style="background-image: url({{ site.baseurl }}{{ author[1].assets }})"><span class="hidden">{{ author[1].name }}'s Picture</span></div>
+                </figure>
+                {% endif %}
+                <h1 class="author-title">{{ author[1].name }}</h1>
+                {% if author[1].bio %}
+                    <div style="display:inline; text-align: justify; text-justify: inter-word;">
+                        <h2 class="author-bio">{{ author[1].bio }}</h2>
+                    </div>
+                {% endif %}
+                <div class="author-meta">
+                    {% if author[1].location %}<span class="author-location icon-location">{{ author[1].location }}</span>{% endif %}
+                    {% if author[1].url %}<span class="author-link icon-link"><a href="{{ author[1].url_full }}">{{ author[1].url }}</a></span>{% endif %}
+                    <!-- <span class="author-stats"><i class="icon-stats"></i> [[plural ../pagination.total empty='No posts' singular='% post' plural='% posts']]</span> -->
+                    <span class="author-stats"><i class="icon-stats"></i>{% if paginator.total_posts == 0 %}No posts{% elsif paginator.total_posts == 1 %}1 post{% else %}{{ paginator.total_posts }} posts{% endif %}</span>
+                </div>
+            {% endif %}
+        {% endfor %}
     </section>
 <!-- /author -->
 

@@ -15,7 +15,6 @@ class: 'page-template'
         {% if page.logo %}<a class="blog-logo" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}{{ page.logo }}" alt="Blog Logo" /></a>{% endif %}
         {% if page.navigation %}
             <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
-            {{ include navigation.html }}
         {% endif %}
     </nav>
 </header>
@@ -29,10 +28,9 @@ class: 'page-template'
         </header>
 
         <section class="post-content">
-            {{content}}
+            {{ content }}
         </section>
 
     </article>
-
 </main>
 <!-- /post -->

@@ -1,8 +1,7 @@
 ---
 layout: page
 title: About
-class: 'post'
-navigation: True
+navigation: true
 logo: 'assets/images/ghost.png'
 current: about
 ---
