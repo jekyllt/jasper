@@ -67,13 +67,6 @@ namespace :site do
     sha = `git log`.match(/[a-z0-9]{40}/)[0]
     Dir.chdir(CONFIG["destination"]) do
       # check if there is anything to add and commit, and pushes it
-      # If there are no changes to the compiled out (e.g. this is a README update) then just bail.
-      sh
-      "if [ -z `git diff --exit-code` ]; then
-          echo "No changes to the output on this push; exiting."
-          exit 0
-      fi"
-
       sh "if [ -n '$(git status)' ]; then
             git add --all .;
             git commit -m 'Updating to #{USERNAME}/#{REPO}@#{sha}.';
