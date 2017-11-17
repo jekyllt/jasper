@@ -27,11 +27,11 @@
     $.fn.arctic_scroll = function (options) {
 
         var defaults = {
-                elem: $(this),
-                speed: 500
-            },
+            elem: $(this),
+            speed: 500
+        },
 
-            allOptions = $.extend(defaults, options);
+        allOptions = $.extend(defaults, options);
 
         allOptions.elem.click(function (event) {
             event.preventDefault();

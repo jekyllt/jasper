@@ -4,10 +4,10 @@
 [![Ruby](https://img.shields.io/badge/ruby-2.1.1-blue.svg?style=flat)](http://travis-ci.org/biomadeira/jasper)
 [![Jekyll](https://img.shields.io/badge/jekyll-3.0.0-blue.svg?style=flat)](http://travis-ci.org/biomadeira/jasper)
 
-This is a port of Ghost's default theme [Casper](https://github.com/tryghost/casper) for Jekyll inspired by [Kasper](https://github.com/rosario/kasper). 
+This is a port of Ghost's default theme [Casper](https://github.com/tryghost/casper) for Jekyll inspired by [Kasper](https://github.com/rosario/kasper).
 
-You might well ask at this point why bother making a new Casper's clone? 
-Although this is inspired by Kasper, there are several **additional** features which make this port closer 
+You might well ask at this point why bother making a new Casper's clone?
+Although this is inspired by Kasper, there are several **additional** features which make this port closer
 to the original theme. Besides, I have recently updated it to match the current version of the theme.
 
 
@@ -41,6 +41,9 @@ to the original theme. Besides, I have recently updated it to match the current 
 ## Jasper theme includes
 
 * Pagination
+* Google Analytics tracking
+* Author's profile with picture
+* Disqus comments (not Ghost standard)
 * Author page (New 07.02.2015)
 * Tag page(s) (New 07.02.2015)
 * 404 page (New 07.02.2015)
@@ -48,11 +51,9 @@ to the original theme. Besides, I have recently updated it to match the current 
 * Related posts view (New 30.10.2015)
 * Tag description(s) (New 30.10.2015)
 * Code Syntax Highlight (New 24.11.2015)
-* Code Syntax Highlight with [highlight.js](https://highlightjs.org/) **(New 06.04.2016)**
-* Rss updated to Jekyll 3.0 **(New 06.04.2016)** 
-* Google Analytics tracking
-* Author's profile with picture
-* Disqus comments (not Ghost standard)
+* Code Syntax Highlight with [highlight.js](https://highlightjs.org/) (New 06.04.2016)
+* Rss updated to Jekyll 3.0 (New 06.04.2016)
+* Updated to Casper v1.3.7 (same as v1.4.0 that runs in Ghost 1.0) **(New 17.11.2017)**  
 
 ## How to use it
 
@@ -74,13 +75,13 @@ For option **2)** you will need to set up travis-ci for your personal fork. Brie
 As discussed [here](https://github.com/biomadeira/jasper/issues/3), in order to properly generate author pages you need to rename the field *categories* in the front matter of every post to match that of your *username* as defined in the *[\_config.yml](_config.yml)* file.
 This probably means that with a bit of hacking you could in principle generate multiple author blogs. Check this [link](https://github.com/biomadeira/jasper/issues/10) for more on working with multiple authors...
 
-## Issues and contributing 
+## Issues and contributing
 
 This install builds well with Ruby v2.1.1 and Jekyll v3.0.0. If you run into any problems please log them on the [issue tracker](https://github.com/biomadeira/jasper/issues).
 
 Feel free pull-request your patches and fixes.
 
-## Thanks 
+## Thanks
 
 
 Many thanks to the Ghost team for all the design work that allows to make this clone possible. Also many thanks to all contributors, that help keeping the project alive and updated :smile:
@@ -96,4 +97,3 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
 NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
