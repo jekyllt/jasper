@@ -8,7 +8,7 @@ This is a port of Ghost's default theme [Casper](https://github.com/tryghost/cas
 
 You might well ask at this point why bother making a new Casper's clone?
 Although this is inspired by Kasper, there are several **additional** features which make this port closer
-to the original theme. Besides, I have recently updated it to match the current version of the theme.
+to the original theme. This port is based on the last Casper v1.3.7 (same as v1.4.0 that runs in Ghost 1.0). 
 
 
 ## Live demo
@@ -52,15 +52,15 @@ to the original theme. Besides, I have recently updated it to match the current 
 * Tag description(s) (New 30.10.2015)
 * Code Syntax Highlight (New 24.11.2015)
 * Code Syntax Highlight with [highlight.js](https://highlightjs.org/) (New 06.04.2016)
-* Rss updated to Jekyll 3.0 (New 06.04.2016)
-* Updated to Casper v1.3.7 (same as v1.4.0 that runs in Ghost 1.0) **(New 17.11.2017)**  
+* Rss updated to Jekyll v3 (New 06.04.2016)
+* Updated to Casper v1.3.7 **(New 17.11.2017)**  
 * 'Out of the box' support for Multiple Authors **(New 17.11.2017)**  
 
 ## How to use it
 
 ### Deployment
 
-**Important:**  For security reasons, Github doesn't allow plugins (under _plugins/) when deploying with Github Pages. This means:
+**Important:**  For security reasons, Github does not allow plugins (under _plugins/) when deploying with Github Pages. This means:
 
 **1)** that we need to generate your site locally (more details below) and push the resulting HTML to a Github repository;
 
@@ -73,12 +73,12 @@ For option **2)** you will need to set up travis-ci for your personal fork. Brie
 
 ### Author pages
 
-As discussed [here](https://github.com/biomadeira/jasper/issues/3), in order to properly generate author pages you need to rename the field *categories* in the front matter of every post to match that of your *username* as defined in the *[\_config.yml](_config.yml)* file.
-This probably means that with a bit of hacking you could in principle generate multiple author blogs. Check this [link](https://github.com/biomadeira/jasper/issues/10) for more on working with multiple authors...
+In order to properly generate author pages you need to rename the field *categories* in the front matter of every post to match that of your each author *username* as defined in the *[\_config.yml](_config.yml)* file.
+With the latest update, multiple author blogs are now supported out of the box. 
 
 ## Issues and contributing
 
-This install builds well with Ruby v2.1.1 and Jekyll v3.0.0. If you run into any problems please log them on the [issue tracker](https://github.com/biomadeira/jasper/issues).
+This install builds well with Ruby v2.4.2 and Jekyll v3.6.2. If you run into any problems please log them on the [issue tracker](https://github.com/biomadeira/jasper/issues).
 
 Feel free pull-request your patches and fixes.
 
@@ -90,7 +90,9 @@ Many thanks to the Ghost team for all the design work that allows to make this c
 
 ## Copyright & License
 
-Copyright (C) 2015 - Released under the MIT License.
+Same licence as the one provided by Ghost's team. See Casper's theme [license](GHOST.txt).
+
+Copyright (C) 2015-2017 - Released under the MIT License.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
