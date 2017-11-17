@@ -2,8 +2,7 @@ sudo: false
 language: ruby
 cache: bundler
 rvm:
-#- 2.1
-- 2.1.1
+- 2.4.2
 
 install:
   # Install Jekyll and dependencies
@@ -22,4 +21,3 @@ env:
 branches:
   only:
     - master
-
