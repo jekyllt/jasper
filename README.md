@@ -1,6 +1,6 @@
 ## Jasper
 
-[![Build Status](https://travis-ci.org/myjekyll/jasper.svg?branch=master)](https://travis-ci.org/myjekyll/jasper)
+[![Build Status](https://travis-ci.org/myJekyll/jasper.svg?branch=master)](https://travis-ci.org/myjekyll/jasper)
 [![Ruby](https://img.shields.io/badge/ruby-2.5.2-blue.svg?style=flat)](http://travis-ci.org/myjekyll/jasper)
 [![Jekyll](https://img.shields.io/badge/jekyll-3.6.2-blue.svg?style=flat)](http://travis-ci.org/myjekyll/jasper)
 
@@ -8,7 +8,7 @@ This is a port of Ghost's default theme [Casper](https://github.com/tryghost/cas
 
 You might well ask at this point why bother making a new Casper's clone?
 Although this is inspired by Kasper, there are several **additional** features which make this port closer
-to the original theme. This port is based on the last Casper v1.3.7 (same as v1.4.0 that runs in Ghost 1.0). 
+to the original theme. This port is based on the last Casper v1.3.7 (same as v1.4.0 that runs in Ghost 1.0).
 
 
 ## Live demo
@@ -74,7 +74,7 @@ For option **2)** you will need to set up travis-ci for your personal fork. Brie
 ### Author pages
 
 In order to properly generate author pages you need to rename the field *categories* in the front matter of every post to match that of your each author *username* as defined in the *[\_config.yml](_config.yml)* file.
-With the latest update, multiple author blogs are now supported out of the box. 
+With the latest update, multiple author blogs are now supported out of the box.
 
 ## Issues and contributing
 
