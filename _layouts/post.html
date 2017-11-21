@@ -29,7 +29,7 @@ class: 'post-template'
             <section class="post-meta">
             <!-- <a href='{{ site.baseurl }}{{ page.about }}'>{{ site.author }}</a> -->
 
-            {% for author in site.authors %}
+            {% for author in site.data.authors %}
                 {% if author[1].username == page.author %}
                     <a href='{{ site.baseurl }}author/{{ page.author }}'>{{ author[1].name }}</a>
                 {% endif %}
@@ -59,7 +59,7 @@ class: 'post-template'
 
             <!-- Everything inside the #author tags pulls data from the author -->
             <!-- #author-->
-            {% for author in site.authors %}
+            {% for author in site.data.authors %}
                 {% if author[1].username == page.author %}
                     {% if author[1].assets %}
                         <figure class="author-image">

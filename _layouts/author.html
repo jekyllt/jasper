@@ -25,7 +25,7 @@ current: author
     </header>
 
     <section class="author-profile inner">
-        {% for author in site.authors %}
+        {% for author in site.data.authors %}
             {% if author[1].username == page.author %}
                 {% if author[1].assets %}
                 <figure class="author-image">
