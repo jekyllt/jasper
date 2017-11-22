@@ -10,6 +10,7 @@ You might well ask at this point why bother making a new Casper's clone?
 Although this is inspired by Kasper, there are several **additional** features which make this port closer
 to the original theme. This port is based on the last Casper v1.3.7 (same as v1.4.0 that runs in Ghost 1.0).
 
+**New:** Check out **[Jasper2](https://github.com/myJekyll/jasper2)**, a new port of Casper version 2!
 
 ## Live demo
 
