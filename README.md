@@ -1,8 +1,8 @@
 ## Jasper
 
-[![Build Status](https://travis-ci.org/myJekyll/jasper.svg?branch=master)](https://travis-ci.org/myjekyll/jasper)
-[![Ruby](https://img.shields.io/badge/ruby-2.5.2-blue.svg?style=flat)](http://travis-ci.org/myjekyll/jasper)
-[![Jekyll](https://img.shields.io/badge/jekyll-3.6.2-blue.svg?style=flat)](http://travis-ci.org/myjekyll/jasper)
+[![Build Status](https://travis-ci.org/myJekyll/jasper.svg?branch=master)](https://travis-ci.org/myJekyll/jasper)
+[![Ruby](https://img.shields.io/badge/ruby-2.5.2-blue.svg?style=flat)](http://travis-ci.org/myJekyll/jasper)
+[![Jekyll](https://img.shields.io/badge/jekyll-3.6.2-blue.svg?style=flat)](http://travis-ci.org/myJekyll/jasper)
 
 This is a port of Ghost's default theme [Casper](https://github.com/tryghost/casper) for Jekyll inspired by [Kasper](https://github.com/rosario/kasper).
 
