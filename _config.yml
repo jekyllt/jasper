@@ -23,7 +23,6 @@ permalink: /:title
 
 # gems and other configs
 plugins: [jekyll-paginate]
-exclude: [vendor]
 
 # Additional settings available on the front-matter
 # Site logo in the index.html (as in demo.ghost.io)
@@ -63,3 +62,5 @@ exclude:
   - "*.Rmd"
   - vendor
   - .travis.yml
+  - node_modules
+  - .git
