@@ -1,8 +1,8 @@
 ## Jasper
 
-[![Build Status](https://travis-ci.org/myJekyll/jasper.svg?branch=master)](https://travis-ci.org/myJekyll/jasper)
-[![Ruby](https://img.shields.io/badge/ruby-2.5.2-blue.svg?style=flat)](http://travis-ci.org/myJekyll/jasper)
-[![Jekyll](https://img.shields.io/badge/jekyll-3.6.2-blue.svg?style=flat)](http://travis-ci.org/myJekyll/jasper)
+[![Build Status](https://travis-ci.org/jekyller/jasper.svg?branch=master)](https://travis-ci.org/jekyller/jasper)
+[![Ruby](https://img.shields.io/badge/ruby-2.5.2-blue.svg?style=flat)](http://travis-ci.org/jekyller/jasper)
+[![Jekyll](https://img.shields.io/badge/jekyll-3.6.2-blue.svg?style=flat)](http://travis-ci.org/jekyller/jasper)
 
 This is a port of Ghost's default theme [Casper](https://github.com/tryghost/casper) for Jekyll inspired by [Kasper](https://github.com/rosario/kasper).
 
@@ -10,11 +10,11 @@ You might well ask at this point why bother making a new Casper's clone?
 Although this is inspired by Kasper, there are several **additional** features which make this port closer
 to the original theme. This port is based on the last Casper v1.3.7 (same as v1.4.0 that runs in Ghost 1.0).
 
-**New:** Check out **[Jasper2](https://github.com/myJekyll/jasper2)**, a new port of Casper version 2!
+**New:** Check out **[Jasper2](https://github.com/jekyller/jasper2)**, a new port of Casper version 2!
 
 ## Live demo
 
-[Jasper Live Demo](https://myjekyll.github.io/jasper)
+[Jasper Live Demo](https://jekyller.github.io/jasper)
 
 [Casper's Original Here](https://demo.ghost.io)
 
@@ -22,22 +22,22 @@ to the original theme. This port is based on the last Casper v1.3.7 (same as v1.
 ## Screenshots
 
 **Home page**
-![home page](https://raw.githubusercontent.com/myjekyll/jasper/master/assets/images/jasper_screen1.png)
+![home page](https://raw.githubusercontent.com/jekyller/jasper/master/assets/images/jasper_screen1.png)
 
 **Post page**
-![post page](https://raw.githubusercontent.com/myjekyll/jasper/master/assets/images/jasper_screen2.png)
+![post page](https://raw.githubusercontent.com/jekyller/jasper/master/assets/images/jasper_screen2.png)
 
 **Author page**
-![author page](https://raw.githubusercontent.com/myjekyll/jasper/master/assets/images/jasper_screen3.png)
+![author page](https://raw.githubusercontent.com/jekyller/jasper/master/assets/images/jasper_screen3.png)
 
 **Related posts page**
-![tag page](https://raw.githubusercontent.com/myjekyll/jasper/master/assets/images/jasper_screen4.png)
+![tag page](https://raw.githubusercontent.com/jekyller/jasper/master/assets/images/jasper_screen4.png)
 
 **Tags page with opened sidebar**
-![sidebar page](https://raw.githubusercontent.com/myjekyll/jasper/master/assets/images/jasper_screen5.png)
+![sidebar page](https://raw.githubusercontent.com/jekyller/jasper/master/assets/images/jasper_screen5.png)
 
 **404 page**
-![related page](https://raw.githubusercontent.com/myjekyll/jasper/master/assets/images/jasper_screen6.png)
+![related page](https://raw.githubusercontent.com/jekyller/jasper/master/assets/images/jasper_screen6.png)
 
 ## Jasper theme includes
 
@@ -68,7 +68,7 @@ to the original theme. This port is based on the last Casper v1.3.7 (same as v1.
 **2)** built the site with [travis-ci](https://travis-ci.org/) (with goodies from [jekyll-travis](https://github.com/mfenner/jekyll-travis)) automatically pushing the generated *_site/* files to your *gh-pages* branch.
  This later approach is the one I am currently using to generate the live demo.
 
-For option **1)** simply clone this repository (*master branch*), and then run `bundle exec jekyll serve` inside the directory. Upload the resulting *_site/* contents to your repository (*master branch* if uploading as your personal page (username.github.io) or *gh-pages branch* if uploading as a project page (as for the [demo](https://github.com/myjekyll/jasper/tree/gh-pages)).
+For option **1)** simply clone this repository (*master branch*), and then run `bundle exec jekyll serve` inside the directory. Upload the resulting *_site/* contents to your repository (*master branch* if uploading as your personal page (username.github.io) or *gh-pages branch* if uploading as a project page (as for the [demo](https://github.com/jekyller/jasper/tree/gh-pages)).
 
 For option **2)** you will need to set up travis-ci for your personal fork. Briefly all you need then is to change your details in *[\_config.yml](_config.yml)* so that you can push to your github repo. You will also need to generate a secure key to add to your *[.travis.yml](.travis.yml)* (you can find more info on how to do it in that file). Also make sure you read the documentation from [jekyll-travis](https://github.com/mfenner/jekyll-travis). This approach has clear advantages in that you simply push changes to your files and all the html files are generated for you. Also you get to know if everything is still fine with your site builds. Don't hesitate to contact me if you still have any issues (see below about issue tracking).
 
@@ -79,7 +79,7 @@ With the latest update, multiple author blogs are now supported out of the box.
 
 ## Issues and contributing
 
-This install builds well with Ruby v2.4.2 and Jekyll v3.6.2. If you run into any problems please log them on the [issue tracker](https://github.com/myjekyll/jasper/issues).
+This install builds well with Ruby v2.4.2 and Jekyll v3.6.2. If you run into any problems please log them on the [issue tracker](https://github.com/jekyller/jasper/issues).
 
 Feel free pull-request your patches and fixes.
 
