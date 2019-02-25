@@ -19,7 +19,7 @@ baseurl: /
 
 # Permalinks
 permalink: /:title
-permalink: /author/:
+permalink: /author/:roseline
 # permalink: /tag/:tag
 
 # gems and other configs
@@ -49,11 +49,12 @@ lsi: false
 username: djangoHY
 repo: djangoHY.github.io
 branch: master
-# relative_source: ../jasper/
-relative_source: ../master/
+relative_source: ../jasper/
+# relative_source: ../master/
 destination: ../jasper-pages/
 # production_url:  https://djangoHY.github.io/jasper/
-production_url:  https://djangoHY.github.io/master/
+production_url:  https://djangoHY.github.io/
+# production_url:  https://djangoHY.github.io/master/
 source_url:  https://github.com/djangoHY/djangoHY.github.io/
 
 exclude:
