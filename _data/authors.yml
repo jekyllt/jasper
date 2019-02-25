@@ -6,33 +6,41 @@ roseline:
   url: djangoHY.github.io/
   bio: one more scoop의 스터디 djang입니다 :) 
   assets: assets/images/casper.png
-lewis:
-  username: lewis
-  name: Lewis Carroll
+rldhks:
+  username: rldhks
+  name: rldhks
   location: Cheshire, England
   url_full: http://jekyller.github.io/jasper/
   url: jekyller.github.io/jasper
   bio: My real name is Charles Lutwidge Dodgson, but people call me Lewis. I'm an English writer, mathematician, logician, Anglican deacon and photographer. People know me best for writing about Alice.
   assets: assets/images/lewis.jpeg
-abraham:
-  username: abraham
-  name: Abraham Lincoln
+yosub:
+  username: yosub
+  name: yosub
   location: Kentucky, USA
   url_full: http://jekyller.github.io/jasper/
   url: jekyller.github.io/jasper
   bio: I was the 16th president of the USA until I was assassinated in April of 1963. I led the US through its Civil War - its bloodiest and greatest moral, constitutional and political crisis.
   assets: assets/images/abraham.jpg
-edgar:
-  username: edgar
-  name: Edgar Rice Burroughs
+chayeon:
+  username: chayeon
+  name: chayeon
   location: Chicago, Illinois
   url_full: http://jekyller.github.io/jasper/
   url: jekyller.github.io/jasper
   bio: I'm an American novelist, best known for my work writing about a brave jungle hero called Tarzan and his muse, Jane.
   assets: assets/images/edgar.gif
-martin:
-  username: martin
-  name: Martin Luther King
+doo:
+  username: doo
+  name: doo
+  location: Memphis, Tennessee
+  url_full: http://jekyller.github.io/jasper/
+  url: jekyller.github.io/jasper
+  bio: An American pastor, activist, humanitarian. People know me for leading the African-American Civil Rights movement using nonviolent civil disobedience.
+  assets: assets/images/martin.jpg
+kondae:
+  username: kondae
+  name: kondae
   location: Memphis, Tennessee
   url_full: http://jekyller.github.io/jasper/
   url: jekyller.github.io/jasper
