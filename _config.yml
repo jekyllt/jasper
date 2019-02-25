@@ -19,7 +19,7 @@ baseurl: /
 
 # Permalinks
 permalink: /:title
-# permalink: /author/:roseline
+permalink: /author/:roseline
 # permalink: /tag/:tag
 
 # gems and other configs
