@@ -4,15 +4,15 @@
 markdown: kramdown
 highlighter: rouge
 paginate: 5
-language: 'en-uk'
+language: 'ko'
 
 # Website info
-name: 'Finding The Way Home'
-description: "A beautiful narrative written with the world's most elegant publishing platform. The story begins here."
+name: 'One More Scoop'
+description: "Django Study in Hanyang University"
 
-short_url: 'jekyller.github.io/jasper/'
+short_url: 'djangoHY.github.io/jasper/'
 google_analytics: UA-69281367-1
-disqus: username
+disqus: djangoHY
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
 baseurl: /jasper/
 
