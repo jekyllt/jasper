@@ -50,8 +50,8 @@ username: djangoHY
 repo: djangoHY.github.io
 branch: master
 relative_source: ../master/
-destination: ../jasper-pages/
-# destination: ../master-pages/
+# destination: ../jasper-pages/
+destination: ../master-pages/
 production_url:  https://djangoHY.github.io/
 source_url:  https://github.com/djangoHY/djangoHY.github.io/
 
