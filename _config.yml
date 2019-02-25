@@ -20,7 +20,7 @@ baseurl: /
 
 # Permalinks
 permalink: /:title
-# permalink: /author/:username
+permalink: /author/:Roseline-Song
 # permalink: /tag/:tag
 
 # gems and other configs
