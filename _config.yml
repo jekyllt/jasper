@@ -49,9 +49,11 @@ lsi: false
 username: djangoHY
 repo: djangoHY.github.io
 branch: master
-relative_source: ../jasper/
+# relative_source: ../jasper/
+relative_source: ../master/
 destination: ../jasper-pages/
-production_url:  https://djangoHY.github.io/jasper/
+# production_url:  https://djangoHY.github.io/jasper/
+production_url:  https://djangoHY.github.io/master/
 source_url:  https://github.com/djangoHY/djangoHY.github.io/
 
 exclude:
