@@ -46,6 +46,7 @@ audio:not([controls]) { display: none; height: 0; }
 a { background-color: transparent;}
 a:active, a:hover { outline: 0; }
 abbr[title] { border-bottom: 1px dotted; }
+p {font-family: 'Noto Sans KR';}
 b, strong { font-weight: bold; }
 dfn { font-style: italic; }
 h1 { font-size: 2em; margin: 0.67em 0; }
