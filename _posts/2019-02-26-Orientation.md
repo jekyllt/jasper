@@ -1,7 +1,7 @@
 ---
 layout: post
 cover: 'assets/images/cover1.jpg'
-navigation: false
+navigation: True
 title: Orientation
 tags: django study 
 subclass: 'post tag-test tag-content'
