@@ -47,13 +47,13 @@ plugins: [jekyll-paginate]
 # or "master" otherwise
 safe: false
 lsi: false
-username: jekyller
-repo: jasper
+username: djangoHY
+repo: djangoHY.github.io
 branch: master
 relative_source: ../jasper/
 destination: ../jasper-pages/
 production_url:  https://djangoHY.github.io/jasper/
-source_url:  https://github.com/djangoHY/jasper/
+source_url:  https://github.com/djangoHY/djangoHY.github.io/
 
 exclude:
   - README.md
