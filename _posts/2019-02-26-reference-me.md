@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: 'assets/images/cover1.jpg'
+cover: 'assets/images/cover3.jpg'
 navigation: True
 title: Mark Down 참고
 date: 2019-02-26 12:18:00
@@ -8,7 +8,6 @@ date: 2019-02-26 12:18:00
 <!-- subclass: 'post tag-test tag-content' -->
 logo: 'assets/images/ghost.png'
 author: roseline
-categories: roseline
 ---
 
 <p>This is just an <em>ipsis verbis</em> copy of the first example running on the <a href="http://demo.ghost.io">Ghost Demo</a>. This shows how you can use html styling to achieve your hopes.</p>
