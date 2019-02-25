@@ -3,6 +3,8 @@ layout: post
 cover: 'assets/images/cover1.jpg'
 navigation: false
 title: Orientation
+tag: django study 
+subclass: 'post tag-test tag-content'
 date: 2019-02-25 17:33:00
 author: roseline
 categories: roseline
