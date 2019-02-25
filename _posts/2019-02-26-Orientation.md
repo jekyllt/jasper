@@ -51,6 +51,20 @@ Django의 기본적인 것부터, ORM이나 REST API와 같이 좀 더 심화된
 10. ???
   </p>
 </font>
+
+<br>
+<br>
+<br>
+
+**이론 참고**
+1. 책 : Two Scoop of Django
+2. [django 공식문서(영/한)](https://docs.djangoproject.com/ko/2.1/)
+3. [Django Book](https://djangobook.com/)
+5. [Djangogirls Tutorial(한글)](https://tutorial.djangogirls.org/ko/)
+5. [Django ORM COOK BOOK(한글)](https://django-orm-cookbook-ko.readthedocs.io/en/latest/)
+4. [초보몽키 개발 블로그](https://wayhome25.github.io/blog/categories/#django) 
+ 
+
   
 <br>
 <br>
