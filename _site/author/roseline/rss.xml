@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>biomadeira.github.io/jasper/</title>
+   
+   <link>http://biomadeira.github.io/jasper/</link>
+   <description>A beautiful narrative written with the world's most elegant publishing platform. The story begins here.</description>
+   <language>en-uk</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>A Full and Comprehensive Style Test</title>
+	  <link>/jasper//a-full-and-comprehensive-style-test</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2014-09-27T11:18:00+01:00</pubDate>
+	  <guid>/jasper//a-full-and-comprehensive-style-test</guid>
+	  <description><![CDATA[
+	     <p>This is just an <em>ipsis verbis</em> copy of the first example running on the <a href="http://demo.ghost.io">Ghost Demo</a>. This shows how you can use html styling to achieve your hopes.</p>
+
+
+<p>Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.</p>
+
+
+<hr />
+
+<h1 id="heading1">Heading 1</h1>
+
+<h2 id="heading2">Heading 2</h2>
+
+<h3 id="heading3">Heading 3</h3>
+
+<h4 id="heading4">Heading 4</h4>
+
+<h5 id="heading5">Heading 5</h5>
+
+<h6 id="heading6">Heading 6</h6>
+
+<hr />
+
+<p>Lorem ipsum dolor sit amet, <a title="test link" href="#">test link</a> adipiscing elit. <strong>This is strong.</strong> Nullam dignissim convallis est. Quisque aliquam. <em>This is emphasized.</em> Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. <cite>The New York Times</cite> (That’s a citation). <span style="text-decoration:underline;">Underline.</span> Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+
+<p><abbr title="Hyper Text Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr> are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.  Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. To copy a file type <code>COPY <var>filename</var></code>. <del>Dinner’s at 5:00.</del> <ins>Let’s make that 7.</ins> This <span style="text-decoration:line-through;">text</span> has been struck.</p>
+
+<hr />
+
+<h2 id="media">Media</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+
+<h3 id="bigimage">Big Image</h3>
+
+<p><img src="http://demo.ghost.io/content/images/2014/09/testimg1.jpeg" alt="Test Image" /></p>
+
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<h3 id="smallimage">Small Image</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+
+<p><img src="http://demo.ghost.io/content/images/2014/09/testimg2.jpg" alt="Small Test Image" /></p>
+
+<p>Labore et dolore.</p>
+
+<hr />
+
+<h2 id="listtypes">List Types</h2>
+
+<h3 id="definitionlist">Definition List</h3>
+
+<dl>  
+<dt>Definition List Title</dt>  
+<dd>This is a definition list division.</dd>  
+<dt>Definition</dt>  
+<dd>An exact statement or description of the nature, scope, or meaning of something: <em>our definition of what constitutes poetry.</em></dd>  
+</dl>
+
+<h3 id="orderedlist">Ordered List</h3>
+
+<ol>
+<li>List Item 1  </li>
+<li>List Item 2 <br />
+<ol><li>Nested list item A</li>
+<li>Nested list item B</li></ol></li>
+<li>List Item 3</li>
+</ol>
+
+<h3 id="unorderedlist">Unordered List</h3>
+
+<ul>
+<li>List Item 1</li>
+<li>List Item 2
+<ul><li>Nested list item A</li>
+<li>Nested list item B</li></ul></li>
+<li>List Item 3</li>
+</ul>
+
+<hr />
+
+<h2 id="table">Table</h2>
+
+<table>  
+<tbody>  
+<tr>  
+<th>Table Header 1</th>  
+<th>Table Header 2</th>  
+<th>Table Header 3</th>  
+</tr>  
+<tr>  
+<td>Division 1</td>  
+<td>Division 2</td>  
+<td>Division 3</td>  
+</tr>  
+<tr class="even">  
+<td>Division 1</td>  
+<td>Division 2</td>  
+<td>Division 3</td>  
+</tr>  
+<tr>  
+<td>Division 1</td>  
+<td>Division 2</td>  
+<td>Division 3</td>  
+</tr>  
+</tbody>  
+</table>
+
+<hr />
+
+<h2 id="preformattedtext">Preformatted Text</h2>
+
+<p>Typographically, preformatted text is not the same thing as code. Sometimes, a faithful execution of the text requires preformatted text that may not have anything to do with code. Most browsers use Courier and that’s a good default — with one slight adjustment, Courier 10 Pitch over regular Courier for Linux users.</p>
+
+<h3 id="code">Code</h3>
+
+<p>Code can be presented inline, like <code>&lt;?php bloginfo('stylesheet_url'); ?&gt;</code>, or within a <code>&lt;pre&gt;</code> block. Because we have more specific typographic needs for code, we’ll specify Consolas and Monaco ahead of the browser-defined monospace font.</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#container</span> <span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">-240px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<hr />
+
+<h2 id="blockquotes">Blockquotes</h2>
+
+<p>Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
+
+<blockquote>
+  <p>Good afternoon, gentlemen. I am a HAL 9000 computer. I became operational at the H.A.L. plant in Urbana, Illinois on the 12th of January 1992. My instructor was Mr. Langley, and he taught me to sing a song. If you’d like to hear it I can sing it for you. <cite>— <a href="http://en.wikipedia.org/wiki/HAL_9000">HAL 9000</a></cite></p>
+</blockquote>
+
+<p>And here’s a bit of trailing text.</p>
+
+<hr />
+
+<h2 id="textlevelsemantics">Text-level semantics</h2>
+
+<p>The <a href="#">a element</a> example <br />
+The <abbr>abbr element</abbr> and <abbr title="Title text">abbr element with title</abbr> examples <br />
+The <b>b element</b> example <br />
+The <cite>cite element</cite> example <br />
+The <code>code element</code> example <br />
+The <del>del element</del> example <br />
+The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn> examples <br />
+The <em>em element</em> example <br />
+The <i>i element</i> example <br />
+The <ins>ins element</ins> example <br />
+The <kbd>kbd element</kbd> example <br />
+The <mark>mark element</mark> example <br />
+The <q>q element <q>inside</q> a q element</q> example <br />
+The <s>s element</s> example <br />
+The <samp>samp element</samp> example <br />
+The <small>small element</small> example <br />
+The <span>span element</span> example <br />
+The <strong>strong element</strong> example <br />
+The <sub>sub element</sub> example <br />
+The <sup>sup element</sup> example <br />
+The <var>var element</var> example <br />
+The <u>u element</u> example</p>
+
+<hr />
+
+<h2 id="forms">Forms</h2>
+
+<form>  
+<fieldset>  
+<legend>Inputs as descendents of labels (form legend)</legend>  
+<label>  
+<b>Text input</b>  
+<input type="text" value="default value">  
+</label>  
+<label>  
+<b>Email input</b>  
+<input type="email">  
+</label>  
+<label>  
+<b>Search input</b>  
+<input type="search">  
+</label>  
+<label>  
+<b>Tel input</b>  
+<input type="tel">  
+</label>  
+<label>  
+<b>URL input</b>  
+<input type="url" placeholder="http://">  
+</label>  
+<label>  
+<b>Password input</b>  
+<input type="password" value="password">  
+</label>  
+<label>  
+<b>File input</b>  
+<input type="file">  
+</label>  
+<label>  
+<b>Radio input</b>  
+<input type="radio" name="rad">  
+</label>  
+<label>  
+<b>Checkbox input</b>  
+<input type="checkbox">  
+</label>  
+<label>  
+<input type="radio" name="rad"> Radio input  
+</label>  
+<label>  
+<input type="checkbox"> Checkbox input  
+</label>  
+<label>  
+<b>Select field</b>  
+<select>  
+<option>Option 01</option>  
+<option>Option 02</option>  
+</select>  
+</label>  
+<label>  
+<b>Textarea</b>  
+<textarea cols="30" rows="5" >Textarea text</textarea>  
+</label>  
+</fieldset> 
+
+<fieldset>  
+<legend>Clickable inputs and buttons</legend>  
+<input type="image" src="http://placekitten.com/90/24" alt="Image (input)">  
+<input type="reset" value="Reset (input)">  
+<input type="button" value="Button (input)">  
+<input type="submit" value="Submit (input)">  
+<button type="reset">Reset (button)</button>  
+<button type="button">Button (button)</button>  
+<button type="submit">Submit (button)</button>  
+</fieldset> 
+
+<fieldset id="boxsize">  
+<legend>box-sizing tests</legend>  
+<div><input type="text" value="text"></div>  
+<div><input type="email" value="email"></div>  
+<div><input type="search" value="search"></div>  
+<div><input type="url" value="http://example.com"></div>  
+<div><input type="password" value="password"></div> 
+
+<div><input type="color" value="#000000"></div>  
+<div><input type="number" value="5"></div>  
+<div><input type="range" value="10"></div>  
+<div><input type="date" value="1970-01-01"></div>  
+<div><input type="month" value="1970-01"></div>  
+<div><input type="week" value="1970-W01"></div>  
+<div><input type="time" value="18:23"></div>  
+<div><input type="datetime" value="1970-01-01T00:00:00Z"></div>  
+<div><input type="datetime-local" value="1970-01-01T00:00"></div> 
+
+<div><input type="radio"></div>  
+<div><input type="checkbox"></div> 
+
+<div><select><option>Option 01</option><option>Option 02</option></select></div>  
+<div><textarea cols="30" rows="5" >Textarea text</textarea></div> 
+
+<div><input type="image" src="http://placekitten.com/90/24" alt="Image (input)"></div>  
+<div><input type="reset" value="Reset (input)"></div>  
+<div><input type="button" value="Button (input)"></div>  
+<div><input type="submit" value="Submit (input)"></div> 
+
+<div><button type="reset">Reset (button)</button></div>  
+<div><button type="button">Button (button)</button></div>  
+<div><button type="submit">Submit (button)</button></div>  
+</fieldset>  
+</form>
+
+<hr />
+
+<h2 id="embeds">Embeds</h2>
+
+<p>Sometimes all you want to do is embed a little love from another location and set your post alive.</p>
+
+<h3 id="video">Video</h3>
+
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+<iframe src="//player.vimeo.com/video/103224792?title=0&amp;byline=0&amp;portrait=0" width="600" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p>Culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<h3 id="slides">Slides</h3>
+
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+<script async class="speakerdeck-embed" data-id="34d2856027ce01316b5d621ab8e7d421" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
+<p>Culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<h3 id="audio">Audio</h3>
+
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/169381837&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+<p>Culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<h3 id="code">Code</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+
+<p><div data-height="268" data-theme-id="0" data-slug-hash="bcqhe" data-default-tab="js" data-user="rglazebrook" class='codepen'></p>
+
+<pre><code>var c = new Sketch.create({autoclear: false}),
+    bigCircle = 50,
+    littleCircle = 5,
+    // The velocity value determines how much to move the spinner head (in radians).
+    velocity = 0.105,
+    hue = 0,
+    // The alpha value below determines the length of the spinner&#39;s tail.
+    bg = &#39;rgba(40,40,40,.075)&#39;;
+    Spinner = function() {};
+
+Spinner.prototype.setup = function() {
+  this.x = c.width / 2;
+  this.y = c.height / 2 - bigCircle;
+  this.rotation = 0;
+}
+Spinner.prototype.update = function() {
+  this.rotation += velocity;
+  this.rotation = this.rotation % TWO_PI;
+  this.x = c.width /2 + cos(this.rotation) * bigCircle;
+  this.y = c.height / 2 + sin(this.rotation) * bigCircle;
+}
+Spinner.prototype.draw = function() {
+  c.fillStyle = &#39;hsl(&#39;+hue+&#39;,50%,50%)&#39;;
+  c.beginPath();
+  c.arc(this.x, this.y, littleCircle, 0, TWO_PI);
+  c.fill();
+  c.closePath(); 
+}
+c.setup = function() {
+  spinner = new Spinner();
+  spinner.setup();
+} 
+c.update = function() {
+  spinner.update();
+  hue = ++hue % 360;
+}
+c.draw = function() {
+  spinner.draw();
+  c.fillStyle = bg;
+  c.fillRect(0,0,c.width,c.height);
+}
+</code></pre>  
+
+<p>See the Pen <a href='http://codepen.io/rglazebrook/pen/bcqhe/'>Simple Rotating Spinner</a> by Rob Glazebrook (<a href='http://codepen.io/rglazebrook'>@rglazebrook</a>) on <a href='http://codepen.io'>CodePen</a>.</p>  
+
+<p></div><script async src="//codepen.io/assets/embed/ei.js"></script></p>
+
+<p>Isn't it beautiful.</p>
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>The Businessman & the fisherman</title>
+	  <link>/jasper//the-businessman-and-fisherman</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2014-08-12T11:18:00+01:00</pubDate>
+	  <guid>/jasper//the-businessman-and-fisherman</guid>
+	  <description><![CDATA[
+	     <p>An American businessman took a vacation to a small coastal Mexican village on doctor’s orders. Unable to sleep after an urgent phone call from the office the first morning, he walked out to the pier to clear his head. A small boat with just one fisherman had docked, and inside the boat were several large yellowfin tuna. The American complimented the Mexican on the quality of his fish.</p>
+
+<p>“How long did it take you to catch them?” the American asked.</p>
+
+<p>“Only a little while,” the Mexican replied in surprisingly good English.</p>
+
+<p>“Why don’t you stay out longer and catch more fish?” the American then asked.</p>
+
+<p>“I have enough to support my family and give a few to friends,” the Mexican said as he unloaded them into a basket.</p>
+
+<p>“But… What do you do with the rest of your time?”</p>
+
+<p>The Mexican looked up and smiled. “I sleep late, fish a little, play with my children, take a siesta with my wife, Julia, and stroll into the village each evening, where I sip wine and play guitar with my amigos. I have a full and busy life, señor.”</p>
+
+<p>The American laughed and stood tall. “Sir, I’m a Harvard M.B.A. and can help you. You should spend more time fishing, and with the proceeds, buy a bigger boat. In no time, you could buy several boats with the increased haul. Eventually, you would have a fleet of fishing boats.”</p>
+
+<p>He continued, “Instead of selling your catch to a middleman, you would sell directly to the consumers, eventually opening your own cannery. You would control the product, processing, and distribution. You would need to leave this small coastal fishing village, of course, and move to Mexico City, then to Los Angeles, and eventually to New York City, where you could run your expanded enterprise with proper management.</p>
+
+<p>The Mexican fisherman asked, “But, señor, how long will all this take?”</p>
+
+<p>To which the American replied, “15-20 years, 25 tops.”</p>
+
+<p>“But what then, señor?”</p>
+
+<p>The American laughed and said, “That’s the best part. When the time is right, you would announce an IPO and sell your company stock to the public and become very rich. You would make millions.”</p>
+
+<p>“Millions señor? Then what?&quot;</p>
+
+<p>“Then you would retire and move to a small coastal fishing village, where you would sleep late, fish a little, play with your kids, take a siesta with your wife, and stroll in to the village in the evenings where you could sip wine and play your guitar with your amigos.”</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>I Have a Dream</title>
+	  <link>/jasper//i-have-a-dream</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>1963-08-28T11:18:00+01:00</pubDate>
+	  <guid>/jasper//i-have-a-dream</guid>
+	  <description><![CDATA[
+	     <p>I am happy to join with you today in what will go down in history as the greatest demonstration for freedom in the history of our nation.</p>
+
+<p>Five score years ago, a great American, in whose symbolic shadow we stand today, signed the Emancipation Proclamation. This momentous decree came as a great beacon light of hope to millions of Negro slaves who had been seared in the flames of withering injustice. It came as a joyous daybreak to end the long night of their captivity.</p>
+
+<p>But one hundred years later, the Negro still is not free. One hundred years later, the life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination. One hundred years later, the Negro lives on a lonely island of poverty in the midst of a vast ocean of material prosperity. One hundred years later, the Negro is still languished in the corners of American society and finds himself an exile in his own land. And so we&#39;ve come here today to dramatize a shameful condition.</p>
+
+<p>In a sense we&#39;ve come to our nation&#39;s capital to cash a check. When the architects of our republic wrote the magnificent words of the Constitution and the Declaration of Independence, they were signing a promissory note to which every American was to fall heir. This note was a promise that all men, yes, black men as well as white men, would be guaranteed the &quot;unalienable Rights&quot; of &quot;Life, Liberty and the pursuit of Happiness.&quot; It is obvious today that America has defaulted on this promissory note, insofar as her citizens of color are concerned. Instead of honoring this sacred obligation, America has given the Negro people a bad check, a check which has come back marked &quot;insufficient funds.&quot;</p>
+
+<p>But we refuse to believe that the bank of justice is bankrupt. We refuse to believe that there are insufficient funds in the great vaults of opportunity of this nation. And so, we&#39;ve come to cash this check, a check that will give us upon demand the riches of freedom and the security of justice.</p>
+
+<p>We have also come to this hallowed spot to remind America of the fierce urgency of Now. This is no time to engage in the luxury of cooling off or to take the tranquilizing drug of gradualism. Now is the time to make real the promises of democracy. Now is the time to rise from the dark and desolate valley of segregation to the sunlit path of racial justice. Now is the time to lift our nation from the quicksands of racial injustice to the solid rock of brotherhood. Now is the time to make justice a reality for all of God&#39;s children.</p>
+
+<p>It would be fatal for the nation to overlook the urgency of the moment. This sweltering summer of the Negro&#39;s legitimate discontent will not pass until there is an invigorating autumn of freedom and equality. Nineteen sixty-three is not an end, but a beginning. And those who hope that the Negro needed to blow off steam and will now be content will have a rude awakening if the nation returns to business as usual. And there will be neither rest nor tranquility in America until the Negro is granted his citizenship rights. The whirlwinds of revolt will continue to shake the foundations of our nation until the bright day of justice emerges.</p>
+
+<p>But there is something that I must say to my people, who stand on the warm threshold which leads into the palace of justice: In the process of gaining our rightful place, we must not be guilty of wrongful deeds. Let us not seek to satisfy our thirst for freedom by drinking from the cup of bitterness and hatred. We must forever conduct our struggle on the high plane of dignity and discipline. We must not allow our creative protest to degenerate into physical violence. Again and again, we must rise to the majestic heights of meeting physical force with soul force.</p>
+
+<p>The marvelous new militancy which has engulfed the Negro community must not lead us to a distrust of all white people, for many of our white brothers, as evidenced by their presence here today, have come to realize that their destiny is tied up with our destiny. And they have come to realize that their freedom is inextricably bound to our freedom.</p>
+
+<p>We cannot walk alone.</p>
+
+<p>And as we walk, we must make the pledge that we shall always march ahead.</p>
+
+<p>We cannot turn back.</p>
+
+<p>There are those who are asking the devotees of civil rights, &quot;When will you be satisfied?&quot; We can never be satisfied as long as the Negro is the victim of the unspeakable horrors of police brutality. We can never be satisfied as long as our bodies, heavy with the fatigue of travel, cannot gain lodging in the motels of the highways and the hotels of the cities. We cannot be satisfied as long as the negro&#39;s basic mobility is from a smaller ghetto to a larger one. We can never be satisfied as long as our children are stripped of their self-hood and robbed of their dignity by signs stating: &quot;For Whites Only.&quot; We cannot be satisfied as long as a Negro in Mississippi cannot vote and a Negro in New York believes he has nothing for which to vote. No, no, we are not satisfied, and we will not be satisfied until &quot;justice rolls down like waters, and righteousness like a mighty stream.&quot;</p>
+
+<p>I am not unmindful that some of you have come here out of great trials and tribulations. Some of you have come fresh from narrow jail cells. And some of you have come from areas where your quest -- quest for freedom left you battered by the storms of persecution and staggered by the winds of police brutality. You have been the veterans of creative suffering. Continue to work with the faith that unearned suffering is redemptive. Go back to Mississippi, go back to Alabama, go back to South Carolina, go back to Georgia, go back to Louisiana, go back to the slums and ghettos of our northern cities, knowing that somehow this situation can and will be changed.</p>
+
+<p>Let us not wallow in the valley of despair, I say to you today, my friends.</p>
+
+<p>And so even though we face the difficulties of today and tomorrow, I still have a dream. It is a dream deeply rooted in the American dream.</p>
+
+<p>I have a dream that one day this nation will rise up and live out the true meaning of its creed: &quot;We hold these truths to be self-evident, that all men are created equal.&quot;</p>
+
+<p>I have a dream that one day on the red hills of Georgia, the sons of former slaves and the sons of former slave owners will be able to sit down together at the table of brotherhood.</p>
+
+<p>I have a dream that one day even the state of Mississippi, a state sweltering with the heat of injustice, sweltering with the heat of oppression, will be transformed into an oasis of freedom and justice.</p>
+
+<p>I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin but by the content of their character.</p>
+
+<p>I have a <strong>dream</strong> today!</p>
+
+<p>I have a dream that one day, down in Alabama, with its vicious racists, with its governor having his lips dripping with the words of &quot;interposition&quot; and &quot;nullification&quot; -- one day right there in Alabama little black boys and black girls will be able to join hands with little white boys and white girls as sisters and brothers.</p>
+
+<p>I have a <strong>dream</strong> today!</p>
+
+<p>I have a dream that one day every valley shall be exalted, and every hill and mountain shall be made low, the rough places will be made plain, and the crooked places will be made straight; &quot;and the glory of the Lord shall be revealed and all flesh shall see it together.&quot;</p>
+
+<p>This is our hope, and this is the faith that I go back to the South with.</p>
+
+<p>With this faith, we will be able to hew out of the mountain of despair a stone of hope. With this faith, we will be able to transform the jangling discords of our nation into a beautiful symphony of brotherhood. With this faith, we will be able to work together, to pray together, to struggle together, to go to jail together, to stand up for freedom together, knowing that we will be free one day.</p>
+
+<p>And this will be the day -- this will be the day when all of God&#39;s children will be able to sing with new meaning:</p>
+
+<blockquote>
+<p>My country &#39;tis of thee, sweet land of liberty, of thee I sing.</p>
+
+<p>Land where my fathers died, land of the Pilgrim&#39;s pride,</p>
+
+<p>From every mountainside, let freedom ring!</p>
+</blockquote>
+
+<p>And if America is to be a great nation, this must become true.</p>
+
+<p>And so let freedom ring from the prodigious hilltops of New Hampshire.</p>
+
+<blockquote>
+<p>Let freedom ring from the mighty mountains of New York.</p>
+
+<p>Let freedom ring from the heightening Alleghenies of Pennsylvania.</p>
+
+<p>Let freedom ring from the snow-capped Rockies of Colorado.</p>
+
+<p>Let freedom ring from the curvaceous slopes of California.</p>
+</blockquote>
+
+<p>But not only that:</p>
+
+<blockquote>
+<p>Let freedom ring from Stone Mountain of Georgia.</p>
+
+<p>Let freedom ring from Lookout Mountain of Tennessee.</p>
+
+<p>Let freedom ring from every hill and molehill of Mississippi.</p>
+
+<p>From every mountainside, let freedom ring.</p>
+</blockquote>
+
+<p>And when this happens, and when we allow freedom ring, when we let it ring from every village and every hamlet, from every state and every city, we will be able to speed up that day when all of God&#39;s children, black men and white men, Jews and Gentiles, Protestants and Catholics, will be able to join hands and sing in the words of the old Negro spiritual:</p>
+
+<p><em>Free at last! Free at last!</em></p>
+
+<p><em>Thank God Almighty, we are free at last!</em></p>
+
+<p>By <strong>Martin Luther King</strong></p>
+
+<p>An American pastor, activist, humanitarian. People know him for leading the African-American Civil Rights movement using nonviolent civil disobedience.</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>The Purpose of Education</title>
+	  <link>/jasper//the-purpose-of-education</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>1948-12-12T10:18:00+00:00</pubDate>
+	  <guid>/jasper//the-purpose-of-education</guid>
+	  <description><![CDATA[
+	     <p>As I engage in the so-called &quot;bull sessions&quot; around and about the school, I too often find that most college men have a misconception of the purpose of education. Most of the &quot;brethren&quot; think that education should equip them with the proper instruments of exploitation so that they can forever trample over the masses. Still others think that education should furnish them with noble ends rather than means to an end.</p>
+
+<p>It seems to me that education has a two-fold function to perform in the life of man and in society: the one is utility and the other is culture. Education must enable a man to become more efficient, to achieve with increasing facility the ligitimate goals of his life.</p>
+
+<p>Education must also train one for quick, resolute and effective thinking. To think incisively and to think for one&#39;s self is very difficult. We are prone to let our mental life become invaded by legions of half truths, prejudices, and propaganda. At this point, I often wonder whether or not education is fulfilling its purpose. A great majority of the so-called educated people do not think logically and scientifically. Even the press, the classroom, the platform, and the pulpit in many instances do not give us objective and unbiased truths. To save man from the morass of propaganda, in my opinion, is one of the chief aims of education. Education must enable one to sift and weigh evidence, to discern the true from the false, the real from the unreal, and the facts from the fiction.</p>
+
+<p>The function of education, therefore, is to teach one to think intensively and to think critically. But education which stops with efficiency may prove the greatest menace to society. The most dangerous criminal may be the man gifted with reason, but with no morals.</p>
+
+<p>The late Eugene Talmadge, in my opinion, possessed one of the better minds of Georgia, or even America. Moreover, he wore the Phi Beta Kappa key. By all measuring rods, Mr. Talmadge could think critically and intensively; yet he contends that I am an inferior being. Are those the types of men we call educated?</p>
+
+<p>We must remember that intelligence is not enough. Intelligence plus character--that is the goal of true education. The complete education gives one not only power of concentration, but worthy objectives upon which to concentrate. The broad education will, therefore, transmit to one not only the accumulated knowledge of the race but also the accumulated experience of social living.</p>
+
+<p>If we are not careful, our colleges will produce a group of close-minded, unscientific, illogical propagandists, consumed with immoral acts. Be careful, &quot;brethren!&quot; Be careful, teachers!</p>
+
+<p>By <strong>Martin Luther King</strong></p>
+
+<p>An American pastor, activist, humanitarian. People know him for leading the African-American Civil Rights movement using nonviolent civil disobedience.</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>Out to Sea</title>
+	  <link>/jasper//out-to-sea</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>1912-07-24T10:18:00+00:00</pubDate>
+	  <guid>/jasper//out-to-sea</guid>
+	  <description><![CDATA[
+	     <p>I had this story from one who had no business to tell it to me, or to any other. I may credit the seductive influence of an old vintage upon the narrator for the beginning of it, and my own skeptical incredulity during the days that followed for the balance of the strange tale.</p>
+
+<p>When my convivial host discovered that he had told me so much, and that I was prone to doubtfulness, his foolish pride assumed the task the old vintage had commenced, and so he unearthed written evidence in the form of musty manuscript, and dry official records of the British Colonial Office to support many of the salient features of his remarkable narrative.</p>
+
+<p>I do not say the story is true, for I did not witness the happenings which it portrays, but the fact that in the telling of it to you I have taken fictitious names for the principal characters quite sufficiently evidences the sincerity of my own belief that it MAY be true.</p>
+
+<p>The yellow, mildewed pages of the diary of a man long dead, and the records of the Colonial Office dovetail perfectly with the narrative of my convivial host, and so I give you the story as I painstakingly pieced it out from these several various agencies.</p>
+
+<p>If you do not find it credible you will at least be as one with me in acknowledging that it is unique, remarkable, and interesting.</p>
+
+<p>From the records of the Colonial Office and from the dead man&#39;s diary we learn that a certain young English nobleman, whom we shall call John Clayton, Lord Greystoke, was commissioned to make a peculiarly delicate investigation of conditions in a British West Coast African Colony from whose simple native inhabitants another European power was known to be recruiting soldiers for its native army, which it used solely for the forcible collection of rubber and ivory from the savage tribes along the Congo and the Aruwimi. The natives of the British Colony complained that many of their young men were enticed away through the medium of fair and glowing promises, but that few if any ever returned to their families.</p>
+
+<p>The Englishmen in Africa went even further, saying that these poor blacks were held in virtual slavery, since after their terms of enlistment expired their ignorance was imposed upon by their white officers, and they were told that they had yet several years to serve.</p>
+
+<p>And so the Colonial Office appointed John Clayton to a new post in British West Africa, but his confidential instructions centered on a thorough investigation of the unfair treatment of black British subjects by the officers of a friendly European power. Why he was sent, is, however, of little moment to this story, for he never made an investigation, nor, in fact, did he ever reach his destination.</p>
+
+<p>Clayton was the type of Englishman that one likes best to associate with the noblest monuments of historic achievement upon a thousand victorious battlefields--a strong, virile man --mentally, morally, and physically.</p>
+
+<p>In stature he was above the average height; his eyes were gray, his features regular and strong; his carriage that of perfect, robust health influenced by his years of army training.</p>
+
+<p>Political ambition had caused him to seek transference from the army to the Colonial Office and so we find him, still young, entrusted with a delicate and important commission in the service of the Queen.</p>
+
+<p>When he received this appointment he was both elated and appalled. The preferment seemed to him in the nature of a well-merited reward for painstaking and intelligent service, and as a stepping stone to posts of greater importance and responsibility; but, on the other hand, he had been married to the Hon. Alice Rutherford for scarce a three months, and it was the thought of taking this fair young girl into the dangers and isolation of tropical Africa that appalled him.</p>
+
+<p>For her sake he would have refused the appointment, but she would not have it so. Instead she insisted that he accept, and, indeed, take her with him.</p>
+
+<p>There were mothers and brothers and sisters, and aunts and cousins to express various opinions on the subject, but as to what they severally advised history is silent.</p>
+
+<p>We know only that on a bright May morning in 1888, John, Lord Greystoke, and Lady Alice sailed from Dover on their way to Africa.</p>
+
+<p>A month later they arrived at Freetown where they chartered a small sailing vessel, the Fuwalda, which was to bear them to their final destination.</p>
+
+<p>And here John, Lord Greystoke, and Lady Alice, his wife, vanished from the eyes and from the knowledge of men.</p>
+
+<p>Two months after they weighed anchor and cleared from the port of Freetown a half dozen British war vessels were scouring the south Atlantic for trace of them or their little vessel, and it was almost immediately that the wreckage was found upon the shores of St. Helena which convinced the world that the Fuwalda had gone down with all on board, and hence the search was stopped ere it had scarce begun; though hope lingered in longing hearts for many years.</p>
+
+<p>The Fuwalda, a barkentine of about one hundred tons, was a vessel of the type often seen in coastwise trade in the far southern Atlantic, their crews composed of the offscourings of the sea--unhanged murderers and cutthroats of every race and every nation.</p>
+
+<p>The Fuwalda was no exception to the rule. Her officers were swarthy bullies, hating and hated by their crew. The captain, while a competent seaman, was a brute in his treatment of his men. He knew, or at least he used, but two arguments in his dealings with them--a belaying pin and a revolver--nor is it likely that the motley aggregation he signed would have understood aught else.</p>
+
+<p>So it was that from the second day out from Freetown John Clayton and his young wife witnessed scenes upon the deck of the Fuwalda such as they had believed were never enacted outside the covers of printed stories of the sea.</p>
+
+<p>It was on the morning of the second day that the first link was forged in what was destined to form a chain of circumstances ending in a life for one then unborn such as has never been paralleled in the history of man.</p>
+
+<p>Two sailors were washing down the decks of the Fuwalda, the first mate was on duty, and the captain had stopped to speak with John Clayton and Lady Alice.</p>
+
+<p>The men were working backwards toward the little party who were facing away from the sailors. Closer and closer they came, until one of them was directly behind the captain. In another moment he would have passed by and this strange narrative would never have been recorded.</p>
+
+<p>But just that instant the officer turned to leave Lord and Lady Greystoke, and, as he did so, tripped against the sailor and sprawled headlong upon the deck, overturning the water- pail so that he was drenched in its dirty contents.</p>
+
+<p>For an instant the scene was ludicrous; but only for an instant. With a volley of awful oaths, his face suffused with the scarlet of mortification and rage, the captain regained his feet, and with a terrific blow felled the sailor to the deck.</p>
+
+<p>The man was small and rather old, so that the brutality of the act was thus accentuated. The other seaman, however, was neither old nor small--a huge bear of a man, with fierce black mustachios, and a great bull neck set between massive shoulders.</p>
+
+<p>As he saw his mate go down he crouched, and, with a low snarl, sprang upon the captain crushing him to his knees with a single mighty blow.</p>
+
+<p>From scarlet the officer&#39;s face went white, for this was mutiny; and mutiny he had met and subdued before in his brutal career. Without waiting to rise he whipped a revolver from his pocket, firing point blank at the great mountain of muscle towering before him; but, quick as he was, John Clayton was almost as quick, so that the bullet which was intended for the sailor&#39;s heart lodged in the sailor&#39;s leg instead, for Lord Greystoke had struck down the captain&#39;s arm as he had seen the weapon flash in the sun.</p>
+
+<p>Words passed between Clayton and the captain, the former making it plain that he was disgusted with the brutality displayed toward the crew, nor would he countenance anything further of the kind while he and Lady Greystoke remained passengers.</p>
+
+<p>The captain was on the point of making an angry reply, but, thinking better of it, turned on his heel and black and scowling, strode aft.</p>
+
+<p>He did not care to antagonize an English official, for the Queen&#39;s mighty arm wielded a punitive instrument which he could appreciate, and which he feared--England&#39;s far-reaching navy.</p>
+
+<p>The two sailors picked themselves up, the older man assisting his wounded comrade to rise. The big fellow, who was known among his mates as Black Michael, tried his leg gingerly, and, finding that it bore his weight, turned to Clayton with a word of gruff thanks.</p>
+
+<p>Though the fellow&#39;s tone was surly, his words were evidently well meant. Ere he had scarce finished his little speech he had turned and was limping off toward the forecastle with the very apparent intention of forestalling any further conversation.</p>
+
+<p>They did not see him again for several days, nor did the captain accord them more than the surliest of grunts when he was forced to speak to them.</p>
+
+<p>They took their meals in his cabin, as they had before the unfortunate occurrence; but the captain was careful to see that his duties never permitted him to eat at the same time.</p>
+
+<p>The other officers were coarse, illiterate fellows, but little above the villainous crew they bullied, and were only too glad to avoid social intercourse with the polished English noble and his lady, so that the Claytons were left very much to themselves.</p>
+
+<p>This in itself accorded perfectly with their desires, but it also rather isolated them from the life of the little ship so that they were unable to keep in touch with the daily happenings which were to culminate so soon in bloody tragedy.</p>
+
+<p>By <strong>Edgar Rice Burroughs</strong></p>
+
+<p>An American novelist, best known for his work writing about a brave jungle hero called Tarzan and his muse, Jane.</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>Looking-Glass house</title>
+	  <link>/jasper//looking-glass-house</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>1871-03-18T11:18:00+01:00</pubDate>
+	  <guid>/jasper//looking-glass-house</guid>
+	  <description><![CDATA[
+	     <p>One thing was certain, that the white kitten had had nothing to do with it:— it was the black kitten’s fault entirely. For the white kitten had been having its face washed by the old cat for the last quarter of an hour (and bearing it pretty well, considering); so you see that it couldn’t have had any hand in the mischief. 
+The way Dinah washed her children’s faces was this: first she held the poor thing down by its ear with one paw, and then with the other paw she rubbed its face all over, the wrong way, beginning at the nose: and just now, as I said, she was hard at work on the white kitten, which was lying quite still and trying to purr — no doubt feeling that it was all meant for its good. 
+But the black kitten had been finished with earlier in the afternoon, and so, while Alice was sitting curled up in a corner of the great arm-chair, half talking to herself and half asleep, the kitten had been having a grand game of romps with the ball of worsted Alice had been trying to wind up, and had been rolling it up and down till it had all come undone again; and there it was, spread over the hearth-rug, all knots and tangles, with the kitten running after its own tail in the middle.</p>
+
+<p>‘Oh, you wicked little thing!’ cried Alice, catching up the kitten, and giving it a little kiss to make it understand that it was in disgrace. ‘Really, Dinah ought to have taught you better manners! You ought, Dinah, you know you ought!’ she added, looking reproachfully at the old cat, and speaking in as cross a voice as she could manage — and then she scrambled back into the arm-chair, taking the kitten and the worsted with her, and began winding up the ball again. But she didn’t get on very fast, as she was talking all the time, sometimes to the kitten, and sometimes to herself. Kitty sat very demurely on her knee, pretending to watch the progress of the winding, and now and then putting out one paw and gently touching the ball, as if it would be glad to help, if it might. ‘Do you know what to-morrow is, Kitty?’ Alice began. ‘You’d have guessed if you’d been up in the window with me — only Dinah was making you tidy, so you couldn’t. I was watching the boys getting in sticks for the bonfire — and it wants plenty of sticks, Kitty! Only it got so cold, and it snowed so, they had to leave off. Never mind, Kitty, we’ll go and see the bonfire to-morrow.’ Here Alice wound two or three turns of the worsted round the kitten’s neck, just to see how it would look: this led to a scramble, in which the ball rolled down upon the floor, and yards and yards of it got unwound again.</p>
+
+<p>‘Do you know, I was so angry, Kitty,’ Alice went on as soon as they were comfortably settled again, ‘when I saw all the mischief you had been doing, I was very nearly opening the window, and putting you out into the snow! And you’d have deserved it, you little mischievous darling! What have you got to say for yourself? Now don’t interrupt me!’ she went on, holding up one finger. ‘I’m going to tell you all your faults. Number one: you squeaked twice while Dinah was washing your face this morning. Now you can’t deny it, Kitty: I heard you! What’s that you say?’ (pretending that the kitten was speaking.) ‘Her paw went into your eye? Well, that’s your fault, for keeping your eyes open — if you’d shut them tight up, it wouldn’t have happened. Now don’t make any more excuses, but listen! Number two: you pulled Snowdrop away by the tail just as I had put down the saucer of milk before her! What, you were thirsty, were you? How do you know she wasn’t thirsty too? Now for number three: you unwound every bit of the worsted while I wasn’t looking! 
+‘That’s three faults, Kitty, and you’ve not been punished for any of them yet. You know I’m saving up all your punishments for Wednesday week — Suppose they had saved up all my punishments!’ she went on, talking more to herself than the kitten. ‘What would they do at the end of a year? I should be sent to prison, I suppose, when the day came. Or — let me see — suppose each punishment was to be going without a dinner: then, when the miserable day came, I should have to go without fifty dinners at once! Well, I shouldn’t mind that much! I’d far rather go without them than eat them! ‘Do you hear the snow against the window-panes, Kitty? How nice and soft it sounds! Just as if some one was kissing the window all over outside. I wonder if the snow loves the trees and fields, that it kisses them so gently? And then it covers them up snug, you know, with a white quilt; and perhaps it says, “Go to sleep, darlings, till the summer comes again.” And when they wake up in the summer, Kitty, they dress themselves all in green, and dance about — whenever the wind blows — oh, that’s very pretty!’ cried Alice, dropping the ball of worsted to clap her hands. ‘And I do so wish it was true! I’m sure the woods look sleepy in the autumn, when the leaves are getting brown. ‘Kitty, can you play chess? Now, don’t smile, my dear, I’m asking it seriously. Because, when we were playing just now, you watched just as if you understood it: and when I said “Check!” you purred! Well, it was a nice check, Kitty, and really I might have won, if it hadn’t been for that nasty Knight, that came wiggling down among my pieces. Kitty, dear, let’s pretend —’ And here I wish I could tell you half the things Alice used to say, beginning with her favourite phrase ‘Let’s pretend.’ She had had quite a long argument with her sister only the day before — all because Alice had begun with ‘Let’s pretend we’re kings and queens;’ and her sister, who liked being very exact, had argued that they couldn’t, because there were only two of them, and Alice had been reduced at last to say, ‘Well, you can be one of them then, and I’ll be all the rest.’ And once she had really frightened her old nurse by shouting suddenly in her ear, ‘Nurse! Do let’s pretend that I’m a hungry hyaena, and you’re a bone.’ But this is taking us away from Alice’s speech to the kitten. ‘Let’s pretend that you’re the Red Queen, Kitty! Do you know, I think if you sat up and folded your arms, you’d look exactly like her. Now do try, there’s a dear!’ And Alice got the Red Queen off the table, and set it up before the kitten as a model for it to imitate: however, the thing didn’t succeed, principally, Alice said, because the kitten wouldn’t fold its arms properly. So, to punish it, she held it up to the Looking-glass, that it might see how sulky it was —‘and if you’re not good directly,’ she added, ‘I’ll put you through into Looking-glass House. How would you like that?’ 
+‘Now, if you’ll only attend, Kitty, and not talk so much, I’ll tell you all my ideas about Looking-glass House. First, there’s the room you can see through the glass — that’s just the same as our drawing room, only the things go the other way. I can see all of it when I get upon a chair — all but the bit behind the fireplace. Oh! I do so wish I could see that bit! I want so much to know whether they’ve a fire in the winter: you never can tell, you know, unless our fire smokes, and then smoke comes up in that room too — but that may be only pretence, just to make it look as if they had a fire. Well then, the books are something like our books, only the words go the wrong way; I know that, because I’ve held up one of our books to the glass, and then they hold up one in the other room. ‘How would you like to live in Looking-glass House, Kitty? I wonder if they’d give you milk in there? Perhaps Looking-glass milk isn’t good to drink — But oh, Kitty! now we come to the passage. You can just see a little peep of the passage in Looking-glass House, if you leave the door of our drawing-room wide open: and it’s very like our passage as far as you can see, only you know it may be quite different on beyond. Oh, Kitty! how nice it would be if we could only get through into Looking-glass House! I’m sure it’s got, oh! such beautiful things in it! Let’s pretend there’s a way of getting through into it, somehow, Kitty. Let’s pretend the glass has got all soft like gauze, so that we can get through. Why, it’s turning into a sort of mist now, I declare! It’ll be easy enough to get through —’ She was up on the chimney-piece while she said this, though she hardly knew how she had got there. And certainly the glass was beginning to melt away, just like a bright silvery mist.</p>
+
+<p>In another moment Alice was through the glass, and had jumped lightly down into the Looking-glass room. The very first thing she did was to look whether there was a fire in the fireplace, and she was quite pleased to find that there was a real one, blazing away as brightly as the one she had left behind. ‘So I shall be as warm here as I was in the old room,’ thought Alice: ‘warmer, in fact, because there’ll be no one here to scold me away from the fire. Oh, what fun it’ll be, when they see me through the glass in here, and can’t get at me!’</p>
+
+<p>Then she began looking about, and noticed that what could be seen from the old room was quite common and uninteresting, but that all the rest was as different as possible. For instance, the pictures on the wall next the fire seemed to be all alive, and the very clock on the chimney-piece (you know you can only see the back of it in the Looking-glass) had got the face of a little old man, and grinned at her. 
+‘They don’t keep this room so tidy as the other,’ Alice thought to herself, as she noticed several of the chessmen down in the hearth among the cinders: but in another moment, with a little ‘Oh!’ of surprise, she was down on her hands and knees watching them. The chessmen were walking about, two and two!</p>
+
+<p>‘Here are the Red King and the Red Queen,’ Alice said (in a whisper, for fear of frightening them), ‘and there are the White King and the White Queen sitting on the edge of the shovel — and here are two castles walking arm in arm — I don’t think they can hear me,’ she went on, as she put her head closer down, ‘and I’m nearly sure they can’t see me. I feel somehow as if I were invisible —’ Here something began squeaking on the table behind Alice, and made her turn her head just in time to see one of the White Pawns roll over and begin kicking: she watched it with great curiosity to see what would happen next. 
+‘It is the voice of my child!’ the White Queen cried out as she rushed past the King, so violently that she knocked him over among the cinders. ‘My precious Lily! My imperial kitten!’ and she began scrambling wildly up the side of the fender. ‘Imperial fiddlestick!’ said the King, rubbing his nose, which had been hurt by the fall. He had a right to be a little annoyed with the Queen, for he was covered with ashes from head to foot. Alice was very anxious to be of use, and, as the poor little Lily was nearly screaming herself into a fit, she hastily picked up the Queen and set her on the table by the side of her noisy little daughter. 
+The Queen gasped, and sat down: the rapid journey through the air had quite taken away her breath and for a minute or two she could do nothing but hug the little Lily in silence. As soon as she had recovered her breath a little, she called out to the White King, who was sitting sulkily among the ashes, ‘Mind the volcano!’ 
+‘What volcano?’ said the King, looking up anxiously into the fire, as if he thought that was the most likely place to find one. ‘Blew — me — up,’ panted the Queen, who was still a little out of breath. ‘Mind you come up — the regular way — don’t get blown up!’ Alice watched the White King as he slowly struggled up from bar to bar, till at last she said, ‘Why, you’ll be hours and hours getting to the table, at that rate. I’d far better help you, hadn’t I?’ But the King took no notice of the question: it was quite clear that he could neither hear her nor see her. 
+So Alice picked him up very gently, and lifted him across more slowly than she had lifted the Queen, that she mightn’t take his breath away: but, before she put him on the table, she thought she might as well dust him a little, he was so covered with ashes.</p>
+
+<p>She said afterwards that she had never seen in all her life such a face as the King made, when he found himself held in the air by an invisible hand, and being dusted: he was far too much astonished to cry out, but his eyes and his mouth went on getting larger and larger, and rounder and rounder, till her hand shook so with laughing that she nearly let him drop upon the floor. 
+‘Oh! please don’t make such faces, my dear!’ she cried out, quite forgetting that the King couldn’t hear her. ‘You make me laugh so that I can hardly hold you! And don’t keep your mouth so wide open! All the ashes will get into it — there, now I think you’re tidy enough!’ she added, as she smoothed his hair, and set him upon the table near the Queen. The King immediately fell flat on his back, and lay perfectly still: and Alice was a little alarmed at what she had done, and went round the room to see if she could find any water to throw over him. However, she could find nothing but a bottle of ink, and when she got back with it she found he had recovered, and he and the Queen were talking together in a frightened whisper — so low, that Alice could hardly hear what they said. 
+The King was saying, ‘I assure, you my dear, I turned cold to the very ends of my whiskers!’ 
+To which the Queen replied, ‘You haven’t got any whiskers.’ 
+‘The horror of that moment,’ the King went on, ‘I shall never, never forget!’ ‘You will, though,’ the Queen said, ‘if you don’t make a memorandum of it.’ Alice looked on with great interest as the King took an enormous memorandum-book out of his pocket, and began writing. A sudden thought struck her, and she took hold of the end of the pencil, which came some way over his shoulder, and began writing for him. 
+The poor King looked puzzled and unhappy, and struggled with the pencil for some time without saying anything; but Alice was too strong for him, and at last he panted out, ‘My dear! I really must get a thinner pencil. I can’t manage this one a bit; it writes all manner of things that I don’t intend —’ 
+‘What manner of things?’ said the Queen, looking over the book (in which Alice had put ‘the White Knight is sliding down the poker. He balances very badly’) ‘That’s not a memorandum of your feelings!’</p>
+
+<p>By <strong>Lewis Carrol</strong></p>
+
+<p>An English writer, mathematician, logician, Anglican deacon and photographer, best know for writing about Alice.</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>Down The Rabbit Hole</title>
+	  <link>/jasper//down-the-rabbit-hole</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>1865-11-26T11:18:00+01:00</pubDate>
+	  <guid>/jasper//down-the-rabbit-hole</guid>
+	  <description><![CDATA[
+	     <p>Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, &#39;and what is the use of a book,&#39; thought Alice &#39;without pictures or conversation?&#39;</p>
+
+<p>So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid), whether the pleasure of making a daisy-chain would be worth the trouble of getting up and picking the daisies, when suddenly a White Rabbit with pink eyes ran close by her.</p>
+
+<p>There was nothing so very remarkable in that; nor did Alice think it so very much out of the way to hear the Rabbit say to itself, &#39;Oh dear! Oh dear! I shall be late!&#39; (when she thought it over afterwards, it occurred to her that she ought to have wondered at this, but at the time it all seemed quite natural); but when the Rabbit actually took a watch out of its waistcoat-pocket, and looked at it, and then hurried on, Alice started to her feet, for it flashed across her mind that she had never before seen a rabbit with either a waistcoat-pocket, or a watch to take out of it, and burning with curiosity, she ran across the field after it, and fortunately was just in time to see it pop down a large rabbit-hole under the hedge.</p>
+
+<p>In another moment down went Alice after it, never once considering how in the world she was to get out again.</p>
+
+<p>The rabbit-hole went straight on like a tunnel for some way, and then dipped suddenly down, so suddenly that Alice had not a moment to think about stopping herself before she found herself falling down a very deep well.</p>
+
+<p>Either the well was very deep, or she fell very slowly, for she had plenty of time as she went down to look about her and to wonder what was going to happen next. First, she tried to look down and make out what she was coming to, but it was too dark to see anything; then she looked at the sides of the well, and noticed that they were filled with cupboards and book-shelves; here and there she saw maps and pictures hung upon pegs. She took down a jar from one of the shelves as she passed; it was labelled &#39;ORANGE MARMALADE&#39;, but to her great disappointment it was empty: she did not like to drop the jar for fear of killing somebody, so managed to put it into one of the cupboards as she fell past it.</p>
+
+<p>&#39;Well!&#39; thought Alice to herself, &#39;after such a fall as this, I shall think nothing of tumbling down stairs! How brave they&#39;ll all think me at home! Why, I wouldn&#39;t say anything about it, even if I fell off the top of the house!&#39; (Which was very likely true.)</p>
+
+<p>Down, down, down. Would the fall never come to an end! &#39;I wonder how many miles I&#39;ve fallen by this time?&#39; she said aloud. &#39;I must be getting somewhere near the centre of the earth. Let me see: that would be four thousand miles down, I think—&#39; (for, you see, Alice had learnt several things of this sort in her lessons in the schoolroom, and though this was not a very good opportunity for showing off her knowledge, as there was no one to listen to her, still it was good practice to say it over) &#39;—yes, that&#39;s about the right distance—but then I wonder what Latitude or Longitude I&#39;ve got to?&#39; (Alice had no idea what Latitude was, or Longitude either, but thought they were nice grand words to say.)</p>
+
+<p>Presently she began again. &#39;I wonder if I shall fall right through the earth! How funny it&#39;ll seem to come out among the people that walk with their heads downward! The Antipathies, I think—&#39; (she was rather glad there was no one listening, this time, as it didn&#39;t sound at all the right word) &#39;—but I shall have to ask them what the name of the country is, you know. Please, Ma&#39;am, is this New Zealand or Australia?&#39; (and she tried to curtsey as she spoke—fancy curtseying as you&#39;re falling through the air! Do you think you could manage it?) &#39;And what an ignorant little girl she&#39;ll think me for asking! No, it&#39;ll never do to ask: perhaps I shall see it written up somewhere.&#39;</p>
+
+<p>Down, down, down. There was nothing else to do, so Alice soon began talking again. &#39;Dinah&#39;ll miss me very much to-night, I should think!&#39; (Dinah was the cat.) &#39;I hope they&#39;ll remember her saucer of milk at tea-time. Dinah my dear! I wish you were down here with me! There are no mice in the air, I&#39;m afraid, but you might catch a bat, and that&#39;s very like a mouse, you know. But do cats eat bats, I wonder?&#39; And here Alice began to get rather sleepy, and went on saying to herself, in a dreamy sort of way, &#39;Do cats eat bats? Do cats eat bats?&#39; and sometimes, &#39;Do bats eat cats?&#39; for, you see, as she couldn&#39;t answer either question, it didn&#39;t much matter which way she put it. She felt that she was dozing off, and had just begun to dream that she was walking hand in hand with Dinah, and saying to her very earnestly, &#39;Now, Dinah, tell me the truth: did you ever eat a bat?&#39; when suddenly, thump! thump! down she came upon a heap of sticks and dry leaves, and the fall was over.</p>
+
+<p>Alice was not a bit hurt, and she jumped up on to her feet in a moment: she looked up, but it was all dark overhead; before her was another long passage, and the White Rabbit was still in sight, hurrying down it. There was not a moment to be lost: away went Alice like the wind, and was just in time to hear it say, as it turned a corner, &#39;Oh my ears and whiskers, how late it&#39;s getting!&#39; She was close behind it when she turned the corner, but the Rabbit was no longer to be seen: she found herself in a long, low hall, which was lit up by a row of lamps hanging from the roof.</p>
+
+<p>There were doors all round the hall, but they were all locked; and when Alice had been all the way down one side and up the other, trying every door, she walked sadly down the middle, wondering how she was ever to get out again.</p>
+
+<p>Suddenly she came upon a little three-legged table, all made of solid glass; there was nothing on it except a tiny golden key, and Alice&#39;s first thought was that it might belong to one of the doors of the hall; but, alas! either the locks were too large, or the key was too small, but at any rate it would not open any of them.</p>
+
+<p>However, on the second time round, she came upon a low curtain she had not noticed before, and behind it was a little door about fifteen inches high: she tried the little golden key in the lock, and to her great delight it fitted!</p>
+
+<p>Alice opened the door and found that it led into a small passage, not much larger than a rat-hole: she knelt down and looked along the passage into the loveliest garden you ever saw. How she longed to get out of that dark hall, and wander about among those beds of bright flowers and those cool fountains, but she could not even get her head though the doorway; &#39;and even if my head would go through,&#39; thought poor Alice, &#39;it would be of very little use without my shoulders. Oh, how I wish I could shut up like a telescope! I think I could, if I only know how to begin.&#39; For, you see, so many out-of-the-way things had happened lately, that Alice had begun to think that very few things indeed were really impossible.</p>
+
+<p>There seemed to be no use in waiting by the little door, so she went back to the table, half hoping she might find another key on it, or at any rate a book of rules for shutting people up like telescopes: this time she found a little bottle on it, (&#39;which certainly was not here before,&#39; said Alice,) and round the neck of the bottle was a paper label, with the words &#39;DRINK ME&#39; beautifully printed on it in large letters.</p>
+
+<p>It was all very well to say &#39;Drink me,&#39; but the wise little Alice was not going to do that in a hurry. &#39;No, I&#39;ll look first,&#39; she said, &#39;and see whether it&#39;s marked &quot;poison&quot; or not&#39;; for she had read several nice little histories about children who had got burnt, and eaten up by wild beasts and other unpleasant things, all because they would not remember the simple rules their friends had taught them: such as, that a red-hot poker will burn you if you hold it too long; and that if you cut your finger very deeply with a knife, it usually bleeds; and she had never forgotten that, if you drink much from a bottle marked &#39;poison,&#39; it is almost certain to disagree with you, sooner or later.</p>
+
+<p>However, this bottle was not marked &#39;poison,&#39; so Alice ventured to taste it, and finding it very nice, (it had, in fact, a sort of mixed flavour of cherry-tart, custard, pine-apple, roast turkey, toffee, and hot buttered toast,) she very soon finished it off.</p>
+
+<p>&#39;What a curious feeling!&#39; said Alice; &#39;I must be shutting up like a telescope.&#39;</p>
+
+<p>And so it was indeed: she was now only ten inches high, and her face brightened up at the thought that she was now the right size for going through the little door into that lovely garden. First, however, she waited for a few minutes to see if she was going to shrink any further: she felt a little nervous about this; &#39;for it might end, you know,&#39; said Alice to herself, &#39;in my going out altogether, like a candle. I wonder what I should be like then?&#39; And she tried to fancy what the flame of a candle is like after the candle is blown out, for she could not remember ever having seen such a thing.</p>
+
+<p>After a while, finding that nothing more happened, she decided on going into the garden at once; but, alas for poor Alice! when she got to the door, she found she had forgotten the little golden key, and when she went back to the table for it, she found she could not possibly reach it: she could see it quite plainly through the glass, and she tried her best to climb up one of the legs of the table, but it was too slippery; and when she had tired herself out with trying, the poor little thing sat down and cried.</p>
+
+<p>&#39;Come, there&#39;s no use in crying like that!&#39; said Alice to herself, rather sharply; &#39;I advise you to leave off this minute!&#39; She generally gave herself very good advice, (though she very seldom followed it), and sometimes she scolded herself so severely as to bring tears into her eyes; and once she remembered trying to box her own ears for having cheated herself in a game of croquet she was playing against herself, for this curious child was very fond of pretending to be two people. &#39;But it&#39;s no use now,&#39; thought poor Alice, &#39;to pretend to be two people! Why, there&#39;s hardly enough of me left to make one respectable person!&#39;</p>
+
+<p>Soon her eye fell on a little glass box that was lying under the table: she opened it, and found in it a very small cake, on which the words &#39;EAT ME&#39; were beautifully marked in currants. &#39;Well, I&#39;ll eat it,&#39; said Alice, &#39;and if it makes me grow larger, I can reach the key; and if it makes me grow smaller, I can creep under the door; so either way I&#39;ll get into the garden, and I don&#39;t care which happens!&#39;</p>
+
+<p>She ate a little bit, and said anxiously to herself, &#39;Which way? Which way?&#39;, holding her hand on the top of her head to feel which way it was growing, and she was quite surprised to find that she remained the same size: to be sure, this generally happens when one eats cake, but Alice had got so much into the way of expecting nothing but out-of-the-way things to happen, that it seemed quite dull and stupid for life to go on in the common way.</p>
+
+<p>So she set to work, and very soon finished off the cake.</p>
+
+<p>By <strong>Lewis Carrol</strong></p>
+
+<p>An English writer, mathematician, logician, Anglican deacon and photographer, best know for writing about Alice.</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>Gettysburg Address</title>
+	  <link>/jasper//gettysburg-address</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>1863-11-19T11:18:00+01:00</pubDate>
+	  <guid>/jasper//gettysburg-address</guid>
+	  <description><![CDATA[
+	     <p>Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.</p>
+
+<p>Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.</p>
+
+<p>But, in a larger sense, we can not dedicate-we can not consecrate-we can not hallow-this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us-that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion-that we here highly resolve that these dead shall not have died in vain-that this nation, under God, shall have a new birth of freedom-and that government of the people, by the people, for the people shall not perish from the earth.</p>
+
+<p>By <strong>Abraham Lincoln</strong></p>
+
+<p>The 16th president of the USA until he was assassinated in April of 1963. He led the US through its Civil War - its bloodiest and greatest moral, constitutional and political crisis.</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>
