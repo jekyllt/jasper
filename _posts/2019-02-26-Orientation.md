@@ -18,7 +18,7 @@ Django 스터디 진행에 앞서 우리가 어떤 사람들인지, 뭘 배우�
 <br>
 <br>
 <br>
-![greeting](/images/greeting.jpg "greeting")  
+![greeting](/assets/images/greeting.jpg "greeting")  
 <br>
 <br>
 <br>
