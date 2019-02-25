@@ -1,10 +1,10 @@
 casper:
-  username: casper
-  name: Casper McFadden
-  location: Maine, USA
-  url_full: http://jekyller.github.io/jasper/
-  url: jekyller.github.io/jasper
-  bio: A paranormal expert and his daughter bunk in an abandoned house populated by 3 mischievous ghosts and a friendly one, Casper.
+  username: roseline124
+  name: Roseline Song
+  location: Deajeon, Korea
+  url_full: http://djangoHY.github.io/jasper/
+  url: djangoHY.github.io/jasper
+  bio: one more scoop의 스터디 djang입니다 :) 
   assets: assets/images/casper.png
 lewis:
   username: lewis
