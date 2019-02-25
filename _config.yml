@@ -10,7 +10,7 @@ language: 'ko'
 name: 'One More Scoop'
 description: "Django Study in Hanyang University"
 
-short_url: 'djangoHY.github.io/'
+short_url: 'djangoHY.github.io/jasper'
 google_analytics: UA-69281367-1
 disqus: djangoHY
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
