@@ -43,10 +43,12 @@ audio, canvas, progress, video {
 }
 audio:not([controls]) { display: none; height: 0; }
 [hidden], template { display: none; }
-a { background-color: transparent;}
+a { background-color: transparent;
+   font-family: 'Noto Sans KR' ;
+}
 a:active, a:hover { outline: 0; }
 abbr[title] { border-bottom: 1px dotted; }
-p, a, li {font-family: 'Noto Sans KR' !important;}
+p, li {font-family: 'Noto Sans KR' ;}
 b, strong { font-weight: bold; }
 dfn { font-style: italic; }
 h1 { font-size: 2em; margin: 0.67em 0; }
