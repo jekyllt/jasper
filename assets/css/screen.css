@@ -45,7 +45,7 @@ audio:not([controls]) { display: none; height: 0; }
 [hidden], template { display: none; }
 a { background-color: transparent;
    font-family: 'Noto Sans KR' ;
-   color : blue;
+   font-color : blue;
 }
 a:active, a:hover { outline: 0; }
 abbr[title] { border-bottom: 1px dotted; }
