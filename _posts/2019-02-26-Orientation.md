@@ -64,7 +64,8 @@ Django의 기본적인 것부터, ORM이나 REST API와 같이 좀 더 심화된
 4. [Djangogirls Tutorial(한글)](https://tutorial.djangogirls.org/ko/)
 5. [Django ORM COOK BOOK(한글)](https://django-orm-cookbook-ko.readthedocs.io/en/latest/)
 6. [웹프로그래밍 튜토리얼(한글)](https://poiemaweb.com/)
-7. [초보몽키 개발 블로그](https://wayhome25.github.io/blog/categories/#django) 
+7. [8퍼센트 두숟갈 스터디](https://8percent.github.io/2017-06-30/%EC%8A%A4%ED%84%B0%EB%94%94%EC%8B%9C%EC%9E%91/)
+8. [초보몽키 개발 블로그](https://wayhome25.github.io/blog/categories/#django) 
  
 
   
