@@ -48,7 +48,7 @@ Django의 기본적인 것부터, ORM이나 REST API와 같이 좀 더 심화된
 6. ORM<br>
 7. REST API<br>
 8. 서버 배포 <br>
-9. ???
+9. ??? <br>
 10.???
   </p>
 </font>
