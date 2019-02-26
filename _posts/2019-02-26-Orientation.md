@@ -39,16 +39,17 @@ Django의 기본적인 것부터, ORM이나 REST API와 같이 좀 더 심화된
   
 <font color="#339441">
   <p>
-1. 실습 환경 만들기 <br>
-2. Django의 MTV 모델<br>
-3. Model<br>
-4. View<br>
-5. Template<br>
-6. Form<br>
-7. ORM<br>
-8. REST API<br>
-9. 서버 배포 <br>
-10. ???
+0. 실습 환경 만들어 오기 <br>
+1. Django의 MTV 모델<br>
+2. Model<br>
+3. View<br>
+4. Template<br>
+5. Form<br>
+6. ORM<br>
+7. REST API<br>
+8. 서버 배포 <br>
+9. ???
+10.???
   </p>
 </font>
 
@@ -71,7 +72,7 @@ Django의 기본적인 것부터, ORM이나 REST API와 같이 좀 더 심화된
 <br>
 <br>
 
-**10 하고 싶은 것이 있나요?**
+**9, 10 하고 싶은 것이 있나요?**
 <br>
 <br>
 미니 해커톤, 웹 프로젝트 시작, 놀아요 등등  
