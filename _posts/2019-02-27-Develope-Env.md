@@ -161,7 +161,7 @@ db.sqlite3
 
 <br>
 
-![repository](/assets/images/git1.png "git repository")  
+![repository](/assets/images/git1.png "git-repository")  
 
 <br>
 
@@ -171,7 +171,7 @@ db.sqlite3
 <br>
 
 
-![address](/assets/images/git2.png "remote rep address")  
+![address](/assets/images/git2.png "remote-rep-address")  
 
 <br>
 
