@@ -39,8 +39,8 @@ Django의 기본적인 것부터, ORM이나 REST API와 같이 좀 더 심화된
   
 <font color="#339441">
   <p>
-0. 실습 환경 만들어 오기 <br>
-1. Django의 MTV 모델<br>
+0. 실습 환경 준비 : 현지 <br>
+1. Django의 MTV 모델 : 현지<br>
 2. Model : 요섭 <br>
 3. View : 도형 <br>
 4. Template : 채연 <br>
