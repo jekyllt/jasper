@@ -158,15 +158,29 @@ db.sqlite3
 - 여기까지 완전 잘하셨어요. 짝짝짝!
 - 어제처럼 [깃허브 사이트](github.com)에 들어가서 repository(저장소) 하나를 생성합니다.
 - 이름만 설정하고 나머지 체크박스는 건들지 않고 바로 생성하면 됩니다. 
-- private은 체크해도 되지만 프로젝트에 사적인 내용이 들어가는게 아니라면 별로 추천드리지 않습니다.
+
+<br>
+
+![repository](/assets/images/git1.png "git repository")  
+
+<br>
 
 
 - 저장소를 생성하면 이런 화면이 뜨는데요. 우리는 파란색으로 밑줄 친 주소만 복사하면 돼요. 
+
+<br>
+
+
+![address](/assets/images/git2.png "remote rep address")  
+
+<br>
 
 
 - 이제 다 끝났습니다.
 - 터미널에 아래 명령어들을 입력하고, 첫번째 커밋을 해봐요!
 - add --all . 할 때 점(.) 찍는 거 잊지 마세요. '현재 폴더'라는 의미입니다.
+
+<br>
 
 <pre><code> 
 > git status
@@ -175,6 +189,8 @@ db.sqlite3
 > git remote add origin 아까 복사한 주소 붙여넣기(마우스 우클릭하면 복붙됩니다)
 > git push -u origin master
 </code></pre>
+
+<br>
 
 - git push -u origin master 한 다음에 계정, 패스워드 입력하라고 하면 github 계정, 패스워드 입력하면 됩니다. 
 
