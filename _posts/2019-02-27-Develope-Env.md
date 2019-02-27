@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: 'assets/images/cover3.jpg'
+cover: 'assets/images/meditation.jpg'
 navigation: True
 title: 실습 환경 준비하기 (a.k.a 인내심 테스트)
 tags: django study 
