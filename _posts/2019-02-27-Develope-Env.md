@@ -9,7 +9,6 @@ date: 2019-02-27 8:56:00
 author: roseline
 categories: roseline
 ---
-<pre>
 <br>
 
 ※참고 : [가상환경 및 장고 설치하기](https://tutorial.djangogirls.org/ko/django_installation/)
@@ -34,7 +33,6 @@ categories: roseline
 ※참고 : 가상환경 실행을 중단하려면 'deactivate'를 치시면 됩니다.
 
 <br><br>
-</pre>
 <pre> <code> 
 > python -m venv 가상환경이름 # 가상환경 만들기
 > 가상환경이름\Scripts\activate
@@ -169,7 +167,6 @@ db.sqlite3
 - 이제 다 끝났습니다.
 - 터미널에 아래 명령어들을 입력하고, 첫번째 커밋을 해봐요!
 - add --all . 할 때 점(.) 찍는 거 잊지 마세요. '현재 폴더'라는 의미입니다.
-- 혹시 git push -u origin master 한 다음에 계정, 패스워드 입력하라고 하면 github 계정, 패스워드 입력하면 됩니다. 
 
 <pre><code> 
 > git status
@@ -178,6 +175,8 @@ db.sqlite3
 > git remote add origin 아까 복사한 주소 붙여넣기(마우스 우클릭하면 복붙됩니다)
 > git push -u origin master
 </code></pre>
+
+- git push -u origin master 한 다음에 계정, 패스워드 입력하라고 하면 github 계정, 패스워드 입력하면 됩니다. 
 
 
 
