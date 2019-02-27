@@ -2,7 +2,7 @@
 layout: post
 cover: 'assets/images/cover3.jpg'
 navigation: True
-title: 실습 환경 준비하기
+title: 실습 환경 준비하기 (a.k.a 인내심 테스트)
 tags: django study 
 subclass: 'post tag-test tag-content'
 date: 2019-02-27 8:56:00
@@ -22,6 +22,8 @@ categories: roseline
 
 <br>
 <br>
+<br>
+
 
 **2. 가상환경**
 <br>
@@ -29,10 +31,10 @@ categories: roseline
 - 터미널에서 아래 명령 실행 
 
 <br>
-※주의 : '>'는 치지 마세요 :) (OS에 따라서 '>'가 아니라 '$'일수도 있어요)
+※주의 : '>'는 치지 마세요 :) (OS에 따라서 '>'가 아니라 '$'일수도 있어요) <br>
 ※참고 : 가상환경 실행을 중단하려면 'deactivate'를 치시면 됩니다.
 
-<br><br>
+<br>
 <pre> <code> 
 > python -m venv 가상환경이름 # 가상환경 만들기
 > 가상환경이름\Scripts\activate
@@ -50,6 +52,8 @@ categories: roseline
 
 <br>
 <br>
+<br>
+
 
 **3. Django 설치**
 
@@ -69,17 +73,21 @@ categories: roseline
 
 <br>
 <br>
+<br>
+
 
 
 **4. Django 프로젝트 시작하기!**
 
 - **가상환경 실행 상태**여야 합니다.
-- 해당 [djangogirls 튜토리얼]((https://tutorial.djangogirls.org/ko/django_start_project/))을 그대로 따라하시면 됩니다.
+- 해당 [djangogirls 튜토리얼](https://tutorial.djangogirls.org/ko/django_start_project/)을 그대로 따라하시면 됩니다.
 - Q. settings.py 는 어떻게 수정하나요? 
 - A. 코드 에디터를 사용하거나, 터미널에서 vi나 vim을 사용해 수정하셔도 좋습니다. 
 
 <br>
 <br>
+<br>
+
 
 
 **5. Django 어플리케이션 시작하기!**
@@ -116,9 +124,17 @@ INSTALLED_APPS = [
 
 <br>
 <br>
+<br>
+
 
 
 **6. 증말 마지막. git 연결하기**
+
+<br>
+
+![whatthe](/assets/images/shit.jpg "whatthe")  
+
+<br>
 
 이거 언제 끝나.. 마지막입니다. <br>
 우리 처음 모인 날 git을 잠깐 해봤으니까 더 빠르고 쉽게 끝날 거에요. ^0^
