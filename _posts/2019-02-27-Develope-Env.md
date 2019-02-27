@@ -36,7 +36,7 @@ categories: roseline
 
 <br>
 <pre> <code> 
-> python -m venv 가상환경이름 # 가상환경 만들기
+> python -m venv 가상환경이름 
 > 가상환경이름\Scripts\activate
 </code> </pre>
 
