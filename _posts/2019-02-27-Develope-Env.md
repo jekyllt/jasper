@@ -34,7 +34,7 @@ categories: roseline
 ※참고 : 가상환경 실행을 중단하려면 'deactivate'를 치시면 됩니다.
 
 <br><br>
-
+</pre>
 <pre> <code> 
 > python -m venv 가상환경이름 # 가상환경 만들기
 > 가상환경이름\Scripts\activate
@@ -182,7 +182,6 @@ db.sqlite3
 
 
 
-</pre>
 
 
 
