@@ -19,10 +19,11 @@ categories: roseline
 
 - 터미널에서 해당 폴더 경로로 이동
 - 터미널에서 아래 명령 실행 
+※주의 : '>'는 치지 마세요 :) 
 
 <pre> <code>
-python -m venv 가상환경이름 # 가상환경 만들기
-가상환경이름\Scripts\activate
+> python -m venv 가상환경이름 # 가상환경 만들기
+> 가상환경이름\Scripts\activate
 </code></pre>
 
 성공 시, 이렇게 나와야 합니다.
