@@ -120,8 +120,8 @@ INSTALLED_APPS = [
 
 **6. 증말 마지막. git 연결하기**
 
-이거 언제 끝나.. 생각하셨죠? 마지막입니다. 
-우리 처음 모인 날 git을 잠깐 체험해봤으니까 더 빠르고 쉽게 끝날 거에요. 화이팅!! ^0^
+이거 언제 끝나.. 마지막입니다. <br>
+우리 처음 모인 날 git을 잠깐 해봤으니까 더 빠르고 쉽게 끝날 거에요. ^0^
 
 <br>
 ※참고 : [git 저장소 연결하기](https://tutorial.djangogirls.org/ko/deploy/)
@@ -131,7 +131,9 @@ INSTALLED_APPS = [
 
 - 본인이 처음 만든 폴더(1번에서 만든 폴더)로 이동하세요. 
 - 가상환경 실행 중이라면 '**deactivate**'라고 치고 비활성화 하세요.
-- 아래 명령어들 실행합니다. (기완님 your name 치지마세요 크크)
+- 아래 명령어들 실행합니다. 
+
+<br>
 
 <pre><code> 
 > git init
@@ -139,6 +141,7 @@ INSTALLED_APPS = [
 > git config --global user.email you@example.com
 </code></pre>
 
+<br>
 
 - 에디터를 열어서 '.gitignore'라는 이름의 파일을 만들어요.
 - 아래 내용을 넣어주고, 저장은 1번에서 만든 폴더에 합니다. (탐색기로 해당 폴더를 보면 .git 폴더가 있을 거에요.) 
@@ -161,7 +164,7 @@ db.sqlite3
 
 <br>
 
-![repository](/assets/images/git1.png "git-repository")  
+![repository](/assets/images/git1.PNG "git-repository")  
 
 <br>
 
@@ -171,7 +174,7 @@ db.sqlite3
 <br>
 
 
-![address](/assets/images/git2.png "remote-rep-address")  
+![address](/assets/images/git2.PNG "remote-rep-address")  
 
 <br>
 
