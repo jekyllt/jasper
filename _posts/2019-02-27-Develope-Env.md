@@ -9,7 +9,7 @@ date: 2019-02-27 8:56:00
 author: roseline
 categories: roseline
 ---
-
+<pre>
 <br>
 
 ※참고 : [가상환경 및 장고 설치하기](https://tutorial.djangogirls.org/ko/django_installation/)
@@ -182,7 +182,7 @@ db.sqlite3
 
 
 
-
+</pre>
 
 
 
