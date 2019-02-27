@@ -41,13 +41,13 @@ Django의 기본적인 것부터, ORM이나 REST API와 같이 좀 더 심화된
   <p>
 0. 실습 환경 만들어 오기 <br>
 1. Django의 MTV 모델<br>
-2. Model<br> : 요섭
-3. View<br> : 도형
-4. Template<br> : 채연
-5. Form<br> : 기완
-6. ORM<br> : 요섭
-7. REST API<br> : 도형
-8. 서버 배포 <br> : 채연 
+2. Model : 요섭 <br>
+3. View : 도형 <br>
+4. Template : 채연 <br>
+5. Form : 기완 <br>
+6. ORM : 요섭 <br>
+7. REST API : 도형 <br>
+8. 서버 배포 : 채연 <br>
 9. ??? <br>
 10.???
   </p>
