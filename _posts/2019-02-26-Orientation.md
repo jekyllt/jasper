@@ -48,7 +48,7 @@ Django의 기본적인 것부터, ORM이나 REST API와 같이 좀 더 심화된
 6. ORM : 요섭 <br>
 7. REST API : 도형 <br>
 8. 서버 배포 : 채연 <br>
-9. ??? <br>
+9. pretty admin : 현지 <br>
 10.???
   </p>
 </font>
@@ -59,13 +59,15 @@ Django의 기본적인 것부터, ORM이나 REST API와 같이 좀 더 심화된
 
 **이론 참고**
 1. 책 : Two Scoop of Django
-2. [django 공식문서(영/한)](https://docs.djangoproject.com/ko/2.1/)
-3. [Django Book](https://djangobook.com/)
-4. [Djangogirls Tutorial(한글)](https://tutorial.djangogirls.org/ko/)
-5. [Django ORM COOK BOOK(한글)](https://django-orm-cookbook-ko.readthedocs.io/en/latest/)
-6. [웹프로그래밍 튜토리얼(한글)](https://poiemaweb.com/)
-7. [8퍼센트 두숟갈 스터디](https://8percent.github.io/2017-06-30/%EC%8A%A4%ED%84%B0%EB%94%94%EC%8B%9C%EC%9E%91/)
-8. [초보몽키 개발 블로그](https://wayhome25.github.io/blog/categories/#django) 
+2. 책 : Django 로 배우는 쉽고 빠른 웹 개발(개정판)
+3. 책 : Django 로 배우는 쉽고 빠른 웹 개발(실전편)
+4. [django 공식문서(영/한)](https://docs.djangoproject.com/ko/2.1/)
+5. [Django Book](https://djangobook.com/)
+6. [Djangogirls Tutorial(한글)](https://tutorial.djangogirls.org/ko/)
+7. [Django ORM COOK BOOK(한글)](https://django-orm-cookbook-ko.readthedocs.io/en/latest/)
+8. [웹프로그래밍 튜토리얼(한글)](https://poiemaweb.com/)
+9. [8퍼센트 두숟갈 스터디](https://8percent.github.io/2017-06-30/%EC%8A%A4%ED%84%B0%EB%94%94%EC%8B%9C%EC%9E%91/)
+10. [초보몽키 개발 블로그](https://wayhome25.github.io/blog/categories/#django) 
  
 
   
