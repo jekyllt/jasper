@@ -49,7 +49,7 @@ Django의 기본적인 것부터, ORM이나 REST API와 같이 좀 더 심화된
 7. REST API : 도형 <br>
 8. 서버 배포 : 채연 <br>
 9. pretty admin : 현지 <br>
-10.???
+10. Django 디버깅 : 기완 <br>
   </p>
 </font>
 
