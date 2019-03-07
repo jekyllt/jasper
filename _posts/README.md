@@ -64,6 +64,7 @@ author : kiwan, yosub, chayeon, dohyung, yoonji
 <br>
 
 수정 전 꼭! **원본 저장소(djangoHY) 내용 반영하기** 
+원본 저장소 - 내 원격 저장소 - 내 로컬 저장소 모두 동기화되어야 충돌이 없다.
 
 <code>git pull djangoHY master</code>
 
