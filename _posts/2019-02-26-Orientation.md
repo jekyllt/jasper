@@ -58,7 +58,7 @@ Django의 기본적인 것부터, ORM이나 REST API와 같이 좀 더 심화된
 <br>
 
 **이론 참고**
-1. 책 : Two Scoop of Django
+1. 책 : Two Scoop of Django + [Two Scoop 요약본](https://github.com/8percent/tsd)
 2. 책 : Django 로 배우는 쉽고 빠른 웹 개발(개정판)
 3. 책 : Django 로 배우는 쉽고 빠른 웹 개발(실전편)
 4. [django 공식문서(영/한)](https://docs.djangoproject.com/ko/2.1/)
