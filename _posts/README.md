@@ -24,7 +24,7 @@ ex) 2019-02-24-How-to-write.md
 
 <br>
 
-2. 본문 첫 시작에 이걸 복붙해주세요.
+**2. 본문 첫 시작에 이걸 복붙해주세요.**
 
 <pre><code>
 ---
@@ -52,14 +52,14 @@ author : kiwan, yosub, chayeon, dohyung, yoonji
 <br>
 
 
-**2. 마크다운으로 작성합니다.** <br><br>
+**3. 마크다운으로 작성합니다.** <br><br>
 
 마크다운 사용법은 아래 링크를 참고해주세요. <br>
   
 [마크다운 사용법](https://gist.github.com/ihoneymon/652be052a0727ad59601) <br><br><br><br>
 
 
-**수정 후 원본 저장소(djagnoHY/djangoHY.github.io)에 반영하기**
+**4.수정 후 원본 저장소(djagnoHY/djangoHY.github.io)에 반영하기**
 
 <br>
 
@@ -75,13 +75,13 @@ author : kiwan, yosub, chayeon, dohyung, yoonji
 
 수정 후 pull request 방법 2가지 
 
-1. github.com 사이트에서 수정
+4-1. github.com 사이트에서 수정
 -  자신의 repository에서 수정한 뒤 사이트에서 new pull request 클릭
 - <code>git pull origin master</code>명령어 입력(자신의 로컬 저장소에 반영해야 하므로)
 
 <br>
 
-2. 에디터에서 수정
+4-2. 에디터에서 수정
 - 에디터에서 수정 후 저장
 - pycharm 에서 플러그인을 설치하면 아래처럼 preview를 볼 수 있다. : [마크다운 preview 플러그인 설치](https://wit.nts-corp.com/2014/08/13/1947)
 - 저장 후 터미널 열고 아래 명령어들 입력
