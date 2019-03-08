@@ -7,12 +7,12 @@ roseline:
   bio: one more scoop의 스터디 djang입니다 :) 
   assets: assets/images/casper.png
 kiwan:
-  username: kiwan
-  name: kiwan
+  username: rldhkstopic
+  name: kiwan, Park
   location: Korea
-  url_full: http://djangoHY.github.io/
-  url: http://djangoHY.github.io/
-  bio: hello my name is.. 
+  url_full: http://rldhks6899.blog.me
+  url: http://rldhks6899.blog.me
+  bio: Just for being a leader
   assets: assets/images/lewis.jpeg
 yosub:
   username: yosub
