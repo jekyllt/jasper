@@ -79,7 +79,7 @@ With the latest update, multiple author blogs are now supported out of the box.
 
 ## Issues and contributing
 
-This install builds well with Ruby v2.4.2 and Jekyll v3.6.2. If you run into any problems please log them on the [issue tracker](https://github.com/jekyller/jasper/issues).
+This install builds well with Ruby v2.4.2 and Jekyll v3.7.4. If you run into any problems please log them on the [issue tracker](https://github.com/jekyller/jasper/issues).
 
 Feel free pull-request your patches and fixes.
 
