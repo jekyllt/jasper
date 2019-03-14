@@ -28,3 +28,4 @@ test/version_tmp
 tmp
 vendor
 Gemfile.lock
+node_modules
