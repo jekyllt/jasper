@@ -1,4 +1,4 @@
-# Jykell configuration
+# Jekyll configuration
 #markdown: redcarpet
 #highlighter: pygments
 markdown: kramdown
