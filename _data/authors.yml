@@ -2,17 +2,17 @@ roseline:
   username: roseline
   name: Roseline Song
   location: Deajeon, Korea
-  url_full: http://djangoHY.github.io/
-  url: djangoHY.github.io/
+  url_full: http://roseline124.github.io/
+  url: roseline124.github.io/
   bio: one more scoop의 스터디 djang입니다 :) 
   assets: assets/images/casper.png
 kiwan:
-  username: kiwan
-  name: kiwan
+  username: rldhkstopic
+  name: kiwan, Park
   location: Korea
-  url_full: http://djangoHY.github.io/
-  url: http://djangoHY.github.io/
-  bio: hello my name is.. 
+  url_full: http://rldhks6899.blog.me
+  url: http://rldhks6899.blog.me
+  bio: Just for being a leader.
   assets: assets/images/lewis.jpeg
 yosub:
   username: yosub
@@ -31,8 +31,8 @@ chayeon:
   bio: I'm an American novelist, best known for my work writing about a brave jungle hero called Tarzan and his muse, Jane.
   assets: assets/images/edgar.gif
 dohyung:
-  username: dohyung
-  name: dohyung
+  username: dohyeong
+  name: dohyeong
   location: Memphis, Tennessee
   url_full: http://jekyller.github.io/jasper/
   url: jekyller.github.io/jasper
