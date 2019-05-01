@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: 'assets/images/bigpicture.jpg'
+cover: 'assets/images/cover3.jpg'
 navigation: True
 title: DjangoForm
 tags: django study
