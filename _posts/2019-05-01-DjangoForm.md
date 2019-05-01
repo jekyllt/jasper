@@ -12,7 +12,14 @@ categories: rldhkstopic
 
 <h3>Django Form</h3> HTML에서 Form은 웹 페이지상에서 한개 이상의 필드나 위젯들의 묶음을 말하며 주로 홈페이지를 사용하는 User로부터 Data를 얻어 Server에 저장하는데 사용됩니다. 텍스트 박스와 같이 데이터를 입력받는 위젯들이 많기 때문에 Form은 정보수집에 특화된 장치로서 Django에서 Model보다 강력한 역할을 합니다.<br><br>
 
-<h3>Form Processing Process in Django tree</h3><img src="./imgs/01.png" width="70%"><br><h5> Django에서 Form은 다음 처리과정을 거칩니다.</h5><li> 사용자로부터 처음 Form Request를 받을 때 Initial Form을 보여줍니다.</li><li> 데이터가 입력된 Form의 Submit Request를 받습니다.<li> 해당 Request로부터 데이터를 수집하고 이를 기존의 Form Data와 결합합니다.<li> 해당 필드에 적절한 값인지를 판단해 데이터를 다듬어서 유효성을 검증합니다.<li> 입력된 데이터가 유효하지 않으면 에러 메세지를 표시합니다.<li> 입력된 모든 데이터가 유효하다면 요청된 동작을 수행하여 데이터를 저장합니다.<li> 모든 작업이 완료되었다면 사용자를 새로운 페이지로 보냅니다.<br><br>
+<h3>Form Processing Process in Django tree</h3>
+<img src="./imgs/01.png" width="70%"><br>
+<h5> Django에서 Form은 다음 처리과정을 거칩니다.</h5>
+<li> 사용자로부터 처음 Form Request를 받을 때 Initial Form을 보여줍니다.
+<li> 데이터가 입력된 Form의 Submit Request를 받습니다.<li> 해당 Request로부터 데이터를 수집하고 이를 기존의 Form Data와 결합합니다.
+<li> 해당 필드에 적절한 값인지를 판단해 데이터를 다듬어서 유효성을 검증합니다.
+<li> 입력된 데이터가 유효하지 않으면 에러 메세지를 표시합니다.<li> 입력된 모든 데이터가 유효하다면 요청된 동작을 수행하여 데이터를 저장합니다.
+<li> 모든 작업이 완료되었다면 사용자를 새로운 페이지로 보냅니다.<br><br>
 
 <h3>Let's Practice</h3> 바로 실습을 진행해봅시다.<br> 우선 reviewBoar 폴더로 이동해서 forms.py 파일을 새로 만들어주세요.<br><img src="./imgs/02.png" width="70%"><br><br>
 
