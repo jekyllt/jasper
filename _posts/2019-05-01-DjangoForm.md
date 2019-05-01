@@ -1,4 +1,14 @@
-<h1>Django Form</h1><hr>
+---
+layout: post
+cover: 'assets/images/cover4.jpg'
+navigation: True
+title: Django Form
+tags: django study
+subclass: 'post tag-test tag-content'
+date: 2019-05-01 12:46:00
+author: rldhkstopic
+categories: rldhkstopic
+---
 
 <h3>Django Form</h3> HTML에서 Form은 웹 페이지상에서 한개 이상의 필드나 위젯들의 묶음을 말하며 주로 홈페이지를 사용하는 User로부터 Data를 얻어 Server에 저장하는데 사용됩니다. 텍스트 박스와 같이 데이터를 입력받는 위젯들이 많기 때문에 Form은 정보수집에 특화된 장치로서 Django에서 Model보다 강력한 역할을 합니다.<br><br>
 
