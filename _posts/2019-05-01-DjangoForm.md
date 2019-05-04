@@ -2,7 +2,7 @@
 layout: post
 cover: 'assets/images/cover3.jpg'
 navigation: True
-title: Orientation
+title: Django Form
 tags: django study 
 subclass: 'post tag-test tag-content'
 date: 2019-05-01 12:45:00
