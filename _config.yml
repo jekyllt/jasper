@@ -7,8 +7,10 @@ paginate: 5
 language: 'en-uk'
 
 # Website info
-name: 'Finding The Way Home'
-description: "A beautiful narrative written with the world's most elegant publishing platform. The story begins here."
+name: 'Andrew Marks'
+description: > 
+Part Time Data Science at Lambda School
+Master of Science in Information Systems Technology with a concentration in Data Science
 
 short_url: 'jekyller.github.io/jasper/'
 google_analytics: UA-69281367-1
