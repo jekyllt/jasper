@@ -3,7 +3,7 @@
 #highlighter: pygments
 markdown: kramdown
 highlighter: rouge
-paginate: 10
+paginate: 30
 language: 'ko'
 
 # Website info
