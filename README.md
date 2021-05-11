@@ -1,8 +1,8 @@
 ## Jasper
 
-[![Build Status](https://travis-ci.org/jekyller/jasper.svg?branch=master)](https://travis-ci.org/jekyller/jasper)
-[![Ruby](https://img.shields.io/badge/ruby-2.5.2-blue.svg?style=flat)](http://travis-ci.org/jekyller/jasper)
-[![Jekyll](https://img.shields.io/badge/jekyll-3.6.2-blue.svg?style=flat)](http://travis-ci.org/jekyller/jasper)
+![Build Status](https://github.com/jekyller/jasper/actions/workflows/jekyll_build.yml/badge.svg)
+[![Ruby](https://img.shields.io/badge/ruby-2.6.3-blue.svg?style=flat)](http://travis-ci.org/jekyller/jasper)
+[![Jekyll](https://img.shields.io/badge/jekyll-3.9.0-blue.svg?style=flat)](http://travis-ci.org/jekyller/jasper)
 
 This is a port of Ghost's default theme [Casper](https://github.com/tryghost/casper) for Jekyll inspired by [Kasper](https://github.com/rosario/kasper).
 
@@ -79,7 +79,7 @@ With the latest update, multiple author blogs are now supported out of the box.
 
 ## Issues and contributing
 
-This install builds well with Ruby v2.4.2 and Jekyll v3.7.4. If you run into any problems please log them on the [issue tracker](https://github.com/jekyller/jasper/issues).
+This install builds well with Ruby v2.6.3 and Jekyll v3.9.0. If you run into any problems please log them on the [issue tracker](https://github.com/jekyller/jasper/issues).
 
 Feel free pull-request your patches and fixes.
 
