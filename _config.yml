@@ -7,17 +7,17 @@ paginate: 5
 language: 'en-uk'
 
 # Website info
-name: 'Finding The Way Home'
-description: "A beautiful narrative written with the world's most elegant publishing platform. The story begins here."
+name: 'The Tideflats'
+description: "An audio project examining distance, infrstructure and the history of the Tacoma Tideflats."
 
-short_url: 'jekyllt.github.io/jasper/'
+short_url: 'aweymo.github.io/tideflats/'
 google_analytics: UA-69281367-1
 disqus: username
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /jasper/
+baseurl: /tideflats/
 
 # Permalinks
-permalink: /:title
+permalink: /:aweymo
 # permalink: /author/:username
 # permalink: /tag/:tag
 
@@ -45,13 +45,13 @@ plugins: [jekyll-paginate]
 # or "master" otherwise
 safe: false
 lsi: false
-username: jekyllt
-repo: jasper
+username: aweymo
+repo: aweymo
 branch: master
-relative_source: ../jasper/
+relative_source: ../tideflats/
 destination: ../jasper-pages/
-production_url:  https://jekyllt.github.io/jasper/
-source_url:  https://github.com/jekyllt/jasper/
+production_url:  https://aweymo.github.io/tideflats/
+source_url:  https://aweymo.github.io/tideflats/
 
 exclude:
   - README.md
