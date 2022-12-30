@@ -35,7 +35,7 @@
 
             <!-- [[tags prefix=" on "]] -->
             {% if post.tags.size > 0 %}
-                on
+                in
                 {% for tag in post.tags %}
                     {% if forloop.index == post.tags.size %}
                        <a href='{{ site.baseurl }}tag/{{ tag }}'>{{ tag | capitalize }}</a>

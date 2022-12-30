@@ -8,13 +8,13 @@ language: 'en-uk'
 
 # Website info
 name: 'Greetings'
-description: "Welcome to my creative space..."
+description: "Welcome to my creative world..."
 
 short_url: 'joannefan.github.io'
-google_analytics: UA-69281367-1
+google_analytics: ''
 disqus: username
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /
+baseurl: '/'
 
 # Permalinks
 permalink: /:title
@@ -45,13 +45,18 @@ plugins: [jekyll-paginate]
 # or "master" otherwise
 safe: false
 lsi: false
-username: jekyllt
-repo: jasper
+#username: joannefan
+#repo: joannefan.github.io
+#branch: master
+#relative_source: ../joannefan.github.io/
+#destination: ../joannefan.github.io-pages/
+username: joannefan # jekyllt
+repo: joannefan.github.io #jasper
 branch: master
-relative_source: ../jasper/
-destination: ../jasper-pages/
-production_url:  https://jekyllt.github.io/jasper/
-source_url:  https://github.com/jekyllt/jasper/
+relative_source: ./ # ../jasper/
+destination: ../joanne-pages/ # ../jasper-pages/
+production_url: https://joannefan.github.io/ # https://jekyllt.github.io/jasper/
+source_url: https://github.com/joannefan/joannefan.github.io # https://github.com/jekyllt/jasper/
 
 exclude:
   - README.md
