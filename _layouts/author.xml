@@ -5,10 +5,10 @@ title: nil
 {% for post in page.posts %}
 	<item>
 	  <title>{{ post.title }}</title>
-	  <link>{{ site.baseurl }}{{ post.url }}</link>
+	  <link>{{ post.url | relative_url }}</link>
 	  <author>{{ site.author }}</author>
 	  <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
-	  <guid>{{ site.baseurl }}{{ post.url }}</guid>
+	  <guid>{{ post.url | relative_url }}</guid>
 	  <description><![CDATA[
 	     {{ post.content | expand_urls : site.url }}
 	  ]]></description>

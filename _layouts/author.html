@@ -15,9 +15,9 @@ current: author
 
 <!-- Everything inside the #author tags pulls data from the author -->
 <!-- #author  -->
-    <header class="main-header author-head {% if page.cover %}" style="background-image: url({{ site.baseurl }}{{ page.cover }}) {% else %}no-cover{% endif %}">
+    <header class="main-header author-head {% if page.cover %}" style="background-image: url({{ page.cover | relative_url }}) {% else %}no-cover{% endif %}">
         <nav class="main-nav overlay clearfix">
-            {% if page.logo %}<a class="blog-logo" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}{{ page.logo }}" alt="Blog Logo" /></a>{% endif %}
+            {% if page.logo %}<a class="blog-logo" href="{{ "/" | relative_url }}"><img src="{{ page.logo | relative_url }}" alt="Blog Logo" /></a>{% endif %}
             {% if page.navigation %}
                 <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
             {% endif %}
@@ -29,7 +29,7 @@ current: author
             {% if author[1].username == page.author %}
                 {% if author[1].assets %}
                 <figure class="author-image">
-                    <div class="img" style="background-image: url({{ site.baseurl }}{{ author[1].assets }})"><span class="hidden">{{ author[1].name }}'s Picture</span></div>
+                    <div class="img" style="background-image: url({{ author[1].assets | relative_url }})"><span class="hidden">{{ author[1].name }}'s Picture</span></div>
                 </figure>
                 {% endif %}
                 <h1 class="author-title">{{ author[1].name }}</h1>
