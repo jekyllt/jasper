@@ -1,0 +1,23 @@
+{%- comment -%} Figure placeholder or final image. Usage: include ew-figure.html id="F4". Definitions live in _data/radar_article.yml. {%- endcomment -%}
+{%- assign fig = site.data.radar_article.figures | where: "id", include.id | first -%}
+{%- if fig -%}
+<figure class="ew-fig ew-fig--{{ fig.width | default: 'normal' }}" id="fig-{{ fig.id }}">
+{%- if fig.image and fig.status == 'final' -%}
+<img class="ew-fig__img" src="{{ site.baseurl }}{{ fig.image }}" alt="{{ fig.title }}" loading="lazy">
+{%- else -%}
+<div class="ew-ph ew-ph--{{ fig.type }}" style="aspect-ratio: {{ fig.ratio | default: '16/9' }};">
+<div class="ew-ph__inner">
+<span class="ew-ph__tag">{{ fig.type | upcase }} &middot; {{ fig.id }} &middot; placeholder</span>
+<strong class="ew-ph__title">{{ fig.title }}</strong>
+<span class="ew-ph__shows">{{ fig.shows }}</span>
+<span class="ew-ph__src">Source: {{ fig.source }} &middot; Owner: {{ fig.owner }} &middot; Status: {{ fig.status }}</span>
+</div>
+</div>
+{%- endif -%}
+{%- if fig.caption and fig.caption != "" -%}
+<figcaption><span class="ew-fig__id">Figure {{ fig.id }}.</span> {{ fig.caption }}</figcaption>
+{%- endif -%}
+</figure>
+{%- else -%}
+<p class="ew-missing">Missing figure definition: {{ include.id }}</p>
+{%- endif -%}

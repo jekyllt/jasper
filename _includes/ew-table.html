@@ -1,0 +1,22 @@
+{%- comment -%} Data-driven table. Usage: include ew-table.html id="T1". Definitions live in _data/radar_article.yml. {%- endcomment -%}
+{%- assign tbl = site.data.radar_article.tables | where: "id", include.id | first -%}
+{%- if tbl -%}
+<figure class="ew-table" id="tbl-{{ tbl.id }}">
+<div class="ew-table__head"><span class="ew-table__title">{{ tbl.title }}</span>{%- if tbl.status == 'placeholder' -%}<span class="ew-badge">{{ tbl.id }} &middot; dummy data</span>{%- elsif tbl.status != 'final' -%}<span class="ew-badge">{{ tbl.id }} &middot; {{ tbl.status }}</span>{%- endif -%}</div>
+<div class="ew-table__scroll">
+<table>
+<thead><tr>{%- for c in tbl.columns -%}<th>{{ c }}</th>{%- endfor -%}</tr></thead>
+<tbody>
+{%- for r in tbl.rows -%}
+<tr>{%- for v in r -%}<td class="ew-cell ew-cell--{{ v | slugify }}">{{ v }}</td>{%- endfor -%}</tr>
+{%- endfor -%}
+</tbody>
+</table>
+</div>
+{%- if tbl.caption and tbl.caption != "" -%}
+<figcaption><span class="ew-fig__id">Table {{ tbl.id }}.</span> {{ tbl.caption }} <span class="ew-src">Source: {{ tbl.source }}</span></figcaption>
+{%- endif -%}
+</figure>
+{%- else -%}
+<p class="ew-missing">Missing table definition: {{ include.id }}</p>
+{%- endif -%}

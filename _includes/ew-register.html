@@ -1,0 +1,20 @@
+{%- comment -%} Internal placeholder register. Shown only when the page has draft: true. {%- endcomment -%}
+{%- assign d = site.data.radar_article -%}
+<section class="ew-register" id="placeholder-register">
+<h2>Placeholder register (internal, draft only)</h2>
+<p>Everything below must be produced or confirmed before this page is published. Edit entries in <code>_data/radar_article.yml</code>; set <code>draft: false</code> on the page to hide this box.</p>
+<div class="ew-table__scroll">
+<table>
+<thead><tr><th>ID</th><th>Type</th><th>Element</th><th>Source output</th><th>Owner</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td><a href="#kpi-{{ d.kpis.id }}">{{ d.kpis.id }}</a></td><td>KPI panel</td><td>Monthly key numbers</td><td>{{ d.kpis.source }}</td><td>{{ d.kpis.owner }}</td><td class="ew-cell--placeholder">placeholder</td></tr>
+{%- for f in d.figures -%}
+<tr><td><a href="#fig-{{ f.id }}">{{ f.id }}</a></td><td>{{ f.type }}</td><td>{{ f.title }}</td><td>{{ f.source }}</td><td>{{ f.owner }}</td><td class="ew-cell--{{ f.status }}">{{ f.status }}</td></tr>
+{%- endfor -%}
+{%- for t in d.tables -%}
+<tr><td><a href="#tbl-{{ t.id }}">{{ t.id }}</a></td><td>table</td><td>{{ t.title }}</td><td>{{ t.source }}</td><td>{{ t.owner }}</td><td class="ew-cell--{{ t.status }}">{{ t.status }}</td></tr>
+{%- endfor -%}
+</tbody>
+</table>
+</div>
+</section>

@@ -1,0 +1,48 @@
+---
+layout: default
+class: 'page-template article-template'
+---
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/css/earthwise-article.css" />
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav clearfix">
+        {% if page.logo %}<a class="blog-logo" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}{{ page.logo }}" alt="Logo" /></a>{% endif %}
+        {% if page.navigation %}<a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>{% endif %}
+    </nav>
+</header>
+
+<main class="content ew-article" role="main">
+
+    {% if page.draft %}<div class="ew-draft">Draft layout &middot; all numbers, maps and charts are dummy placeholders &middot; not for publication</div>{% endif %}
+
+    <header class="ew-hero">
+        {% if page.eyebrow %}<p class="ew-eyebrow">{{ page.eyebrow }}</p>{% endif %}
+        <h1 class="ew-hero__title">{{ page.title }}</h1>
+        {% if page.lede %}<p class="ew-hero__lede">{{ page.lede }}</p>{% endif %}
+        {% if page.cta_label %}<p class="ew-hero__cta"><a class="ew-btn" href="{{ page.cta_url }}">{{ page.cta_label }}</a>{% if page.cta_secondary_label %} <a class="ew-btn ew-btn--ghost" href="{{ page.cta_secondary_url }}">{{ page.cta_secondary_label }}</a>{% endif %}</p>{% endif %}
+    </header>
+
+    {% if page.hero_figure %}<div class="ew-hero__figure">{% include ew-figure.html id=page.hero_figure %}</div>{% endif %}
+
+    {% if page.toc %}
+    <nav class="ew-toc" aria-label="On this page">
+        <span class="ew-toc__label">On this page</span>
+        <ol>{% for item in page.toc %}<li><a href="#{{ item.id }}">{{ item.label }}</a></li>{% endfor %}</ol>
+    </nav>
+    {% endif %}
+
+    <article class="ew-body">
+        {{ content }}
+    </article>
+
+    {% if page.cta_label %}
+    <section class="ew-cta-band">
+        <h2>{{ page.cta_band_title | default: page.cta_label }}</h2>
+        {% if page.cta_band_text %}<p>{{ page.cta_band_text }}</p>{% endif %}
+        <a class="ew-btn ew-btn--light" href="{{ page.cta_url }}">{{ page.cta_label }}</a>
+    </section>
+    {% endif %}
+
+    {% if page.draft %}{% include ew-register.html %}{% endif %}
+
+</main>

@@ -1,0 +1,11 @@
+{%- comment -%} KPI panel from site.data.radar_article.kpis. Usage: include ew-kpis.html {%- endcomment -%}
+{%- assign k = site.data.radar_article.kpis -%}
+<section class="ew-kpis" id="kpi-{{ k.id }}">
+<div class="ew-kpis__head"><span class="ew-table__title">{{ site.data.radar_article.concession.name }} &middot; {{ site.data.radar_article.concession.report_month }}</span><span class="ew-badge">{{ k.id }} &middot; dummy data</span></div>
+<div class="ew-kpis__grid">
+{%- for t in k.tiles -%}
+<div class="ew-kpi"><span class="ew-kpi__label">{{ t.label }}</span><span class="ew-kpi__value">{{ t.value }}</span><span class="ew-kpi__note">{{ t.note }}</span></div>
+{%- endfor -%}
+</div>
+<p class="ew-src">Source: {{ k.source }} &middot; Owner: {{ k.owner }}</p>
+</section>
