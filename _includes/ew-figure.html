@@ -3,7 +3,7 @@
 {%- if fig -%}
 <figure class="ew-fig ew-fig--{{ fig.width | default: 'normal' }}" id="fig-{{ fig.id }}">
 {%- if fig.image and fig.status == 'final' -%}
-<img class="ew-fig__img" src="{{ site.baseurl }}{{ fig.image }}" alt="{{ fig.title }}" loading="lazy">
+<img class="ew-fig__img" src="/{{ fig.image }}" alt="{{ fig.title }}" loading="lazy">
 {%- else -%}
 <div class="ew-ph ew-ph--{{ fig.type }}" style="aspect-ratio: {{ fig.ratio | default: '16/9' }};">
 <div class="ew-ph__inner">
