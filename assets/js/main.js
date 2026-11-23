@@ -137,6 +137,14 @@
       searchInput.addEventListener('input', applyBlogFilters);
     }
 
+    var searchForm = document.getElementById('blog-search-form');
+    if (searchForm) {
+      searchForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        applyBlogFilters();
+      });
+    }
+
     filterBtns.forEach(function (btn) {
       btn.addEventListener('click', function () {
         activeCategory = (btn.getAttribute('data-filter-category') || 'all').toLowerCase();

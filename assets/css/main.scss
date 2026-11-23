@@ -132,6 +132,18 @@ ul, ol {
   top: 1rem;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* Container */
 .container {
   width: 100%;
@@ -470,7 +482,7 @@ ul, ol {
   border-radius: var(--radius-lg);
   overflow: hidden;
   border: 1px solid var(--border);
-  background: var(--bg-subtle);
+  background: #f2f2f5;
   box-shadow: var(--shadow-md);
   aspect-ratio: 4 / 4.4;
 }
@@ -479,7 +491,7 @@ ul, ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: 66.5% top;
 }
 
 @media (max-width: 860px) {
@@ -491,8 +503,11 @@ ul, ol {
     gap: 2.25rem;
   }
   .hero-portrait-wrap {
-    max-width: 340px;
-    aspect-ratio: 1 / 1;
+    max-width: 360px;
+    aspect-ratio: 4 / 4.2;
+  }
+  .hero-portrait {
+    object-position: 66.5% top;
   }
 }
 
@@ -706,8 +721,9 @@ ul, ol {
 .blog-controls {
   display: flex;
   flex-direction: column;
-  gap: 1.15rem;
-  margin-bottom: 2.25rem;
+  gap: 1.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 2.5rem;
 }
 
 .blog-controls-row {
@@ -718,10 +734,18 @@ ul, ol {
   flex-wrap: wrap;
 }
 
+.search-row {
+  display: flex;
+  align-items: stretch;
+  gap: 0.65rem;
+  flex: 1 1 360px;
+  max-width: 540px;
+}
+
 .search-box {
   position: relative;
-  flex: 1 1 320px;
-  max-width: 440px;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .search-box svg {
@@ -735,7 +759,9 @@ ul, ol {
 
 .search-input {
   width: 100%;
-  padding: 0.65rem 0.9rem 0.65rem 2.5rem;
+  height: 100%;
+  min-height: 42px;
+  padding: 0.6rem 0.9rem 0.6rem 2.5rem;
   font-family: var(--font-sans);
   font-size: 0.95rem;
   color: var(--text-primary);
@@ -746,6 +772,13 @@ ul, ol {
 
 .search-input::placeholder {
   color: var(--text-muted);
+}
+
+@media (max-width: 540px) {
+  .search-row {
+    flex-direction: column;
+    max-width: 100%;
+  }
 }
 
 .filter-pills {
