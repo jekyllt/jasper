@@ -1,58 +1,59 @@
 ---
 ---
 :root {
-  --bg-primary: #fafafa;
+  --bg-primary: #faf8f5;
   --bg-surface: #ffffff;
-  --bg-subtle: #f4f4f5;
-  --bg-header: rgba(250, 250, 250, 0.88);
-  --text-primary: #09090b;
-  --text-secondary: #3f3f46;
-  --text-muted: #71717a;
-  --accent: #2563eb;
-  --accent-hover: #1d4ed8;
-  --accent-soft: rgba(37, 99, 235, 0.08);
-  --teal: #0f766e;
-  --teal-soft: rgba(15, 118, 110, 0.1);
-  --border: #e4e4e7;
-  --border-strong: #d4d4d8;
-  --code-bg: #18181b;
-  --code-text: #f4f4f5;
-  --shadow-sm: 0 1px 2px rgba(9, 9, 11, 0.04);
-  --shadow-md: 0 8px 24px rgba(9, 9, 11, 0.06);
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 14px;
+  --bg-subtle: #f3f0ea;
+  --bg-header: rgba(250, 248, 245, 0.9);
+  --text-primary: #27272a;
+  --text-secondary: #52525b;
+  --text-muted: #78716c;
+  --accent: #3b6ea5;
+  --accent-hover: #2c5784;
+  --accent-soft: rgba(59, 110, 165, 0.09);
+  --teal: #2a7b72;
+  --teal-soft: rgba(42, 123, 114, 0.1);
+  --border: #e7e2d8;
+  --border-strong: #d6cfc2;
+  --code-bg: #1f2024;
+  --code-text: #f3f0ea;
+  --shadow-sm: 0 2px 8px rgba(39, 39, 42, 0.04);
+  --shadow-md: 0 10px 28px rgba(39, 39, 42, 0.06);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-display: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
 [data-theme="dark"] {
-  --bg-primary: #09090b;
-  --bg-surface: #121215;
-  --bg-subtle: #18181b;
-  --bg-header: rgba(9, 9, 11, 0.88);
-  --text-primary: #f4f4f5;
-  --text-secondary: #d4d4d8;
-  --text-muted: #a1a1aa;
-  --accent: #60a5fa;
-  --accent-hover: #93c5fd;
-  --accent-soft: rgba(96, 165, 250, 0.12);
-  --teal: #2dd4bf;
-  --teal-soft: rgba(45, 212, 191, 0.12);
-  --border: #27272a;
-  --border-strong: #3f3f46;
+  --bg-primary: #141416;
+  --bg-surface: #1b1b1f;
+  --bg-subtle: #232328;
+  --bg-header: rgba(20, 20, 22, 0.9);
+  --text-primary: #edeae4;
+  --text-secondary: #c7c3bc;
+  --text-muted: #9a958d;
+  --accent: #7aa7d9;
+  --accent-hover: #9bc0e8;
+  --accent-soft: rgba(122, 167, 217, 0.12);
+  --teal: #58b6ac;
+  --teal-soft: rgba(88, 182, 172, 0.12);
+  --border: #2c2c32;
+  --border-strong: #3d3d45;
   --code-bg: #111114;
-  --code-text: #e4e4e7;
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.45);
+  --code-text: #e8e5df;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 10px 28px rgba(0, 0, 0, 0.4);
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-[hidden] {
+[hidden],
+.is-hidden {
   display: none !important;
 }
 
@@ -1279,36 +1280,99 @@ ul, ol {
   white-space: nowrap;
 }
 
-/* Certifications */
-.cert-card {
-  padding: 1.25rem 1.35rem;
+/* Editorial Two-Column List (Professional Expertise) */
+.editorial-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.75rem 2.5rem;
 }
 
-.cert-id-row {
+.editorial-item {
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.editorial-item h3 {
+  font-size: 1.08rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.editorial-item p {
+  font-size: 0.94rem;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .editorial-list {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+/* Clickable Certification Cards */
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.cert-link-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.5rem;
-  margin-top: auto;
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--border);
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--text-muted);
-}
-
-.copy-id-btn {
-  padding: 0.2rem 0.5rem;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--text-secondary);
-  background: var(--bg-subtle);
+  gap: 1.25rem;
+  padding: 1.2rem 1.4rem;
+  background: var(--bg-surface);
   border: 1px solid var(--border);
-  border-radius: 4px;
-  cursor: pointer;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  color: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.copy-id-btn:hover {
+.cert-link-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+  color: inherit;
+}
+
+.cert-link-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.cert-link-title {
+  font-size: 1.06rem;
+  font-weight: 600;
+  margin: 0;
   color: var(--text-primary);
-  border-color: var(--border-strong);
+}
+
+.cert-link-card:hover .cert-link-title {
+  color: var(--accent);
+}
+
+.cert-verify {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .cert-link-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
 }
