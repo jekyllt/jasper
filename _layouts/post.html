@@ -1,95 +1,127 @@
 ---
-layout: framework
-banner:
-banner_html: post-header.html
-hidden:
-  - header
-  - navigator
-  - related_posts
-sidebar:
-  - article-menu
+layout: default
 ---
+{%- assign date_format = site.yat.date_format | default: "%b %d, %Y" -%}
+{%- assign words = page.content | strip_html | number_of_words -%}
+{%- assign reading_time = words | divided_by: 200 | plus: 1 -%}
+{%- assign hero_image = page.image | default: page.banner.image -%}
 
-<div class="post">
-  <section>
+<article class="post-article" itemscope itemtype="https://schema.org/BlogPosting">
+  <header class="article-header">
+    <div class="container container-narrow">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <span aria-hidden="true">/</span>
+        <a href="{{ '/blog/' | relative_url }}">Blog</a>
+        {%- if page.categories.size > 0 -%}
+          {%- assign primary_cat = page.categories | first -%}
+          <span aria-hidden="true">/</span>
+          <a href="{{ '/blog/' | relative_url }}?category={{ primary_cat | url_encode }}">{{ primary_cat | capitalize }}</a>
+        {%- endif -%}
+      </nav>
 
-    {%- assign name = 'banner' -%}
-    {%- include functions.html func='get_value' -%}
-    {%- assign banner = return -%}
-
-    {%- assign name = 'hidden' -%}
-    {%- include functions.html func='get_value' -%}
-    {%- assign hidden = return -%}
-
-    {%- assign result = hidden | where_exp: "item", "item == 'header'" -%}
-    {%- if banner == nil and result.size == 0 -%}
-    {%- include views/post-header.html -%}
-    {%- endif -%}
-
-    {%- include views/article.html -%}
-
-    {%- assign result = hidden | where_exp: "item", "item == 'navigator'" -%}
-    {%- if result.size == 0 -%}
-    <div class="post-nav">
-      {%- if page.previous -%}
-        <a class="previous" href="{{ page.previous.url | relative_url }}" title="{{
-          page.previous.title | escape }}">{{ page.previous.title | escape | truncatewords: 6 }}</a>
-      {%- else -%}
-      <span></span>
-      {%- endif -%}
-
-      {%- if page.next -%}
-        <a class="next" href="{{ page.next.url | relative_url }}" title="{{ page.next.title | escape }}">{{ page.next.title | escape | truncatewords: 6 }}</a>
-      {%- else -%}
-      <span></span>
-      {%- endif -%}
-    </div>
-    {%- endif -%}
-
-    {%- assign result = hidden | where_exp: "item", "item == 'related_posts'" -%}
-    {%- if result.size == 0 -%}
-    <div class="post-related">
-      <div>Related Articles</div>
-      <ul>
-        {% assign posts = site[page.collection] | sample:4 %}
-        {%- for post in posts -%}
-          {%- assign post_item_class = "" -%}
-          {%- if post.top -%}
-            {%- assign post_item_class = "top-post" -%}
-          {%- endif -%}
-        <li class="{{ post_item_class }}">
-          <a class="post-link"
-            href="{{ post.url | relative_url }}"
-            title="{{ post.title | escape }}">
-            {{ post.title | escape | truncatewords: 12 }}
-            {%- include views/post-badges.html -%}
-          </a>
-        </li>
+      {%- if page.categories.size > 0 -%}
+      <div style="margin-bottom: 0.75rem;">
+        {%- for cat in page.categories -%}
+          <a class="cat-pill" href="{{ '/blog/' | relative_url }}?category={{ cat | url_encode }}">{{ cat }}</a>
         {%- endfor -%}
-      </ul>
+      </div>
+      {%- endif -%}
+
+      <h1 class="article-title" itemprop="headline">{{ page.title | escape }}</h1>
+
+      <div class="article-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {{ page.date | date: date_format }}
+        </time>
+        {%- if page.last_modified_at -%}
+          <span>&middot;</span>
+          <span>Updated <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: date_format }}</time></span>
+        {%- endif -%}
+        <span>&middot;</span>
+        <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">{{ page.author | default: site.author | escape }}</span>
+        </span>
+        <span>&middot;</span>
+        <span>{{ reading_time }} min read</span>
+      </div>
+
+      {%- if hero_image -%}
+      <div class="article-hero-wrap">
+        <img src="{{ hero_image | relative_url }}"
+             alt="{{ page.title | escape }}"
+             loading="eager"
+             fetchpriority="high"
+             itemprop="image">
+      </div>
+      {%- endif -%}
     </div>
-    {%- endif -%}
+  </header>
 
-    {%- assign result = hidden | where_exp: "item", "item == 'comments'" -%}
-    {%- if result.size == 0 -%}
-    <div class="post-comments">
-      {%- if page.comments != false -%}
+  <div class="article-layout">
+    <div class="container container-narrow">
+      <div class="prose" itemprop="articleBody">
+        {{ content }}
+      </div>
 
-      {%- if site.disqus.shortname -%}
-      {%- include extensions/comments/disqus.html -%}
+      {%- if page.tags.size > 0 -%}
+      <div class="article-tags" aria-label="Article tags">
+        {%- for tag in page.tags -%}
+          <a class="tag-pill" href="{{ '/tags.html' | relative_url }}#{{ tag | slugify }}">#{{ tag }}</a>
+        {%- endfor -%}
+      </div>
       {%- endif -%}
 
-      {%- if site.gitment.username -%}
-      {%- include extensions/comments/gitment.html -%}
+      {%- if page.previous or page.next -%}
+      <nav class="post-nav" aria-label="Article navigation">
+        {%- if page.previous -%}
+          <a class="post-nav-item" href="{{ page.previous.url | relative_url }}">
+            <span class="post-nav-label">&larr; Previous Article</span>
+            <span class="post-nav-title">{{ page.previous.title | escape }}</span>
+          </a>
+        {%- else -%}
+          <div></div>
+        {%- endif -%}
+
+        {%- if page.next -%}
+          <a class="post-nav-item post-nav-next" href="{{ page.next.url | relative_url }}">
+            <span class="post-nav-label">Next Article &rarr;</span>
+            <span class="post-nav-title">{{ page.next.title | escape }}</span>
+          </a>
+        {%- endif -%}
+      </nav>
       {%- endif -%}
 
-      {%- if site.utterances.repo -%}
-      {%- include extensions/comments/utterances.html -%}
-      {%- endif -%}
+      {%- assign related_count = 0 -%}
+      {%- capture related_html -%}
+        {%- for post in site.posts -%}
+          {%- if post.url != page.url and related_count < 2 -%}
+            {%- assign related_count = related_count | plus: 1 -%}
+            <article class="card card-interactive">
+              <div class="card-meta">
+                {%- if post.categories.size > 0 -%}
+                  <span class="cat-pill">{{ post.categories | first }}</span>
+                {%- endif -%}
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time>
+              </div>
+              <h3 class="card-title"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+              <p class="card-desc">{{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 110 }}</p>
+            </article>
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endcapture -%}
 
+      {%- if related_count > 0 -%}
+      <section class="related-section" aria-label="More Articles">
+        <div class="section-header" style="margin-bottom: 1.25rem;">
+          <h2 class="section-title" style="font-size: 1.35rem; margin: 0;">More from the Blog</h2>
+          <a class="section-link" href="{{ '/blog/' | relative_url }}">View all articles &rarr;</a>
+        </div>
+        <div class="grid-2">
+          {{ related_html }}
+        </div>
+      </section>
       {%- endif -%}
     </div>
-    {%- endif -%}
-
-  </section>
-</div>
+  </div>
+</article>

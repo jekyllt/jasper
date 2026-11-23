@@ -1,19 +1,13 @@
 ---
 layout: post
 title: Seminar Cyber Aware 2026 | Beyond Breach, Strategi Cerdas Menghadapi Ancaman Siber
-author: Aldi
+description: "Catatan dan materi Seminar Cyber Aware 2026 di Universitas Pasundan oleh Aldi Saputra Wahyudi mengenai OSINT, oversharing di media sosial, dan privasi data."
+author: Aldi Saputra Wahyudi
 categories: security
 banner:
   image: https://github.com/user-attachments/assets/2413c6c3-adc4-4593-a44d-586491487e48
-  opacity: 0.618
-  background: "#000"
-  height: "100vh"
-  min_height: "38vh"
-  heading_style: "font-size: 4.25em; font-weight: bold; text-decoration: underline"
-  subheading_style: "color: gold"
-tags: security
+tags: [security, Speaking, Cyber Awareness, OSINT]
 top: 1
-sidebar: []
 ---
 
 Kemarin saya baru saja diundang oleh Teknik Informatika Universitas Pasundan sebagai pembicara di acara **Seminar Cyber Aware 2026** dengan tema **"Beyond Breach, Strategi Cerdas Menghadapi Ancaman Siber 2026"**.
@@ -84,4 +78,4 @@ Kita merasa sedang menggunakan teknologi.
 
 Padahal, di saat yang sama, teknologi juga sedang belajar tentang **kita**.
 
-![](https://github.com/user-attachments/assets/9d03f24f-22a1-4e13-b08f-ced337dd0e74)
+![Dokumentasi Seminar Cyber Aware 2026 di Universitas Pasundan](https://github.com/user-attachments/assets/9d03f24f-22a1-4e13-b08f-ced337dd0e74)

@@ -1,16 +1,31 @@
 ---
-layout: framework
-sidebar: category-list
+layout: default
 ---
+{%- assign date_format = site.yat.date_format | default: "%b %d, %Y" -%}
+<header class="page-header">
+  <div class="container">
+    <div class="eyebrow">Blog Taxonomy</div>
+    <h1 class="page-title">Categories</h1>
+    <p class="page-lead">Browse all articles organized by broad topic.</p>
+  </div>
+</header>
 
-{%- if site.posts.size > 0 -%}
-
-  {%- include functions.html func='log' level='debug' msg='Get value' -%}
-  {%- include functions.html func='get_categories' -%}
-  {% assign categories = return %}
-
-  {% assign keys = categories %}
-  {% assign field = 'categories' %}
-  {%- include views/segments.html -%}
-
-{%- endif -%}
+<div class="page-body">
+  <div class="container container-narrow">
+    {%- for category in site.categories -%}
+      {%- assign cat_name = category[0] -%}
+      {%- assign cat_posts = category[1] -%}
+      <section class="archive-group" id="{{ cat_name | slugify }}">
+        <h2 class="archive-group-title">{{ cat_name }} ({{ cat_posts.size }})</h2>
+        <ul class="archive-list">
+          {%- for post in cat_posts -%}
+          <li>
+            <span class="archive-date">{{ post.date | date: date_format }}</span>
+            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </li>
+          {%- endfor -%}
+        </ul>
+      </section>
+    {%- endfor -%}
+  </div>
+</div>

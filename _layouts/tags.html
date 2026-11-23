@@ -1,16 +1,31 @@
 ---
-layout: framework
-sidebar: tag-list
+layout: default
 ---
+{%- assign date_format = site.yat.date_format | default: "%b %d, %Y" -%}
+<header class="page-header">
+  <div class="container">
+    <div class="eyebrow">Blog Taxonomy</div>
+    <h1 class="page-title">Tags</h1>
+    <p class="page-lead">Browse all articles by specific technologies, subjects, or themes.</p>
+  </div>
+</header>
 
-{%- if site.posts.size > 0 -%}
-
-  {%- include functions.html func='log' level='debug' msg='Get tags value' -%}
-  {%- include functions.html func='get_tags' -%}
-  {% assign tags = return %}
-
-  {% assign keys = tags %}
-  {% assign field = 'tags' %}
-  {%- include views/segments.html -%}
-
-{%- endif -%}
+<div class="page-body">
+  <div class="container container-narrow">
+    {%- for tag in site.tags -%}
+      {%- assign tag_name = tag[0] -%}
+      {%- assign tag_posts = tag[1] -%}
+      <section class="archive-group" id="{{ tag_name | slugify }}">
+        <h2 class="archive-group-title">#{{ tag_name }} ({{ tag_posts.size }})</h2>
+        <ul class="archive-list">
+          {%- for post in tag_posts -%}
+          <li>
+            <span class="archive-date">{{ post.date | date: date_format }}</span>
+            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </li>
+          {%- endfor -%}
+        </ul>
+      </section>
+    {%- endfor -%}
+  </div>
+</div>

@@ -1,18 +1,30 @@
 ---
-layout: framework
-sidebar: archive-list
+layout: default
 ---
+{%- assign date_format = site.yat.date_format | default: "%b %d, %Y" -%}
+<header class="page-header">
+  <div class="container">
+    <div class="eyebrow">Timeline</div>
+    <h1 class="page-title">Archives</h1>
+    <p class="page-lead">Complete chronological archive of all published articles.</p>
+  </div>
+</header>
 
-{%- if site.posts.size > 0 -%}
-
-  {% include functions.html func='log' level='debug' msg='Get datetimes value' %}
-
-  {% assign filter = '%Y' %}
-  {% include functions.html func='get_datetimes' %}
-  {% assign datetimes = return %}
-
-  {% assign keys = datetimes | reverse %}
-  {% assign field = 'date' %}
-  {% include views/segments.html %}
-
-{%- endif -%}
+<div class="page-body">
+  <div class="container container-narrow">
+    {%- assign postsByYear = site.posts | group_by_exp: "post", "post.date | date: '%Y'" -%}
+    {%- for year in postsByYear -%}
+      <section class="archive-group" id="year-{{ year.name }}">
+        <h2 class="archive-group-title">{{ year.name }} ({{ year.items.size }})</h2>
+        <ul class="archive-list">
+          {%- for post in year.items -%}
+          <li>
+            <span class="archive-date">{{ post.date | date: date_format }}</span>
+            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </li>
+          {%- endfor -%}
+        </ul>
+      </section>
+    {%- endfor -%}
+  </div>
+</div>
