@@ -1,83 +1,31 @@
 - id: "python-application-automation-toolkit"
   name: "Python Application Automation Toolkit"
-  status: "Active"
+  status: "Documentation Coming Soon"
+  status_note: "Documentation in Progress"
   category: "Automation Engineering & Behavioral Analysis"
-  summary: "A collection of Python-based automation tools designed to orchestrate complex application workflows, analyze application behavior, and automate Android-based interactions. The toolkit combines workflow orchestration, network traffic analysis, OCR, computer vision, and emulator automation."
-  problem: "Complex, multi-step desktop and mobile application workflows often involve dynamic UI states, layered API communication, and frequent execution bottlenecks that are difficult to analyze or automate reliably with brittle single-purpose scripts."
-  objective: "Build a modular, resilient Python engineering toolkit capable of analyzing application communication flows, automating Android and API-driven workflows, and maintaining high execution reliability through adaptive session and retry controls."
-  architecture:
-    - layer: "1. Workflow Orchestration & Reliability Core"
-      detail: "Python state-machine orchestration, adaptive request throttling, session management, and structured retry/backoff policies."
-    - layer: "2. Application & Protocol Analysis Layer"
-      detail: "HTTP/HTTPS traffic interception, protocol inspection, API interaction mapping, and internal application logic analysis."
-    - layer: "3. Vision & OCR Processing Layer"
-      detail: "Computer vision pattern recognition, image preprocessing, and real-time OCR integration for visual state extraction."
-    - layer: "4. Android Execution & Emulator Layer"
-      detail: "Android Debug Bridge (ADB) control, multi-emulator orchestration, and automated UI interaction pipelines."
+  summary: "A collection of Python-based automation tools for application workflow orchestration, behavioral analysis, network traffic inspection, and Android automation. The toolkit combines Python automation, OCR, computer vision, and emulator orchestration."
+  technical_areas:
+    - "Python Automation"
+    - "Application Workflow Orchestration"
+    - "Application Behavioral Analysis"
+    - "HTTP/HTTPS Traffic Analysis"
+    - "OCR and Computer Vision"
+    - "Android Automation"
+    - "ADB and Emulator Orchestration"
+    - "Session Management and Workflow Reliability"
   capabilities:
-    - title: "A. Python Workflow Automation"
+    - title: "Python Workflow Automation"
       items:
         - "Modular Python automation frameworks"
         - "Multi-step application workflow orchestration"
-        - "Automated user interaction simulation"
-        - "High-volume workflow processing"
-        - "Adaptive execution strategies, retry handling, and resilience mechanisms"
-    - title: "B. Application Behavioral Analysis"
+        - "Adaptive execution strategies and retry handling"
+    - title: "Application Behavioral & Traffic Analysis"
       items:
-        - "Application reverse engineering and internal logic analysis"
-        - "Authentication workflow and state-transition analysis"
-        - "API interaction mapping and communication flow inspection"
-    - title: "C. Network Traffic Analysis"
+        - "Internal application logic and API interaction analysis"
+        - "HTTP/HTTPS traffic interception and protocol inspection"
+        - "Application communication flow analysis"
+    - title: "OCR, Computer Vision & Android Automation"
       items:
-        - "HTTP/HTTPS traffic interception and protocol analysis"
-        - "Request and response payload inspection"
-        - "Application communication behavior analysis"
-    - title: "D. OCR & Computer Vision"
-      items:
-        - "OCR engine integrations and image preprocessing"
-        - "Pattern recognition and visual information extraction"
-        - "Automated image and UI state analysis"
-    - title: "E. Android Automation"
-      items:
-        - "Android Debug Bridge (ADB) device and emulator orchestration"
-        - "UI interaction automation combined with computer vision"
-        - "Real-time OCR-driven application interaction"
-    - title: "F. Automation Reliability"
-      items:
-        - "Stateful session management and lifecycle handling"
-        - "Adaptive request throttling and rate control"
-        - "Structured error handling and workflow resilience"
-  highlights:
-    - "Unified Python orchestration connecting network-level inspection with UI-level Android emulator control."
-    - "Modular separation between core workflow engines, computer vision pipelines, and device drivers."
-    - "Public documentation strategy: architectural patterns and non-sensitive modules are being prepared for open-source release, while sensitive operational details and private endpoints remain redacted."
-  stack:
-    - Python
-    - ADB
-    - Android Automation
-    - Emulator Orchestration
-    - HTTP/HTTPS Analysis
-    - Reverse Engineering
-    - OCR
-    - Computer Vision
-    - Workflow Automation
-  related_posts:
-    - title: "Android Pentest Without Connect to PC (Wireless) | JsHook Tutorial"
-      url: "/security/2024/08/01/Android-Pentest-Without-Connect-PC-(Wireless).html"
-
-- id: "android-wireless-lab"
-  name: "Android Wireless Dynamic Instrumentation Lab"
-  status: "Completed"
-  category: "Mobile Application Security"
-  summary: "A cable-free Android testing and instrumentation setup using Magisk, Zygisk, and JsHook for runtime JavaScript hooking and SSL/TLS pinning bypass."
-  problem: "Traditional USB-tethered mobile instrumentation workflows can be disrupted by USB debugging detection or physical cable constraints during dynamic analysis."
-  objective: "Establish a reproducible wireless runtime hooking environment for inspecting Android application behavior directly on-device."
-  stack:
-    - Android
-    - Magisk
-    - Zygisk
-    - JsHook
-    - JavaScript
-  related_posts:
-    - title: "Read Technical Write-up: Android Pentest Without Connect to PC (Wireless)"
-      url: "/security/2024/08/01/Android-Pentest-Without-Connect-PC-(Wireless).html"
+        - "OCR integrations, image processing, and pattern recognition"
+        - "Android Debug Bridge (ADB) and emulator orchestration"
+        - "Automated UI interaction and session reliability"

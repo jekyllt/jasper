@@ -3,8 +3,8 @@ layout: about
 title: Projects
 permalink: /projects/
 eyebrow: "Engineering & Tools"
-subtitle: "Automation systems, instrumentation setups, and practical engineering tools I have designed and built."
-description: "Technical projects by Aldi Saputra Wahyudi (Aldisaw), featuring the Python Application Automation Toolkit and Android dynamic instrumentation tools."
+subtitle: "Automation systems and engineering tools I have built and am preparing to document publicly."
+description: "Technical projects by Aldi Saputra Wahyudi (Aldisaw), featuring the Python Application Automation Toolkit."
 ---
 
 {%- assign toolkit = site.data.projects | first -%}
@@ -12,7 +12,7 @@ description: "Technical projects by Aldi Saputra Wahyudi (Aldisaw), featuring th
 <article id="{{ toolkit.id }}" class="card" style="padding: 2rem; margin-bottom: 2.5rem;">
   <div class="card-meta" style="margin-bottom: 1rem;">
     <span class="cat-pill">{{ toolkit.category }}</span>
-    <span class="status-badge is-active">{{ toolkit.status }}</span>
+    <span class="status-badge">{{ toolkit.status }}</span>
   </div>
 
   <h2 style="font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 0.75rem;">{{ toolkit.name }}</h2>
@@ -20,28 +20,14 @@ description: "Technical projects by Aldi Saputra Wahyudi (Aldisaw), featuring th
     {{ toolkit.summary }}
   </p>
 
-  <div class="grid-2" style="margin-bottom: 2rem;">
-    <div style="padding: 1.25rem; background: var(--bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--border);">
-      <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">Problem Statement</h3>
-      <p style="font-size: 0.925rem; margin: 0;">{{ toolkit.problem }}</p>
-    </div>
-    <div style="padding: 1.25rem; background: var(--bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--border);">
-      <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">Engineering Objectives</h3>
-      <p style="font-size: 0.925rem; margin: 0;">{{ toolkit.objective }}</p>
-    </div>
-  </div>
-
-  <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Architecture Overview</h3>
-  <div class="grid-2" style="margin-bottom: 2rem;">
-    {%- for arch in toolkit.architecture -%}
-    <div style="padding: 1rem 1.25rem; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--bg-primary);">
-      <div style="font-family: var(--font-mono); font-size: 0.82rem; font-weight: 600; color: var(--accent); margin-bottom: 0.35rem;">{{ arch.layer }}</div>
-      <p style="font-size: 0.9rem; margin: 0;">{{ arch.detail }}</p>
-    </div>
+  <h3 style="font-size: 1.15rem; margin-bottom: 0.85rem;">Technical Areas</h3>
+  <div class="card-tags" style="margin-bottom: 2rem;">
+    {%- for area in toolkit.technical_areas -%}
+      <span class="tag-pill">{{ area }}</span>
     {%- endfor -%}
   </div>
 
-  <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Core Capabilities</h3>
+  <h3 style="font-size: 1.15rem; margin-bottom: 1rem;">Core Capabilities</h3>
   <div class="grid-3" style="margin-bottom: 2rem;">
     {%- for cap in toolkit.capabilities -%}
     <div style="padding: 1.15rem; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--bg-primary);">
@@ -55,84 +41,24 @@ description: "Technical projects by Aldi Saputra Wahyudi (Aldisaw), featuring th
     {%- endfor -%}
   </div>
 
-  <h3 style="font-size: 1.25rem; margin-bottom: 0.85rem;">Selected Highlights &amp; Public Release Note</h3>
-  <ul style="font-size: 0.95rem; margin-bottom: 1.5rem;">
-    {%- for h in toolkit.highlights -%}
-    <li>{{ h }}</li>
-    {%- endfor -%}
-  </ul>
-
-  <div style="padding: 1rem 1.25rem; border-left: 3px solid var(--accent); background: var(--bg-subtle); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; margin-bottom: 1.75rem;">
+  <div style="padding: 1rem 1.25rem; border-left: 3px solid var(--accent); background: var(--bg-subtle); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
     <p style="font-size: 0.9rem; margin: 0;">
-      <strong style="color: var(--text-primary);">Source Code &amp; Documentation Status:</strong>
-      Selected non-sensitive modules and architectural documentation are being prepared for public release on GitHub. Sensitive operational scripts, internal endpoints, and proprietary configurations are intentionally excluded.
+      <strong style="color: var(--text-primary);">{{ toolkit.status_note | default: "Documentation Coming Soon" }}:</strong>
+      Public repository modules, architectural diagrams, and technical write-ups are currently being prepared. Sensitive operational details and private configurations are intentionally excluded.
     </p>
   </div>
-
-  <div class="card-tags" style="margin-bottom: 1.5rem;">
-    {%- for tech in toolkit.stack -%}
-      <span class="tag-pill">{{ tech }}</span>
-    {%- endfor -%}
-  </div>
-
-  {%- if toolkit.related_posts -%}
-  <div style="padding-top: 1.15rem; border-top: 1px solid var(--border);">
-    <div style="font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.5rem;">Related Technical Articles</div>
-    {%- for post_ref in toolkit.related_posts -%}
-      <a class="section-link" href="{{ post_ref.url | relative_url }}">{{ post_ref.title }} &rarr;</a>
-    {%- endfor -%}
-  </div>
-  {%- endif -%}
 </article>
-
-{%- for project in site.data.projects offset:1 -%}
-<article id="{{ project.id }}" class="card" style="margin-bottom: 2.5rem;">
-  <div class="card-meta">
-    <span class="cat-pill">{{ project.category }}</span>
-    <span class="status-badge{% if project.status == 'Active' %} is-active{% endif %}">{{ project.status }}</span>
-  </div>
-
-  <h2 class="card-title" style="font-size: 1.35rem;">{{ project.name }}</h2>
-  <p class="card-desc">{{ project.summary }}</p>
-
-  {%- if project.problem -%}
-  <p style="font-size: 0.92rem; margin-bottom: 0.5rem;">
-    <strong style="color: var(--text-primary);">Problem:</strong> {{ project.problem }}
-  </p>
-  {%- endif -%}
-
-  {%- if project.objective -%}
-  <p style="font-size: 0.92rem; margin-bottom: 1rem;">
-    <strong style="color: var(--text-primary);">Objective:</strong> {{ project.objective }}
-  </p>
-  {%- endif -%}
-
-  <div class="card-tags" style="margin-bottom: 1rem;">
-    {%- for tech in project.stack -%}
-      <span class="tag-pill">{{ tech }}</span>
-    {%- endfor -%}
-  </div>
-
-  {%- if project.related_posts -%}
-  <div style="padding-top: 0.85rem; border-top: 1px solid var(--border); font-size: 0.9rem; font-weight: 600;">
-    {%- for post_ref in project.related_posts -%}
-      <a href="{{ post_ref.url | relative_url }}">{{ post_ref.title }} &rarr;</a>
-    {%- endfor -%}
-  </div>
-  {%- endif -%}
-</article>
-{%- endfor -%}
 
 <section>
   <div class="cta-box">
     <div>
-      <div class="eyebrow">Code &amp; Writing</div>
-      <h2>Explore repositories and technical write-ups.</h2>
-      <p>Follow my public work on GitHub or read the technical articles behind my security and automation research.</p>
+      <div class="eyebrow">Stay Updated</div>
+      <h2>Follow my technical writing and updates.</h2>
+      <p>Read existing cybersecurity research and tutorials on the Blog, or connect via GitHub.</p>
     </div>
     <div class="cta-actions">
-      <a class="btn btn-primary" href="https://github.com/aldisaw" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
-      <a class="btn btn-secondary" href="{{ '/blog/' | relative_url }}">Read the Blog</a>
+      <a class="btn btn-primary" href="{{ '/blog/' | relative_url }}">Read the Blog</a>
+      <a class="btn btn-secondary" href="https://github.com/aldisaw" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
     </div>
   </div>
 </section>
