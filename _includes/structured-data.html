@@ -1,0 +1,140 @@
+{%- assign site_url = site.url | default: "https://aldisaw.id" -%}
+{%- assign canonical_url = page.url | replace: 'index.html', '' | prepend: site_url -%}
+{%- assign og_image = page.image | default: page.banner.image | default: "/assets/images/banners/home.jpg" -%}
+{%- unless og_image contains "://" -%}
+  {%- assign og_image = og_image | prepend: site_url -%}
+{%- endunless -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "{{ site_url }}/#website",
+      "url": "{{ site_url }}/",
+      "name": "ALDISAW — Aldi Saputra Wahyudi",
+      "description": {{ site.description | jsonify }},
+      "publisher": {
+        "@id": "{{ site_url }}/#person"
+      },
+      "inLanguage": "{{ page.lang | default: site.lang | default: 'en' }}"
+    },
+    {
+      "@type": "Person",
+      "@id": "{{ site_url }}/#person",
+      "name": "Aldi Saputra Wahyudi",
+      "alternateName": "Aldisaw",
+      "url": "{{ site_url }}/",
+      "email": "mailto:{{ site.email }}",
+      "image": "{{ site_url }}/assets/images/banners/home.jpg",
+      "jobTitle": "Cybersecurity Researcher & Application Security Specialist",
+      "description": "Aldi Saputra Wahyudi (Aldisaw) is a cybersecurity professional with over five years of experience in application security, penetration testing, mobile security, and vulnerability research.",
+      "sameAs": [
+        "https://github.com/aldisaw",
+        "https://www.linkedin.com/in/aldisaw",
+        "https://instagram.com/aldisaw"
+      ],
+      "knowsAbout": [
+        "Application Security",
+        "Penetration Testing",
+        "Vulnerability Assessment",
+        "Vulnerability Research",
+        "Bug Bounty",
+        "Mobile Application Security",
+        "Android Reverse Engineering",
+        "Web Security",
+        "API Security",
+        "OWASP Top 10",
+        "OWASP MASVS",
+        "Artificial Intelligence",
+        "AI Automation",
+        "Python"
+      ]
+    }
+    {%- if page.url == "/about/" or page.url == "/about.html" or page.url == "/security/" -%}
+    ,{
+      "@type": "ProfilePage",
+      "@id": "{{ canonical_url }}#profilepage",
+      "url": "{{ canonical_url }}",
+      "name": {{ page.title | jsonify }},
+      "description": {{ page.description | default: site.description | jsonify }},
+      "mainEntity": {
+        "@id": "{{ site_url }}/#person"
+      },
+      "isPartOf": {
+        "@id": "{{ site_url }}/#website"
+      }
+    }
+    {%- endif -%}
+    {%- if page.layout == "post" -%}
+    ,{
+      "@type": "BlogPosting",
+      "@id": "{{ canonical_url }}#article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ canonical_url }}"
+      },
+      "headline": {{ page.title | jsonify }},
+      "description": {{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | jsonify }},
+      "image": {{ og_image | jsonify }},
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      {%- if page.last_modified_at %}
+      "dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",
+      {%- else %}
+      "dateModified": "{{ page.date | date_to_xmlschema }}",
+      {%- endif %}
+      "author": {
+        "@id": "{{ site_url }}/#person"
+      },
+      "publisher": {
+        "@id": "{{ site_url }}/#person"
+      },
+      "isPartOf": {
+        "@id": "{{ site_url }}/#website"
+      }
+      {%- if page.categories.size > 0 %},
+      "articleSection": {{ page.categories | first | jsonify }}
+      {%- endif %}
+      {%- if page.tags.size > 0 %},
+      "keywords": {{ page.tags | join: ", " | jsonify }}
+      {%- endif %}
+    }
+    {%- endif -%}
+    {%- if page.url != "/" and page.url != "/index.html" -%}
+    ,{
+      "@type": "BreadcrumbList",
+      "@id": "{{ canonical_url }}#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "{{ site_url }}/"
+        }
+        {%- if page.layout == "post" -%},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "{{ site_url }}/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": {{ page.title | jsonify }},
+          "item": "{{ canonical_url }}"
+        }
+        {%- else -%},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": {{ page.title | default: "Page" | jsonify }},
+          "item": "{{ canonical_url }}"
+        }
+        {%- endif -%}
+      ]
+    }
+    {%- endif -%}
+  ]
+}
+</script>

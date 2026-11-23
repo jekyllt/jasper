@@ -1,9 +1,20 @@
 ---
-layout: post
-hidden:
-  - header
-  - navigator
-  - related_posts
+layout: default
 ---
+<header class="page-header">
+  <div class="container">
+    {%- if page.eyebrow -%}
+      <div class="eyebrow">{{ page.eyebrow }}</div>
+    {%- endif -%}
+    <h1 class="page-title">{{ page.title | escape }}</h1>
+    {%- if page.subtitle -%}
+      <p class="page-lead">{{ page.subtitle | escape }}</p>
+    {%- endif -%}
+  </div>
+</header>
 
-{{ content }}
+<div class="page-body">
+  <div class="container">
+    {{ content }}
+  </div>
+</div>

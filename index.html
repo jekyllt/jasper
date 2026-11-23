@@ -1,7 +1,268 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
-banner: "/assets/images/banners/home.jpg"
+title: "Aldisaw — Security Researcher. Technology Enthusiast. Always Exploring."
+description: "Aldi Saputra Wahyudi (Aldisaw) — Cybersecurity researcher, application security specialist, and technology enthusiast sharing vulnerability research, projects, and travel stories."
 ---
+
+<!-- A. Hero Section -->
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="container hero-grid">
+    <div class="hero-content">
+      <div class="eyebrow">
+        <span aria-hidden="true">//</span> ALDISAW &middot; Aldi Saputra Wahyudi
+      </div>
+      <h1 id="hero-heading" class="hero-title">
+        Security Researcher. Technology Enthusiast. Always Exploring.
+      </h1>
+      <p class="hero-lead">
+        I'm <strong>Aldi Saputra Wahyudi</strong>. I explore cybersecurity, experiment with technology, create digital experiences, and document the journey along the way.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="{{ '/security/' | relative_url }}">Explore My Work</a>
+        <a class="btn btn-secondary" href="{{ '/blog/' | relative_url }}">Read My Blog</a>
+      </div>
+      <div class="hero-socials" aria-label="Social Profiles">
+        <a href="https://github.com/aldisaw" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/aldisaw" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:{{ site.email }}">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          {{ site.email }}
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-media">
+      <div class="hero-portrait-wrap">
+        <img class="hero-portrait"
+             src="{{ '/assets/images/banners/home.jpg' | relative_url }}"
+             alt="Portrait of Aldi Saputra Wahyudi (Aldisaw)"
+             width="480"
+             height="528"
+             loading="eager"
+             fetchpriority="high">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- B. About Preview -->
+<section class="section section-subtle" aria-labelledby="about-preview-heading">
+  <div class="container about-preview-grid">
+    <div>
+      <div class="eyebrow">About</div>
+      <h2 id="about-preview-heading" class="section-title">Technical depth with a creative, curious mindset.</h2>
+    </div>
+    <div>
+      <p>
+        I'm a cybersecurity professional with over five years of hands-on experience in penetration testing, application security, and vulnerability research. Currently pursuing a Master's degree in Informatics, I focus on securing modern web, API, and mobile applications while building AI-powered automation to make security workflows smarter.
+      </p>
+      <p style="margin-bottom: 1.25rem;">
+        Outside of security research, I enjoy experimenting with new software, digital storytelling, and documenting travel experiences across the places I explore.
+      </p>
+      <a class="section-link" href="{{ '/about/' | relative_url }}">More about my background &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- C. Professional Expertise -->
+<section class="section" aria-labelledby="expertise-heading">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <div class="eyebrow">Core Focus</div>
+        <h2 id="expertise-heading" class="section-title">Professional Expertise</h2>
+        <p class="section-desc">Primary cybersecurity disciplines and technical areas I work in.</p>
+      </div>
+      <a class="section-link" href="{{ '/security/' | relative_url }}">View Security Portfolio &rarr;</a>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <h3 class="card-title">Application &amp; API Security</h3>
+        <p class="card-desc">Security assessments, threat modeling, and remediation guidance for modern web applications and APIs aligned with OWASP Top 10.</p>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Penetration Testing</h3>
+        <p class="card-desc">Manual and automated offensive security testing to uncover business logic flaws, access control issues, and injection vulnerabilities.</p>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Mobile Security &amp; Android RE</h3>
+        <p class="card-desc">Android application security testing, dynamic runtime instrumentation (Frida, Zygisk, JsHook), SSL pinning bypass, and OWASP MASVS.</p>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Vulnerability Research &amp; Bug Bounty</h3>
+        <p class="card-desc">Discovering, analyzing, and responsibly disclosing real-world security vulnerabilities, including published CVE advisories.</p>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Cloud &amp; Secure Engineering</h3>
+        <p class="card-desc">Expanding secure software architecture, digital forensics, and cloud security practices into resilient engineering workflows.</p>
+      </div>
+      <div class="card">
+        <h3 class="card-title">AI &amp; Security Automation</h3>
+        <p class="card-desc">Designing Python scripts and AI-assisted automation workflows to accelerate reconnaissance, testing, and research productivity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- D. Selected Work / Achievements -->
+<section class="section section-subtle" aria-labelledby="achievements-heading">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <div class="eyebrow">Selected Highlights</div>
+        <h2 id="achievements-heading" class="section-title">Research, Speaking &amp; Work</h2>
+        <p class="section-desc">Verified public security disclosures, technical research, and community speaking engagements.</p>
+      </div>
+      <a class="section-link" href="{{ '/security/' | relative_url }}">All security work &rarr;</a>
+    </div>
+
+    <div class="grid-3">
+      <article class="card card-interactive">
+        <div class="card-meta">
+          <span class="cat-pill">CVE Advisory</span>
+          <span>2024</span>
+        </div>
+        <h3 class="card-title">
+          <a href="{{ '/security/2024/06/03/CVE-2023-27636.html' | relative_url }}">CVE-2023-27636: Progress Sitefinity CMS Stored XSS</a>
+        </h3>
+        <p class="card-desc">Discovered and responsibly disclosed a stored Cross-Site Scripting vulnerability affecting Progress Sitefinity CMS versions prior to 15.0.0.</p>
+        <div class="card-tags">
+          <span class="tag-pill">Vulnerability Research</span>
+          <span class="tag-pill">XSS</span>
+        </div>
+      </article>
+
+      <article class="card card-interactive">
+        <div class="card-meta">
+          <span class="cat-pill">Speaking</span>
+          <span>2026</span>
+        </div>
+        <h3 class="card-title">
+          <a href="{{ '/security/2026/05/12/Seminar-Cyber-Aware-2026.html' | relative_url }}">Seminar Cyber Aware 2026 — Universitas Pasundan</a>
+        </h3>
+        <p class="card-desc">Invited speaker presenting "Beyond Breach: Strategi Cerdas Menghadapi Ancaman Siber", covering OSINT, oversharing risks, and data privacy.</p>
+        <div class="card-tags">
+          <span class="tag-pill">Public Speaking</span>
+          <span class="tag-pill">OSINT</span>
+        </div>
+      </article>
+
+      <article class="card card-interactive">
+        <div class="card-meta">
+          <span class="cat-pill">Mobile Research</span>
+          <span>2024</span>
+        </div>
+        <h3 class="card-title">
+          <a href="{{ '/security/2024/08/01/Android-Pentest-Without-Connect-PC-(Wireless).html' | relative_url }}">Wireless Android Pentesting &amp; JsHook Instrumentation</a>
+        </h3>
+        <p class="card-desc">Published practical methodology for wireless Android runtime hooking and SSL pinning bypass using Magisk, Zygisk, and JsHook.</p>
+        <div class="card-tags">
+          <span class="tag-pill">Android Security</span>
+          <span class="tag-pill">Zygisk</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- E. Technology & Personal Interests -->
+<section class="section" aria-labelledby="interests-heading">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <div class="eyebrow">Beyond Security</div>
+        <h2 id="interests-heading" class="section-title">Technology &amp; Personal Interests</h2>
+        <p class="section-desc">Curiosity outside core security work—building experiments and documenting experiences.</p>
+      </div>
+      <a class="section-link" href="{{ '/projects/' | relative_url }}">Explore Projects &rarr;</a>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <h3 class="card-title">AI Agents &amp; Automation</h3>
+        <p class="card-desc">Experimenting with Python, AI agents, and practical automation tools to solve everyday engineering and security problems.</p>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Digital Storytelling</h3>
+        <p class="card-desc">Combining technical clarity with creative storytelling through writing, visual media, and digital experiences.</p>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Travel &amp; Backpacking</h3>
+        <p class="card-desc">Exploring new places, photography, and capturing personal reflections and travel journals on the blog.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- F. Latest Blog Posts -->
+<section class="section section-subtle" aria-labelledby="latest-posts-heading">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <div class="eyebrow">Editorial</div>
+        <h2 id="latest-posts-heading" class="section-title">Latest from the Blog</h2>
+        <p class="section-desc">Security write-ups, technical tutorials, speaking notes, and personal stories.</p>
+      </div>
+      <a class="section-link" href="{{ '/blog/' | relative_url }}">View All Articles &rarr;</a>
+    </div>
+
+    {%- assign date_format = site.yat.date_format | default: "%b %d, %Y" -%}
+    <div class="grid-2">
+      {%- for post in site.posts limit:4 -%}
+        {%- assign words = post.content | strip_html | number_of_words -%}
+        {%- assign reading_time = words | divided_by: 200 | plus: 1 -%}
+        {%- assign thumb = post.image | default: post.banner.image | default: '/assets/images/default-image.jpeg' -%}
+        <article class="post-card">
+          <a class="post-card-thumb" href="{{ post.url | relative_url }}" aria-hidden="true" tabindex="-1">
+            <img src="{{ thumb | relative_url }}" alt="" loading="lazy" width="640" height="360">
+          </a>
+          <div class="post-card-body">
+            <div class="post-card-meta">
+              {%- if post.categories.size > 0 -%}
+                <span class="cat-pill">{{ post.categories | first }}</span>
+              {%- endif -%}
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time>
+              <span>&middot;</span>
+              <span>{{ reading_time }} min read</span>
+            </div>
+            <h3 class="post-card-title">
+              <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </h3>
+            <p class="post-card-excerpt">
+              {{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 140 }}
+            </p>
+            <div class="post-card-footer">
+              <a href="{{ post.url | relative_url }}">Read article &rarr;</a>
+            </div>
+          </div>
+        </article>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+<!-- G. Contact CTA -->
+<section class="section" aria-labelledby="cta-heading">
+  <div class="container">
+    <div class="cta-box">
+      <div>
+        <div class="eyebrow">Get in Touch</div>
+        <h2 id="cta-heading">Let's connect or collaborate.</h2>
+        <p>
+          Open to discussions on application security, vulnerability research, technical projects, and speaking opportunities.
+        </p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="{{ '/contact/' | relative_url }}">Contact Me</a>
+        <a class="btn btn-secondary" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </div>
+    </div>
+  </div>
+</section>

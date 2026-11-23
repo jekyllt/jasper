@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}" data-theme="light">
   {%- include head.html -%}
-
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
     {%- include views/header.html -%}
 
-    {%- include views/banner.html -%}
-
-    {%- include extensions/hashlocate.html -%}
-
-    {%- include extensions/theme-toggle.html -%}
-
-    {%- include extensions/click-to-top.html -%}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    <main id="main-content" class="page-main" tabindex="-1">
+      {{ content }}
     </main>
 
     {%- include views/footer.html -%}
 
+    <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top" hidden>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
   </body>
 </html>

@@ -1,0 +1,98 @@
+---
+layout: about
+title: Blog
+permalink: /blog/
+eyebrow: "Editorial & Publications"
+subtitle: "Technical write-ups, CVE advisories, tutorials, AI experiments, speaking notes, and personal travel stories."
+description: "Read articles by Aldi Saputra Wahyudi (Aldisaw) covering cybersecurity, CVE research, Android pentesting, technical tutorials, AI automation, and travel stories."
+---
+
+{%- assign date_format = site.yat.date_format | default: "%b %d, %Y" -%}
+
+<div class="blog-controls" aria-label="Blog search and filters">
+  <div class="blog-controls-row">
+    <div class="search-box">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <label for="blog-search-input" class="skip-link">Search articles</label>
+      <input type="search"
+             id="blog-search-input"
+             class="search-input"
+             placeholder="Search articles, CVEs, topics, or tags..."
+             autocomplete="off">
+    </div>
+
+    <div class="blog-results-meta" id="blog-results-count">
+      {{ site.posts.size }} {% if site.posts.size == 1 %}article{% else %}articles{% endif %}
+    </div>
+  </div>
+
+  <div class="blog-controls-row">
+    <div class="filter-pills" role="group" aria-label="Filter by category">
+      <button type="button" class="filter-pill is-active" data-filter-category="all" aria-pressed="true">All</button>
+      {%- for category in site.categories -%}
+        {%- assign cat_name = category[0] -%}
+        <button type="button"
+                class="filter-pill"
+                data-filter-category="{{ cat_name | downcase | escape }}"
+                aria-pressed="false">
+          {{ cat_name | capitalize }} ({{ category[1].size }})
+        </button>
+      {%- endfor -%}
+    </div>
+
+    <div style="display: flex; gap: 1rem; font-size: 0.875rem;">
+      <a href="{{ '/categories.html' | relative_url }}">Categories</a>
+      <a href="{{ '/tags.html' | relative_url }}">Tags</a>
+      <a href="{{ '/archives.html' | relative_url }}">Archives</a>
+    </div>
+  </div>
+</div>
+
+<div class="grid-2" id="blog-posts-grid">
+  {%- for post in site.posts -%}
+    {%- assign words = post.content | strip_html | number_of_words -%}
+    {%- assign reading_time = words | divided_by: 200 | plus: 1 -%}
+    {%- assign thumb = post.image | default: post.banner.image | default: '/assets/images/default-image.jpeg' -%}
+    {%- assign primary_cat = post.categories | first | default: 'general' -%}
+    <article class="post-card"
+             data-post-card
+             data-category="{{ primary_cat | downcase | escape }}"
+             data-tags="{{ post.tags | join: ' ' | downcase | escape }}"
+             data-search="{{ post.title | downcase | escape }} {{ post.description | default: post.excerpt | strip_html | strip_newlines | downcase | escape }}">
+      <a class="post-card-thumb" href="{{ post.url | relative_url }}" aria-hidden="true" tabindex="-1">
+        <img src="{{ thumb | relative_url }}" alt="" loading="lazy" width="640" height="360">
+      </a>
+      <div class="post-card-body">
+        <div class="post-card-meta">
+          <span class="cat-pill">{{ primary_cat }}</span>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time>
+          <span>&middot;</span>
+          <span>{{ reading_time }} min read</span>
+        </div>
+        <h2 class="post-card-title">
+          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+        <p class="post-card-excerpt">
+          {{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 155 }}
+        </p>
+        <div class="post-card-footer">
+          <a href="{{ post.url | relative_url }}">Read article &rarr;</a>
+          {%- if post.tags.size > 0 -%}
+            <span class="tag-pill">#{{ post.tags | first }}</span>
+          {%- endif -%}
+        </div>
+      </div>
+    </article>
+  {%- endfor -%}
+</div>
+
+<div id="blog-empty-state" class="empty-state" hidden>
+  <h2 style="font-size: 1.25rem; margin-bottom: 0.4rem;">No matching articles found</h2>
+  <p style="margin-bottom: 1rem;">Try a different search keyword or reset the category filter.</p>
+  <button type="button" class="btn btn-secondary" onclick="document.getElementById('blog-search-input').value=''; document.querySelector('[data-filter-category=\'all\']').click();">
+    Reset Filters
+  </button>
+</div>

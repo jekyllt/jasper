@@ -1,24 +1,17 @@
 ---
 layout: default
 ---
-
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>Try to check other pages through the menu. </p>
-</div>
+<section class="section" style="border-top: none; padding: 6rem 0;">
+  <div class="container container-narrow" style="text-align: center;">
+    <div class="eyebrow" style="justify-content: center;">404 &middot; Not Found</div>
+    <h1 class="page-title">Page Not Found</h1>
+    <p class="page-lead" style="margin: 0 auto 2rem;">
+      The page you are looking for may have moved or does not exist. Explore my cybersecurity portfolio or read the latest articles below.
+    </p>
+    <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+      <a class="btn btn-primary" href="{{ '/' | relative_url }}">Back to Home</a>
+      <a class="btn btn-secondary" href="{{ '/security/' | relative_url }}">Security Portfolio</a>
+      <a class="btn btn-secondary" href="{{ '/blog/' | relative_url }}">Read the Blog</a>
+    </div>
+  </div>
+</section>

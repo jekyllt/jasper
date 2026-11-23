@@ -1,98 +1,49 @@
-<footer class="site-footer">
-  <div class="footer-content">
-    <!-- Copyright & Info -->
-    <div class="footer-info">
-      <p>&copy; {{ site.time | date: '%Y' }} <strong>{{ site.author }}</strong>. All rights reserved.</p>
-      <p class="footer-subtitle">Powered by Jekyll & GitHub Pages</p>
+<footer class="site-footer" role="contentinfo">
+  <div class="container footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand-col">
+        <a class="footer-brand" href="{{ '/' | relative_url }}">
+          <span class="brand-mark" aria-hidden="true">//</span> ALDISAW
+        </a>
+        <p class="footer-tagline">
+          Aldi Saputra Wahyudi &mdash; Security Researcher, Technology Enthusiast, Always Exploring.
+        </p>
+      </div>
+
+      <div class="footer-links-col">
+        <h2 class="footer-heading">Navigation</h2>
+        <ul class="footer-nav-list">
+          {%- for item in site.data.navigation -%}
+          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {%- endfor -%}
+        </ul>
+      </div>
+
+      <div class="footer-social-col">
+        <h2 class="footer-heading">Connect</h2>
+        <div class="footer-social-links">
+          <a href="https://github.com/aldisaw" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" title="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/aldisaw" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" title="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="https://instagram.com/aldisaw" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile" title="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="mailto:{{ site.email }}" aria-label="Email Aldi Saputra Wahyudi" title="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+          <a href="{{ '/feed.xml' | relative_url }}" aria-label="RSS Feed" title="RSS Feed">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+          </a>
+        </div>
+      </div>
     </div>
 
-    <!-- Social Media Icons -->
-    <div class="footer-social">
-      <!-- LinkedIn -->
-      <a href="https://linkedin.com/in/aldisaw" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-        <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-      </a>
-
-      <!-- Instagram -->
-      <a href="https://instagram.com/aldisaw" target="_blank" rel="noopener noreferrer" title="Instagram">
-        <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-      </a>
-
-      <!-- Email -->
-      <a href="mailto:hello@aldisaw.id" title="Email Me">
-        <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-      </a>
+    <div class="footer-bottom">
+      <p>&copy; {{ site.time | date: '%Y' }} Aldi Saputra Wahyudi (ALDISAW). All rights reserved.</p>
+      <p class="footer-meta">Built with Jekyll &amp; GitHub Pages &middot; <a href="{{ '/sitemap.xml' | relative_url }}">Sitemap</a></p>
     </div>
   </div>
 </footer>
-
-<style>
-/* --- CSS KUSTOM UNTUK FOOTER MODERN --- */
-.site-footer {
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-  padding: 40px 20px;
-  margin-top: 60px;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #6c757d;
-}
-
-.footer-content {
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-}
-
-.footer-info p {
-  margin: 4px 0;
-}
-
-.footer-subtitle {
-  font-size: 0.8rem;
-  opacity: 0.8;
-}
-
-.footer-social {
-  display: flex;
-  gap: 20px;
-  margin-top: 8px;
-}
-
-.footer-social a {
-  color: #555;
-  background: rgba(0, 0, 0, 0.04);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-}
-
-.footer-social a:hover {
-  background: #3498db;
-  color: #ffffff;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
-}
-
-/* Penyesuaian untuk Dark Mode bawaan tema */
-@media (prefers-color-scheme: dark) {
-  .site-footer {
-    border-top-color: rgba(255, 255, 255, 0.1);
-    color: #a0a0a0;
-  }
-  .footer-social a {
-    color: #ccc;
-    background: rgba(255, 255, 255, 0.08);
-  }
-  .footer-social a:hover {
-    background: #3498db;
-    color: #fff;
-  }
-}
-</style>

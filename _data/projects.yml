@@ -1,0 +1,52 @@
+- name: "Security Workflow & AI Automation Experiments"
+  status: "Experimental"
+  category: "AI & Security Automation"
+  summary: "Exploring AI agents and Python-based automation to streamline repetitive application security workflows, reconnaissance, and vulnerability triage."
+  objective: "Reduce manual overhead in security testing and research workflows through structured, repeatable automation."
+  problem: "Modern security testing involves repetitive data correlation, payload testing, and reporting tasks that slow down deep manual analysis."
+  stack:
+    - Python
+    - AI Agents
+    - Automation
+    - Application Security
+  features:
+    - "Modular task automation for security testing workflows"
+    - "AI-assisted research notes and triage experiments"
+    - "Focus on reproducible, human-in-the-loop verification"
+
+- name: "Android Wireless Dynamic Instrumentation Lab"
+  status: "Completed"
+  category: "Mobile Application Security"
+  summary: "A cable-free Android penetration testing setup using Magisk, Zygisk, and JsHook for runtime JavaScript hooking and SSL pinning bypass."
+  objective: "Enable dynamic mobile application security testing without relying on USB debugging, helping bypass USB-debugging detection mechanisms."
+  problem: "Many mobile applications implement USB debugging detection or anti-tampering checks that complicate traditional Frida/ADB-over-USB workflows."
+  stack:
+    - Android
+    - Magisk
+    - Zygisk
+    - JsHook
+    - JavaScript
+  features:
+    - "Wireless runtime hooking without USB cable connection"
+    - "SSL/TLS pinning bypass via injected JavaScript hooks"
+    - "On-device log inspection and hook service management"
+  related_post: "/security/2024/08/01/Android-Pentest-Without-Connect-PC-(Wireless).html"
+  related_post_title: "Read Technical Write-up: Android Pentest Without Connect to PC (Wireless)"
+
+- name: "aldisaw.id — Personal Brand & Research Platform"
+  status: "Active"
+  category: "Web Engineering & Technical SEO"
+  summary: "A custom-designed, minimalist Jekyll portfolio and editorial publishing platform built for speed, accessibility, and search visibility."
+  objective: "Unify cybersecurity portfolio, technical projects, and multi-topic editorial writing under the ALDISAW personal brand."
+  problem: "Default blog themes often mix personal storytelling and professional credibility poorly while suffering from SEO duplication and layout shifts."
+  stack:
+    - Jekyll
+    - SCSS
+    - Vanilla JS
+    - JSON-LD
+    - GitHub Pages
+  features:
+    - "Zero-dependency client-side blog search and category filtering"
+    - "Complete @graph JSON-LD structured data and canonical URL hygiene"
+    - "Accessible light/dark theme system with zero FOUC"
+  repo_url: "https://github.com/aldisaw/aldisaw.github.io"

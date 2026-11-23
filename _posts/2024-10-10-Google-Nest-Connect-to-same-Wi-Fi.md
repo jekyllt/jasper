@@ -1,19 +1,13 @@
 ---
 layout: post
 title: Google Nest Inter Tidak Bisa Terkoneksi ke Wifi ? Masalah Google Nest "Connect to same Wi-Fi"
-author: Aldi
+description: "Solusi mengatasi masalah Google Nest Mini yang gagal terhubung ke Wi-Fi dengan pesan AP Isolation atau Connect to same Wi-Fi pada router IndiHome."
+author: Aldi Saputra Wahyudi
 categories: tutorial
 banner:
   image: https://github.com/user-attachments/assets/846533c6-b510-4818-a1f5-cb67833be52d
-  opacity: 0.618
-  background: "#000"
-  height: "100vh"
-  min_height: "38vh"
-  heading_style: "font-size: 4.25em; font-weight: bold; text-decoration: underline"
-  subheading_style: "color: gold"
-tags: tutorial
+tags: [tutorial, Smart Home, Google Nest, Networking]
 top: 1
-sidebar: []
 ---
 
 Berawal dari punya duit nganggur gue beli google nest biar hidup gue lebih praktis aja serasa punya asisten pribadi dan gue sebelumnya udah pake beberapa smart device spt STB Indihome (walaupun beli yang root), smart lampu dan juga smart stop kontak, selama ini gue pake manual tanpa nyuruh nyuruh pake suara, selain hp gue lemot ya lebih cepet manual juga dari pada harus nunggu respon hp gue yang lemot parah.

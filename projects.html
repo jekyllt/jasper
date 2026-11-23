@@ -1,0 +1,75 @@
+---
+layout: about
+title: Projects
+permalink: /projects/
+eyebrow: "Engineering & Experiments"
+subtitle: "Tools, technical labs, and software experiments I build to explore security automation and modern web engineering."
+description: "Technical projects and experiments by Aldi Saputra Wahyudi (Aldisaw) spanning security automation, AI agents, mobile instrumentation, and web engineering."
+---
+
+<section style="margin-bottom: 3rem;">
+  <div class="grid-2">
+    {%- for project in site.data.projects -%}
+    <article class="card">
+      <div class="card-meta">
+        <span class="cat-pill">{{ project.category }}</span>
+        <span class="status-badge{% if project.status == 'Active' %} is-active{% endif %}">{{ project.status }}</span>
+      </div>
+
+      <h2 class="card-title" style="font-size: 1.3rem;">{{ project.name }}</h2>
+      <p class="card-desc">{{ project.summary }}</p>
+
+      {%- if project.problem -%}
+      <p style="font-size: 0.9rem; margin-bottom: 0.65rem;">
+        <strong style="color: var(--text-primary);">Problem:</strong> {{ project.problem }}
+      </p>
+      {%- endif -%}
+
+      {%- if project.objective -%}
+      <p style="font-size: 0.9rem; margin-bottom: 0.85rem;">
+        <strong style="color: var(--text-primary);">Objective:</strong> {{ project.objective }}
+      </p>
+      {%- endif -%}
+
+      {%- if project.features -%}
+      <ul style="font-size: 0.9rem; margin-bottom: 1.15rem;">
+        {%- for feat in project.features -%}
+        <li>{{ feat }}</li>
+        {%- endfor -%}
+      </ul>
+      {%- endif -%}
+
+      <div class="card-tags" style="margin-bottom: 1rem;">
+        {%- for tech in project.stack -%}
+          <span class="tag-pill">{{ tech }}</span>
+        {%- endfor -%}
+      </div>
+
+      {%- if project.repo_url or project.related_post -%}
+      <div style="display: flex; flex-wrap: wrap; gap: 0.85rem; padding-top: 0.85rem; border-top: 1px solid var(--border); font-size: 0.9rem; font-weight: 600;">
+        {%- if project.repo_url -%}
+          <a href="{{ project.repo_url }}" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+        {%- endif -%}
+        {%- if project.related_post -%}
+          <a href="{{ project.related_post | relative_url }}">{{ project.related_post_title | default: "Read Related Article" }} &rarr;</a>
+        {%- endif -%}
+      </div>
+      {%- endif -%}
+    </article>
+    {%- endfor -%}
+  </div>
+</section>
+
+<section>
+  <div class="cta-box">
+    <div>
+      <div class="eyebrow">Open Source &amp; Notes</div>
+      <h2>More experiments on GitHub and the Blog.</h2>
+      <p>Follow my public repositories on GitHub or read detailed technical write-ups behind my research and tools.</p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn btn-primary" href="https://github.com/aldisaw" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+      <a class="btn btn-secondary" href="{{ '/blog/' | relative_url }}">Read the Blog</a>
+    </div>
+  </div>
+</section>

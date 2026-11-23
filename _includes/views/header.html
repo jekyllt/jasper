@@ -1,94 +1,105 @@
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+    <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="ALDISAW Home">
+      <span class="brand-mark" aria-hidden="true">//</span>
+      <span class="brand-text">ALDISAW</span>
+    </a>
 
-{%- include functions.html func='get_banner' -%}
-
-{%- include functions.html func='log' level='debug' msg='Get header_transparent value' -%}
-{%- assign name = 'header_transparent' -%}
-{%- include functions.html func='get_value' default=true -%}
-{%- assign header_transparent = return -%}
-
-{%- if has_banner and header_transparent -%}
-  {%- assign header_transparent_class = "site-header-transparent" -%}
-{%- endif -%}
-
-<header class="site-header {{ header_transparent_class }}" role="banner">
-  <div class="wrapper">
-    <div class="site-header-inner">
-      {%- assign default_paths = site.pages | where: "dir", "/" | map: "path" -%}
-      {%- assign page_paths = site.header_pages | default: default_paths -%}
-
-      <span class="site-brand">
-        {%- include views/site-brand.html -%}
-      </span>
-
-      {%- if page_paths -%}
-        <nav class="site-nav">
-          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-          <label for="nav-trigger">
-            <span class="menu-icon">
-              <svg viewBox="0 0 18 15" width="18px" height="15px">
-                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-              </svg>
-            </span>
-          </label>
-
-          <div class="trigger">
-            {%- for path in page_paths -%}
-              {%- assign my_page = site.pages | where: "path", path | first -%}
-              {%- if my_page.title -%}
-              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | upcase | escape }}</a>
+    <div class="header-actions">
+      <nav id="primary-nav" class="site-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          {%- for item in site.data.navigation -%}
+            {%- assign is_active = false -%}
+            {%- if item.url == "/" -%}
+              {%- if page.url == "/" or page.url == "/index.html" -%}
+                {%- assign is_active = true -%}
               {%- endif -%}
-            {%- endfor -%}
-
-            {%- assign name = 'translate_langs' -%}
-            {%- include functions.html func='get_value' -%}
-            {%- assign translate_langs = return -%}
-            {%- if translate_langs.size > 0 -%}
-              {%- assign name = 'lang' -%}
-              {%- include functions.html func='get_value' default='en' -%}
-              {%- assign lang = return -%}
-              <span class="page-link">
-                  {%- include extensions/google-translate.html -%}
-              </span>
+            {%- elsif item.url == "/blog/" -%}
+              {%- if page.url == "/blog/" or page.layout == "post" or page.url == "/categories.html" or page.url == "/tags.html" or page.url == "/archives.html" -%}
+                {%- assign is_active = true -%}
+              {%- endif -%}
+            {%- elsif item.url == "/about/" -%}
+              {%- if page.url == "/about/" or page.url == "/about.html" -%}
+                {%- assign is_active = true -%}
+              {%- endif -%}
+            {%- elsif page.url == item.url -%}
+              {%- assign is_active = true -%}
             {%- endif -%}
-          </div>
-        </nav>
-      {%- endif -%}
+            <li>
+              <a class="nav-link{% if is_active %} is-active{% endif %}"
+                 href="{{ item.url | relative_url }}"
+                 {% if is_active %}aria-current="page"{% endif %}>
+                {{ item.title }}
+              </a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </nav>
+
+      <button type="button"
+              id="theme-toggle-btn"
+              class="theme-toggle-btn"
+              aria-label="Toggle dark mode"
+              aria-pressed="false"
+              title="Toggle light/dark theme">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+
+      <button type="button"
+              id="mobile-menu-btn"
+              class="mobile-menu-btn"
+              aria-label="Toggle navigation menu"
+              aria-expanded="false"
+              aria-controls="mobile-nav-drawer">
+        <svg class="icon-menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg class="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
     </div>
   </div>
+
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer" hidden>
+    <nav aria-label="Mobile Navigation">
+      <ul class="mobile-nav-list">
+        {%- for item in site.data.navigation -%}
+          {%- assign is_active = false -%}
+          {%- if item.url == "/" and (page.url == "/" or page.url == "/index.html") -%}
+            {%- assign is_active = true -%}
+          {%- elsif item.url == "/blog/" and (page.url == "/blog/" or page.layout == "post") -%}
+            {%- assign is_active = true -%}
+          {%- elsif item.url == "/about/" and (page.url == "/about/" or page.url == "/about.html") -%}
+            {%- assign is_active = true -%}
+          {%- elsif item.url != "/" and page.url == item.url -%}
+            {%- assign is_active = true -%}
+          {%- endif -%}
+          <li>
+            <a class="mobile-nav-link{% if is_active %} is-active{% endif %}"
+               href="{{ item.url | relative_url }}"
+               {% if is_active %}aria-current="page"{% endif %}>
+              {{ item.title }}
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+  </div>
 </header>
-
-<script>
-  function initHeader() {
-    var lastScrollY = getScrollPos().y;
-    var documentElement = document.documentElement;
-
-    function storeScrollData() {
-      var y = getScrollPos().y;
-
-      {%- if banner and header_transparent -%}
-      documentElement.setAttribute("data-header-transparent", "");
-      {%- endif -%}
-
-      var scrollStatus = "";
-
-      if (y <= 0) {
-        scrollStatus = "top";
-      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
-        scrollStatus = "bottom";
-      } else {
-        var isScrollDown = (y - lastScrollY > 0) ? true : false;
-        scrollStatus = isScrollDown ? "down" : "up";
-      }
-
-      lastScrollY = y;
-      documentElement.setAttribute("data-scroll-status", scrollStatus);
-    }
-
-    window.addEventListener('scroll', function(e) {
-      storeScrollData();
-    });
-
-    storeScrollData();
-  }
-  document.addEventListener('DOMContentLoaded', initHeader);
-</script>
