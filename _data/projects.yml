@@ -1,52 +1,83 @@
-- name: "Security Workflow & AI Automation Experiments"
-  status: "Experimental"
-  category: "AI & Security Automation"
-  summary: "Exploring AI agents and Python-based automation to streamline repetitive application security workflows, reconnaissance, and vulnerability triage."
-  objective: "Reduce manual overhead in security testing and research workflows through structured, repeatable automation."
-  problem: "Modern security testing involves repetitive data correlation, payload testing, and reporting tasks that slow down deep manual analysis."
+- id: "python-application-automation-toolkit"
+  name: "Python Application Automation Toolkit"
+  status: "Active"
+  category: "Automation Engineering & Behavioral Analysis"
+  summary: "A collection of Python-based automation tools designed to orchestrate complex application workflows, analyze application behavior, and automate Android-based interactions. The toolkit combines workflow orchestration, network traffic analysis, OCR, computer vision, and emulator automation."
+  problem: "Complex, multi-step desktop and mobile application workflows often involve dynamic UI states, layered API communication, and frequent execution bottlenecks that are difficult to analyze or automate reliably with brittle single-purpose scripts."
+  objective: "Build a modular, resilient Python engineering toolkit capable of analyzing application communication flows, automating Android and API-driven workflows, and maintaining high execution reliability through adaptive session and retry controls."
+  architecture:
+    - layer: "1. Workflow Orchestration & Reliability Core"
+      detail: "Python state-machine orchestration, adaptive request throttling, session management, and structured retry/backoff policies."
+    - layer: "2. Application & Protocol Analysis Layer"
+      detail: "HTTP/HTTPS traffic interception, protocol inspection, API interaction mapping, and internal application logic analysis."
+    - layer: "3. Vision & OCR Processing Layer"
+      detail: "Computer vision pattern recognition, image preprocessing, and real-time OCR integration for visual state extraction."
+    - layer: "4. Android Execution & Emulator Layer"
+      detail: "Android Debug Bridge (ADB) control, multi-emulator orchestration, and automated UI interaction pipelines."
+  capabilities:
+    - title: "A. Python Workflow Automation"
+      items:
+        - "Modular Python automation frameworks"
+        - "Multi-step application workflow orchestration"
+        - "Automated user interaction simulation"
+        - "High-volume workflow processing"
+        - "Adaptive execution strategies, retry handling, and resilience mechanisms"
+    - title: "B. Application Behavioral Analysis"
+      items:
+        - "Application reverse engineering and internal logic analysis"
+        - "Authentication workflow and state-transition analysis"
+        - "API interaction mapping and communication flow inspection"
+    - title: "C. Network Traffic Analysis"
+      items:
+        - "HTTP/HTTPS traffic interception and protocol analysis"
+        - "Request and response payload inspection"
+        - "Application communication behavior analysis"
+    - title: "D. OCR & Computer Vision"
+      items:
+        - "OCR engine integrations and image preprocessing"
+        - "Pattern recognition and visual information extraction"
+        - "Automated image and UI state analysis"
+    - title: "E. Android Automation"
+      items:
+        - "Android Debug Bridge (ADB) device and emulator orchestration"
+        - "UI interaction automation combined with computer vision"
+        - "Real-time OCR-driven application interaction"
+    - title: "F. Automation Reliability"
+      items:
+        - "Stateful session management and lifecycle handling"
+        - "Adaptive request throttling and rate control"
+        - "Structured error handling and workflow resilience"
+  highlights:
+    - "Unified Python orchestration connecting network-level inspection with UI-level Android emulator control."
+    - "Modular separation between core workflow engines, computer vision pipelines, and device drivers."
+    - "Public documentation strategy: architectural patterns and non-sensitive modules are being prepared for open-source release, while sensitive operational details and private endpoints remain redacted."
   stack:
     - Python
-    - AI Agents
-    - Automation
-    - Application Security
-  features:
-    - "Modular task automation for security testing workflows"
-    - "AI-assisted research notes and triage experiments"
-    - "Focus on reproducible, human-in-the-loop verification"
+    - ADB
+    - Android Automation
+    - Emulator Orchestration
+    - HTTP/HTTPS Analysis
+    - Reverse Engineering
+    - OCR
+    - Computer Vision
+    - Workflow Automation
+  related_posts:
+    - title: "Android Pentest Without Connect to PC (Wireless) | JsHook Tutorial"
+      url: "/security/2024/08/01/Android-Pentest-Without-Connect-PC-(Wireless).html"
 
-- name: "Android Wireless Dynamic Instrumentation Lab"
+- id: "android-wireless-lab"
+  name: "Android Wireless Dynamic Instrumentation Lab"
   status: "Completed"
   category: "Mobile Application Security"
-  summary: "A cable-free Android penetration testing setup using Magisk, Zygisk, and JsHook for runtime JavaScript hooking and SSL pinning bypass."
-  objective: "Enable dynamic mobile application security testing without relying on USB debugging, helping bypass USB-debugging detection mechanisms."
-  problem: "Many mobile applications implement USB debugging detection or anti-tampering checks that complicate traditional Frida/ADB-over-USB workflows."
+  summary: "A cable-free Android testing and instrumentation setup using Magisk, Zygisk, and JsHook for runtime JavaScript hooking and SSL/TLS pinning bypass."
+  problem: "Traditional USB-tethered mobile instrumentation workflows can be disrupted by USB debugging detection or physical cable constraints during dynamic analysis."
+  objective: "Establish a reproducible wireless runtime hooking environment for inspecting Android application behavior directly on-device."
   stack:
     - Android
     - Magisk
     - Zygisk
     - JsHook
     - JavaScript
-  features:
-    - "Wireless runtime hooking without USB cable connection"
-    - "SSL/TLS pinning bypass via injected JavaScript hooks"
-    - "On-device log inspection and hook service management"
-  related_post: "/security/2024/08/01/Android-Pentest-Without-Connect-PC-(Wireless).html"
-  related_post_title: "Read Technical Write-up: Android Pentest Without Connect to PC (Wireless)"
-
-- name: "aldisaw.id — Personal Brand & Research Platform"
-  status: "Active"
-  category: "Web Engineering & Technical SEO"
-  summary: "A custom-designed, minimalist Jekyll portfolio and editorial publishing platform built for speed, accessibility, and search visibility."
-  objective: "Unify cybersecurity portfolio, technical projects, and multi-topic editorial writing under the ALDISAW personal brand."
-  problem: "Default blog themes often mix personal storytelling and professional credibility poorly while suffering from SEO duplication and layout shifts."
-  stack:
-    - Jekyll
-    - SCSS
-    - Vanilla JS
-    - JSON-LD
-    - GitHub Pages
-  features:
-    - "Zero-dependency client-side blog search and category filtering"
-    - "Complete @graph JSON-LD structured data and canonical URL hygiene"
-    - "Accessible light/dark theme system with zero FOUC"
-  repo_url: "https://github.com/aldisaw/aldisaw.github.io"
+  related_posts:
+    - title: "Read Technical Write-up: Android Pentest Without Connect to PC (Wireless)"
+      url: "/security/2024/08/01/Android-Pentest-Without-Connect-PC-(Wireless).html"

@@ -11,18 +11,21 @@ description: "Read articles by Aldi Saputra Wahyudi (Aldisaw) covering cybersecu
 
 <div class="blog-controls" aria-label="Blog search and filters">
   <div class="blog-controls-row">
-    <div class="search-box">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <circle cx="11" cy="11" r="8"></circle>
-        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-      </svg>
-      <label for="blog-search-input" class="skip-link">Search articles</label>
-      <input type="search"
-             id="blog-search-input"
-             class="search-input"
-             placeholder="Search articles, CVEs, topics, or tags..."
-             autocomplete="off">
-    </div>
+    <form id="blog-search-form" class="search-row" role="search">
+      <div class="search-box">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <label for="blog-search-input" class="sr-only">Search articles</label>
+        <input type="search"
+               id="blog-search-input"
+               class="search-input"
+               placeholder="Search articles, CVEs, topics, or tags..."
+               autocomplete="off">
+      </div>
+      <button type="submit" class="btn btn-secondary">Search Articles</button>
+    </form>
 
     <div class="blog-results-meta" id="blog-results-count">
       {{ site.posts.size }} {% if site.posts.size == 1 %}article{% else %}articles{% endif %}
