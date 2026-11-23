@@ -25,6 +25,7 @@ description: "Read articles by Aldi Saputra Wahyudi (Aldisaw) covering cybersecu
                autocomplete="off">
       </div>
       <button type="submit" class="btn btn-secondary">Search Articles</button>
+      <button type="button" id="blog-clear-btn" class="btn btn-secondary" hidden>Clear</button>
     </form>
 
     <div class="blog-results-meta" id="blog-results-count">
@@ -63,8 +64,9 @@ description: "Read articles by Aldi Saputra Wahyudi (Aldisaw) covering cybersecu
     <article class="post-card"
              data-post-card
              data-category="{{ primary_cat | downcase | escape }}"
+             data-categories="{{ post.categories | join: ' ' | downcase | escape }}"
              data-tags="{{ post.tags | join: ' ' | downcase | escape }}"
-             data-search="{{ post.title | downcase | escape }} {{ post.description | default: post.excerpt | strip_html | strip_newlines | downcase | escape }}">
+             data-search="{{ post.title | downcase | escape }} {{ post.description | default: post.excerpt | strip_html | strip_newlines | downcase | escape }} {{ post.content | strip_html | strip_newlines | downcase | escape }}">
       <a class="post-card-thumb" href="{{ post.url | relative_url }}" aria-hidden="true" tabindex="-1">
         <img src="{{ thumb | relative_url }}" alt="" loading="lazy" width="640" height="360">
       </a>
@@ -93,9 +95,9 @@ description: "Read articles by Aldi Saputra Wahyudi (Aldisaw) covering cybersecu
 </div>
 
 <div id="blog-empty-state" class="empty-state" hidden>
-  <h2 style="font-size: 1.25rem; margin-bottom: 0.4rem;">No matching articles found</h2>
-  <p style="margin-bottom: 1rem;">Try a different search keyword or reset the category filter.</p>
-  <button type="button" class="btn btn-secondary" onclick="document.getElementById('blog-search-input').value=''; document.querySelector('[data-filter-category=\'all\']').click();">
-    Reset Filters
+  <h2 style="font-size: 1.25rem; margin-bottom: 0.4rem;">No articles found.</h2>
+  <p style="margin-bottom: 1rem;">Try another search term or clear the search and category filters.</p>
+  <button type="button" id="blog-reset-btn" class="btn btn-secondary">
+    Clear Search &amp; Filters
   </button>
 </div>

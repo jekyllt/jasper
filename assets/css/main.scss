@@ -52,6 +52,10 @@
   box-sizing: border-box;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
@@ -491,7 +495,7 @@ ul, ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 66.5% top;
+  object-position: 80% top;
 }
 
 @media (max-width: 860px) {
@@ -507,7 +511,7 @@ ul, ol {
     aspect-ratio: 4 / 4.2;
   }
   .hero-portrait {
-    object-position: 66.5% top;
+    object-position: 80% top;
   }
 }
 
@@ -1273,4 +1277,38 @@ ul, ol {
   font-size: 0.825rem;
   color: var(--text-muted);
   white-space: nowrap;
+}
+
+/* Certifications */
+.cert-card {
+  padding: 1.25rem 1.35rem;
+}
+
+.cert-id-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.copy-id-btn {
+  padding: 0.2rem 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.copy-id-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--border-strong);
 }
